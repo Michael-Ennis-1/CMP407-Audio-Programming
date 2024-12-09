@@ -74,11 +74,12 @@ Plugins/*/Intermediate/*
 DerivedDataCache/*
 
 # Wwise files
-Wwise/IncrementalSoundBankData.xml
-Wwise/.cache/
-Wwise/.backup/
-Wwise/*.akd
-Wwise/*.akpk
-Wwise/*.prof
-Wwise/*.validationcache
-Wwise/*.wsettings
+Plugins/Wwise/IncrementalSoundBankData.xml
+Plugins/Wwise/.cache/
+Plugins/Wwise/.backup/
+Plugins/Wwise/*.akd
+Plugins/Wwise/*.akpk
+Plugins/Wwise/*.prof
+Plugins/Wwise/*.validationcache
+Plugins/Wwise/*.wsettings
+Plugins/Wwise/Intermediate
