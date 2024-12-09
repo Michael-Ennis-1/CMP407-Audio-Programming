@@ -81,3 +81,16 @@ DerivedDataCache/*
 *.validationcache
 *.wsettings
 IncrementalSoundBankData.xml
+
+#Wwise Additional
+/Wwise/GeneratedSoundBanks/
+/Wwise/Cache
+
+*.log
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+*.cache
+*.tmp
