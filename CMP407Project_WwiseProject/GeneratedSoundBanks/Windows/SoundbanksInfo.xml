@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{3B1E1D1B-67A8-49D5-603F-445A3C69235D}">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" ObjectPath="\Audio Devices\Default Work Unit\No_Output" GUID="{78E175C2-554A-42C3-B180-CA29DED39A66}" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" ObjectPath="\Audio Devices\Default Work Unit\System" GUID="{97DB15DC-1484-4684-9D05-838B4010AC7F}" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus" GUID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
+			</Busses>
+			<GameParameters>
+				<GameParameter Id="1493153371" Name="PlayerSpeed" ObjectPath="\Game Parameters\Default Work Unit\PlayerSpeed" GUID="{E25294AF-93C8-4B62-B86F-4447C6D2C2D5}"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="2734173067" Type="Event" GUID="{11EFE650-9670-42D6-97FA-95E7D171C8F2}" Language="SFX" Hash="{9C0E00D8-AE90-B307-2C40-5A4882DE6820}">
+			<ObjectPath>MetalFootsteps</ObjectPath>
+			<ShortName>MetalFootsteps</ShortName>
+			<Path>Event/MetalFootsteps.bnk</Path>
+			<Media>
+				<File Id="238955772" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Footstep2Metal.wav</ShortName>
+					<Path>Media/238955772.wem</Path>
+					<CachePath>SFX/Footstep2Metal_818F3B66.wem</CachePath>
+				</File>
+				<File Id="541635670" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Footstep1Metal.wav</ShortName>
+					<Path>Media/541635670.wem</Path>
+					<CachePath>SFX/Footstep1Metal_818F3B66.wem</CachePath>
+				</File>
+				<File Id="779536952" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Footstep3Metal.wav</ShortName>
+					<Path>Media/779536952.wem</Path>
+					<CachePath>SFX/Footstep3Metal_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2734173067" Name="MetalFootsteps" ObjectPath="\Events\Default Work Unit\MetalFootsteps" GUID="{11EFE650-9670-42D6-97FA-95E7D171C8F2}" DurationType="OneShot" DurationMin="0.3809375" DurationMax="0.4045">
+					<MediaRefs>
+						<MediaRef Id="238955772"/>
+						<MediaRef Id="541635670"/>
+						<MediaRef Id="779536952"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="3392340300" Type="Event" GUID="{8B739BA1-DFB9-4EF4-8CD7-6942C7C807DA}" Language="SFX" Hash="{DFAF99A3-1553-69E0-4BF5-8C6856E6EC1A}">
+			<ObjectPath>StartDynamicLoop</ObjectPath>
+			<ShortName>StartDynamicLoop</ShortName>
+			<Path>Event/StartDynamicLoop.bnk</Path>
+			<Media>
+				<File Id="125221835" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>11_Pad1.wav</ShortName>
+					<Path>Media/125221835.wem</Path>
+					<CachePath>SFX/11_Pad1_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="175323427" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>12_Pad2.wav</ShortName>
+					<Path>Media/175323427.wem</Path>
+					<CachePath>SFX/12_Pad2_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="383356598" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>04_Percussion1.wav</ShortName>
+					<Path>Media/383356598.wem</Path>
+					<CachePath>SFX/04_Percussion1_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="400726703" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>02_RomanWarDrum.wav</ShortName>
+					<Path>Media/400726703.wem</Path>
+					<CachePath>SFX/02_RomanWarDrum_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="630912592" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>01_Daiko.wav</ShortName>
+					<Path>Media/630912592.wem</Path>
+					<CachePath>SFX/01_Daiko_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="673410174" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>03_MalaysianDjembe.wav</ShortName>
+					<Path>Media/673410174.wem</Path>
+					<CachePath>SFX/03_MalaysianDjembe_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="693567868" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>05_Percussion2.wav</ShortName>
+					<Path>Media/693567868.wem</Path>
+					<CachePath>SFX/05_Percussion2_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="923013930" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>06_Percussion3.wav</ShortName>
+					<Path>Media/923013930.wem</Path>
+					<CachePath>SFX/06_Percussion3_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="980266171" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>10_Psaltery.wav</ShortName>
+					<Path>Media/980266171.wem</Path>
+					<CachePath>SFX/10_Psaltery_FBC78EF0.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3392340300" Name="StartDynamicLoop" ObjectPath="\Events\Default Work Unit\StartDynamicLoop" GUID="{8B739BA1-DFB9-4EF4-8CD7-6942C7C807DA}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="125221835"/>
+						<MediaRef Id="175323427"/>
+						<MediaRef Id="383356598"/>
+						<MediaRef Id="400726703"/>
+						<MediaRef Id="630912592"/>
+						<MediaRef Id="673410174"/>
+						<MediaRef Id="693567868"/>
+						<MediaRef Id="923013930"/>
+						<MediaRef Id="980266171"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="1493153371" Name="PlayerSpeed" ObjectPath="\Game Parameters\Default Work Unit\PlayerSpeed" GUID="{E25294AF-93C8-4B62-B86F-4447C6D2C2D5}"/>
+			</GameParameters>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{C0B3C364-EDCA-9E73-B8DF-E5C290BA218D}</FileHash>
+</SoundBanksInfo>

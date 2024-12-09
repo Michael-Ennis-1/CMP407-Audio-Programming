@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2734173067	MetalFootsteps			\Default Work Unit\MetalFootsteps	
+
