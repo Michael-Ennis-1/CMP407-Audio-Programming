@@ -11,7 +11,19 @@ class CMP407PROJECT_API AAudioAIController : public AAIController
 {
 	GENERATED_BODY()
 
+	AAudioAIController(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
+
 public:
 	virtual void BeginPlay() override;
-	
+
+	UFUNCTION()
+	void StartChasingPlayer();
+
+	UFUNCTION()
+	void StopChasingPlayer();
+
+protected:
+	TObjectPtr<AActor> PlayerActor;
+
+	bool bIsChasingPlayer;
 };

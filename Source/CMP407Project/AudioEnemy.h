@@ -6,7 +6,12 @@
 #include "GameFramework/Character.h"
 #include "AudioEnemy.generated.h"
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnGenericEnemyEvent);
+
 class UAIPerceptionComponent;
+class UAudioEnemySubsystem;
+
+struct FAIStimulus;
 
 UCLASS()
 class CMP407PROJECT_API AAudioEnemy : public ACharacter
@@ -17,13 +22,20 @@ public:
 	// Sets default values for this pawn's properties
 	AAudioEnemy();
 
+	FOnGenericEnemyEvent OnEnemyStartedChasing;
+	FOnGenericEnemyEvent OnEnemyStoppedChasing;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	UFUNCTION()
+		void TargetPerceptionUpdated(AActor* InActor, FAIStimulus InStimulus);
+
+	UAudioEnemySubsystem* GetAudioEnemySubsystem();
+
 	TObjectPtr<AActor> PlayerActor;
 
-	// Work on this tomorrow
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	TObjectPtr<UAIPerceptionComponent> PerceptionComponent;
 };
