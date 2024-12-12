@@ -1,0 +1,11 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1377933095	BeginChaseMusic			\Default Work Unit\DynamicMusic\BeginChaseMusic	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3060884600	PlayerChasedStateGroup			\Default Work Unit\PlayerChasedStateGroup	
+
+State	ID	Name	State Group			Notes
+	493461511	Chased	PlayerChasedStateGroup			
+	748895195	None	PlayerChasedStateGroup			
+	3621873013	Hidden	PlayerChasedStateGroup			
+

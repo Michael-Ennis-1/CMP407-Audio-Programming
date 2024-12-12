@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{3B1E1D1B-67A8-49D5-603F-445A3C69235D}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{3CC2F5A3-FBC7-A2BA-C772-1786A6154F52}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -16,8 +16,18 @@
 			</Busses>
 			<GameParameters>
 				<GameParameter Id="1493153371" Name="PlayerSpeed" ObjectPath="\Game Parameters\Default Work Unit\PlayerSpeed" GUID="{E25294AF-93C8-4B62-B86F-4447C6D2C2D5}"/>
+				<GameParameter Id="3441729996" Name="DistanceFromEnemy" ObjectPath="\Game Parameters\Default Work Unit\DistanceFromEnemy" GUID="{50BF7DC5-CFDD-4211-8E17-0D2DA6D11F89}"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="3060884600" Name="PlayerChasedStateGroup" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup" GUID="{EE672E92-347B-4545-8120-1C668D97E78D}">
+					<States>
+						<State Id="493461511" Name="Chased" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup\Chased" GUID="{F27B355F-CFC9-4BA7-8C85-D4B70DE44E5C}"/>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup\None" GUID="{A5447658-B540-4BC5-B1E4-59D200CF4E42}"/>
+						<State Id="3621873013" Name="Hidden" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup\Hidden" GUID="{29A4E8D1-97D7-4D2F-B42B-A5E175D58A35}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B8E3CB0D-9843-D1EF-1F06-8F598B386C69}</FileHash>
+	<FileHash>{A45AC084-C8FE-08EE-6D39-E1AE0D2988EB}</FileHash>
 </SoundBanksInfo>

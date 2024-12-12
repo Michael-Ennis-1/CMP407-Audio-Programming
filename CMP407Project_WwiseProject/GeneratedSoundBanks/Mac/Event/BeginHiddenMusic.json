@@ -1,0 +1,145 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "150",
+  "SoundBanks": [
+   {
+    "Id": "4244123813",
+    "Type": "Event",
+    "GUID": "{AD634FDE-E1BB-4FED-ABCF-F7C8744CE6B5}",
+    "Language": "SFX",
+    "Hash": "{F5CE5A86-6400-DBE7-CF1E-B92DE619F90D}",
+    "ObjectPath": "BeginHiddenMusic",
+    "ShortName": "BeginHiddenMusic",
+    "Path": "Event/BeginHiddenMusic.bnk",
+    "Media": [
+     {
+      "Id": "279993006",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "PianoEdited.wav",
+      "Path": "Media/279993006.wem",
+      "CachePath": "SFX/PianoEdited_FBC78EF0.wem"
+     },
+     {
+      "Id": "342025362",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "TimbalesEdited.wav",
+      "Path": "Media/342025362.wem",
+      "CachePath": "SFX/TimbalesEdited_FBC78EF0.wem"
+     },
+     {
+      "Id": "449572488",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "TheFastTrackEdited.wav",
+      "Path": "Media/449572488.wem",
+      "CachePath": "SFX/TheFastTrackEdited_FBC78EF0.wem"
+     },
+     {
+      "Id": "484453395",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "BassEdited.wav",
+      "Path": "Media/484453395.wem",
+      "CachePath": "SFX/BassEdited_FBC78EF0.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4244123813",
+      "Name": "BeginHiddenMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\DynamicMusic\\BeginHiddenMusic",
+      "GUID": "{AD634FDE-E1BB-4FED-ABCF-F7C8744CE6B5}",
+      "DurationType": "Infinite",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "3060884600",
+         "Id": "493461511",
+         "GUID": "{F27B355F-CFC9-4BA7-8C85-D4B70DE44E5C}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "279993006"
+         },
+         {
+          "Id": "342025362"
+         },
+         {
+          "Id": "484453395"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "3060884600",
+         "Id": "3621873013",
+         "GUID": "{29A4E8D1-97D7-4D2F-B42B-A5E175D58A35}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "279993006"
+         },
+         {
+          "Id": "342025362"
+         },
+         {
+          "Id": "449572488"
+         }
+        ]
+       }
+      ],
+      "ActionSetState": [
+       {
+        "GroupId": "3060884600",
+        "Id": "3621873013",
+        "Name": "Hidden",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup\\Hidden",
+        "GUID": "{29A4E8D1-97D7-4D2F-B42B-A5E175D58A35}"
+       }
+      ]
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "3060884600",
+      "Name": "PlayerChasedStateGroup",
+      "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup",
+      "GUID": "{EE672E92-347B-4545-8120-1C668D97E78D}",
+      "States": [
+       {
+        "Id": "493461511",
+        "Name": "Chased",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup\\Chased",
+        "GUID": "{F27B355F-CFC9-4BA7-8C85-D4B70DE44E5C}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup\\None",
+        "GUID": "{A5447658-B540-4BC5-B1E4-59D200CF4E42}"
+       },
+       {
+        "Id": "3621873013",
+        "Name": "Hidden",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup\\Hidden",
+        "GUID": "{29A4E8D1-97D7-4D2F-B42B-A5E175D58A35}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{972D56B3-7548-EA12-75EA-60EE106F5CD3}"
+ }
+}

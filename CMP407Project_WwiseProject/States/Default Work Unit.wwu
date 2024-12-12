@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D8D1B017-C1C8-4084-8C58-5278EFED9B42}" SchemaVersion="119">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{D8D1B017-C1C8-4084-8C58-5278EFED9B42}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{D8D1B017-C1C8-4084-8C58-5278EFED9B42}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="PlayerChasedStateGroup" ID="{EE672E92-347B-4545-8120-1C668D97E78D}">
+					<ChildrenList>
+						<State Name="None" ID="{A5447658-B540-4BC5-B1E4-59D200CF4E42}"/>
+						<State Name="Chased" ID="{F27B355F-CFC9-4BA7-8C85-D4B70DE44E5C}"/>
+						<State Name="Hidden" ID="{29A4E8D1-97D7-4D2F-B42B-A5E175D58A35}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Chased" ID="{F27B355F-CFC9-4BA7-8C85-D4B70DE44E5C}"/>
+							<EndState Name="Hidden" ID="{29A4E8D1-97D7-4D2F-B42B-A5E175D58A35}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Hidden" ID="{29A4E8D1-97D7-4D2F-B42B-A5E175D58A35}"/>
+							<EndState Name="Chased" ID="{F27B355F-CFC9-4BA7-8C85-D4B70DE44E5C}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

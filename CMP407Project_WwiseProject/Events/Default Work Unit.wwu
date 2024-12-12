@@ -15,6 +15,9 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="StartDynamicLoop" ID="{8B739BA1-DFB9-4EF4-8CD7-6942C7C807DA}">
+					<PropertyList>
+						<Property Name="Inclusion" Type="bool" Value="False"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{CBC65BA9-15E9-4E3F-89F6-1A60B4511670}" ShortID="92846425">
 							<ReferenceList>
@@ -25,6 +28,100 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="DynamicMusic" ID="{F7F1638B-9A25-4917-AC19-3A8E6E3628A0}" ShortID="375594220">
+					<ChildrenList>
+						<Event Name="BeginChaseMusic" ID="{EDA2D3EF-9B78-4B3E-8607-E6835CE32334}">
+							<ChildrenList>
+								<Action Name="" ID="{BCE50391-97C9-46DE-8F6B-4A25DAD3E55C}" ShortID="420695796">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="DynamicMusicSwitchContainer" ID="{6E4F1D76-C6D3-45E1-A979-5DA0238CAEF6}" WorkUnitID="{45DC0039-BAA1-4FBA-AAE4-3BD71AF33185}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{4ADCCD70-1CAD-41A5-9DF4-E9680CB5225E}" ShortID="356501497">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Chased" ID="{F27B355F-CFC9-4BA7-8C85-D4B70DE44E5C}" WorkUnitID="{D8D1B017-C1C8-4084-8C58-5278EFED9B42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A409C732-DA06-4513-B60F-D9D9F83C9FE6}" ShortID="828479081">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="DynamicMusicSwitchContainer" ID="{6E4F1D76-C6D3-45E1-A979-5DA0238CAEF6}" WorkUnitID="{45DC0039-BAA1-4FBA-AAE4-3BD71AF33185}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="BeginHiddenMusic" ID="{AD634FDE-E1BB-4FED-ABCF-F7C8744CE6B5}">
+							<ChildrenList>
+								<Action Name="" ID="{1CF08129-91FF-4D1B-A0F7-367C48FE01E5}" ShortID="396777756">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="DynamicMusicSwitchContainer" ID="{6E4F1D76-C6D3-45E1-A979-5DA0238CAEF6}" WorkUnitID="{45DC0039-BAA1-4FBA-AAE4-3BD71AF33185}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{83785B86-91C5-42F9-9F95-E88B307F7D10}" ShortID="438541250">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Hidden" ID="{29A4E8D1-97D7-4D2F-B42B-A5E175D58A35}" WorkUnitID="{D8D1B017-C1C8-4084-8C58-5278EFED9B42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{6DC8037A-EA8B-4717-A786-33AEABBE54A3}" ShortID="550304847">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="DynamicMusicSwitchContainer" ID="{6E4F1D76-C6D3-45E1-A979-5DA0238CAEF6}" WorkUnitID="{45DC0039-BAA1-4FBA-AAE4-3BD71AF33185}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SetChased" ID="{09EEC311-8EA0-41D7-848B-C3FD401D13D0}">
+							<ChildrenList>
+								<Action Name="" ID="{BE0B0CD2-828D-4BF8-AA62-72A52287B667}" ShortID="645763475">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Chased" ID="{F27B355F-CFC9-4BA7-8C85-D4B70DE44E5C}" WorkUnitID="{D8D1B017-C1C8-4084-8C58-5278EFED9B42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SetHidden" ID="{75D0B19F-D998-4551-8A37-D9A0F38654B3}">
+							<ChildrenList>
+								<Action Name="" ID="{A6B6677D-094A-444D-A85B-6263575EC2CF}" ShortID="123199607">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Hidden" ID="{29A4E8D1-97D7-4D2F-B42B-A5E175D58A35}" WorkUnitID="{D8D1B017-C1C8-4084-8C58-5278EFED9B42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -1,6 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	3392340300	StartDynamicLoop			\Default Work Unit\StartDynamicLoop	
-
-Game Parameter	ID	Name			Wwise Object Path	Notes
-	1493153371	PlayerSpeed			\Default Work Unit\PlayerSpeed	
-

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<SoundBanks>
+		<SoundBank Id="4089554691" Type="Event" GUID="{75D0B19F-D998-4551-8A37-D9A0F38654B3}" Language="SFX" Hash="{2FCBA7CF-8CAD-5146-F91A-C6570E494870}">
+			<ObjectPath>SetHidden</ObjectPath>
+			<ShortName>SetHidden</ShortName>
+			<Path>Event/SetHidden.bnk</Path>
+			<Events>
+				<Event Id="4089554691" Name="SetHidden" ObjectPath="\Events\Default Work Unit\DynamicMusic\SetHidden" GUID="{75D0B19F-D998-4551-8A37-D9A0F38654B3}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="3060884600" Id="3621873013" Name="Hidden" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup\Hidden" GUID="{29A4E8D1-97D7-4D2F-B42B-A5E175D58A35}"/>
+					</ActionSetState>
+				</Event>
+			</Events>
+			<StateGroups>
+				<StateGroup Id="3060884600" Name="PlayerChasedStateGroup" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup" GUID="{EE672E92-347B-4545-8120-1C668D97E78D}">
+					<States>
+						<State Id="493461511" Name="Chased" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup\Chased" GUID="{F27B355F-CFC9-4BA7-8C85-D4B70DE44E5C}"/>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup\None" GUID="{A5447658-B540-4BC5-B1E4-59D200CF4E42}"/>
+						<State Id="3621873013" Name="Hidden" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup\Hidden" GUID="{29A4E8D1-97D7-4D2F-B42B-A5E175D58A35}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{EFC7E40E-34B1-39E0-5B0B-26789D7489AA}</FileHash>
+</SoundBanksInfo>

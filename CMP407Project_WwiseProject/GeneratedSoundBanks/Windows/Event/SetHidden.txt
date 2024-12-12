@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	4089554691	SetHidden			\Default Work Unit\DynamicMusic\SetHidden	
+

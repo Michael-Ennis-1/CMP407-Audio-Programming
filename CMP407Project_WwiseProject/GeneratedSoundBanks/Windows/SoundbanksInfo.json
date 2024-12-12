@@ -18,7 +18,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{3B1E1D1B-67A8-49D5-603F-445A3C69235D}",
+    "Hash": "{3CC2F5A3-FBC7-A2BA-C772-1786A6154F52}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -56,6 +56,174 @@
       "Name": "PlayerSpeed",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\PlayerSpeed",
       "GUID": "{E25294AF-93C8-4B62-B86F-4447C6D2C2D5}"
+     },
+     {
+      "Id": "3441729996",
+      "Name": "DistanceFromEnemy",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\DistanceFromEnemy",
+      "GUID": "{50BF7DC5-CFDD-4211-8E17-0D2DA6D11F89}"
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "3060884600",
+      "Name": "PlayerChasedStateGroup",
+      "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup",
+      "GUID": "{EE672E92-347B-4545-8120-1C668D97E78D}",
+      "States": [
+       {
+        "Id": "493461511",
+        "Name": "Chased",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup\\Chased",
+        "GUID": "{F27B355F-CFC9-4BA7-8C85-D4B70DE44E5C}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup\\None",
+        "GUID": "{A5447658-B540-4BC5-B1E4-59D200CF4E42}"
+       },
+       {
+        "Id": "3621873013",
+        "Name": "Hidden",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup\\Hidden",
+        "GUID": "{29A4E8D1-97D7-4D2F-B42B-A5E175D58A35}"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "1377933095",
+    "Type": "Event",
+    "GUID": "{EDA2D3EF-9B78-4B3E-8607-E6835CE32334}",
+    "Language": "SFX",
+    "Hash": "{85DF42C3-0AAC-CDBA-8140-9872B2C1152B}",
+    "ObjectPath": "BeginChaseMusic",
+    "ShortName": "BeginChaseMusic",
+    "Path": "Event/BeginChaseMusic.bnk",
+    "Media": [
+     {
+      "Id": "279993006",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "PianoEdited.wav",
+      "Path": "Media/279993006.wem",
+      "CachePath": "SFX/PianoEdited_FBC78EF0.wem"
+     },
+     {
+      "Id": "342025362",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "TimbalesEdited.wav",
+      "Path": "Media/342025362.wem",
+      "CachePath": "SFX/TimbalesEdited_FBC78EF0.wem"
+     },
+     {
+      "Id": "449572488",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "TheFastTrackEdited.wav",
+      "Path": "Media/449572488.wem",
+      "CachePath": "SFX/TheFastTrackEdited_FBC78EF0.wem"
+     },
+     {
+      "Id": "484453395",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "BassEdited.wav",
+      "Path": "Media/484453395.wem",
+      "CachePath": "SFX/BassEdited_FBC78EF0.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1377933095",
+      "Name": "BeginChaseMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\DynamicMusic\\BeginChaseMusic",
+      "GUID": "{EDA2D3EF-9B78-4B3E-8607-E6835CE32334}",
+      "DurationType": "Infinite",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "3060884600",
+         "Id": "493461511",
+         "GUID": "{F27B355F-CFC9-4BA7-8C85-D4B70DE44E5C}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "279993006"
+         },
+         {
+          "Id": "342025362"
+         },
+         {
+          "Id": "484453395"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "3060884600",
+         "Id": "3621873013",
+         "GUID": "{29A4E8D1-97D7-4D2F-B42B-A5E175D58A35}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "279993006"
+         },
+         {
+          "Id": "342025362"
+         },
+         {
+          "Id": "449572488"
+         }
+        ]
+       }
+      ],
+      "ActionSetState": [
+       {
+        "GroupId": "3060884600",
+        "Id": "493461511",
+        "Name": "Chased",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup\\Chased",
+        "GUID": "{F27B355F-CFC9-4BA7-8C85-D4B70DE44E5C}"
+       }
+      ]
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "3060884600",
+      "Name": "PlayerChasedStateGroup",
+      "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup",
+      "GUID": "{EE672E92-347B-4545-8120-1C668D97E78D}",
+      "States": [
+       {
+        "Id": "493461511",
+        "Name": "Chased",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup\\Chased",
+        "GUID": "{F27B355F-CFC9-4BA7-8C85-D4B70DE44E5C}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup\\None",
+        "GUID": "{A5447658-B540-4BC5-B1E4-59D200CF4E42}"
+       },
+       {
+        "Id": "3621873013",
+        "Name": "Hidden",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup\\Hidden",
+        "GUID": "{29A4E8D1-97D7-4D2F-B42B-A5E175D58A35}"
+       }
+      ]
      }
     ]
    },
@@ -121,145 +289,258 @@
     ]
    },
    {
-    "Id": "3392340300",
+    "Id": "3531571417",
     "Type": "Event",
-    "GUID": "{8B739BA1-DFB9-4EF4-8CD7-6942C7C807DA}",
+    "GUID": "{09EEC311-8EA0-41D7-848B-C3FD401D13D0}",
     "Language": "SFX",
-    "Hash": "{DFAF99A3-1553-69E0-4BF5-8C6856E6EC1A}",
-    "ObjectPath": "StartDynamicLoop",
-    "ShortName": "StartDynamicLoop",
-    "Path": "Event/StartDynamicLoop.bnk",
-    "Media": [
-     {
-      "Id": "125221835",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "11_Pad1.wav",
-      "Path": "Media/125221835.wem",
-      "CachePath": "SFX/11_Pad1_FBC78EF0.wem"
-     },
-     {
-      "Id": "175323427",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "12_Pad2.wav",
-      "Path": "Media/175323427.wem",
-      "CachePath": "SFX/12_Pad2_FBC78EF0.wem"
-     },
-     {
-      "Id": "383356598",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "04_Percussion1.wav",
-      "Path": "Media/383356598.wem",
-      "CachePath": "SFX/04_Percussion1_FBC78EF0.wem"
-     },
-     {
-      "Id": "400726703",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "02_RomanWarDrum.wav",
-      "Path": "Media/400726703.wem",
-      "CachePath": "SFX/02_RomanWarDrum_FBC78EF0.wem"
-     },
-     {
-      "Id": "630912592",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "01_Daiko.wav",
-      "Path": "Media/630912592.wem",
-      "CachePath": "SFX/01_Daiko_FBC78EF0.wem"
-     },
-     {
-      "Id": "673410174",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "03_MalaysianDjembe.wav",
-      "Path": "Media/673410174.wem",
-      "CachePath": "SFX/03_MalaysianDjembe_FBC78EF0.wem"
-     },
-     {
-      "Id": "693567868",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "05_Percussion2.wav",
-      "Path": "Media/693567868.wem",
-      "CachePath": "SFX/05_Percussion2_FBC78EF0.wem"
-     },
-     {
-      "Id": "923013930",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "06_Percussion3.wav",
-      "Path": "Media/923013930.wem",
-      "CachePath": "SFX/06_Percussion3_FBC78EF0.wem"
-     },
-     {
-      "Id": "980266171",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "10_Psaltery.wav",
-      "Path": "Media/980266171.wem",
-      "CachePath": "SFX/10_Psaltery_FBC78EF0.wem"
-     }
-    ],
+    "Hash": "{99EA3602-51A8-AFBA-94CD-B8DDC6435C09}",
+    "ObjectPath": "SetChased",
+    "ShortName": "SetChased",
+    "Path": "Event/SetChased.bnk",
     "Events": [
      {
-      "Id": "3392340300",
-      "Name": "StartDynamicLoop",
-      "ObjectPath": "\\Events\\Default Work Unit\\StartDynamicLoop",
-      "GUID": "{8B739BA1-DFB9-4EF4-8CD7-6942C7C807DA}",
-      "DurationType": "Infinite",
-      "MediaRefs": [
+      "Id": "3531571417",
+      "Name": "SetChased",
+      "ObjectPath": "\\Events\\Default Work Unit\\DynamicMusic\\SetChased",
+      "GUID": "{09EEC311-8EA0-41D7-848B-C3FD401D13D0}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
        {
-        "Id": "125221835"
-       },
-       {
-        "Id": "175323427"
-       },
-       {
-        "Id": "383356598"
-       },
-       {
-        "Id": "400726703"
-       },
-       {
-        "Id": "630912592"
-       },
-       {
-        "Id": "673410174"
-       },
-       {
-        "Id": "693567868"
-       },
-       {
-        "Id": "923013930"
-       },
-       {
-        "Id": "980266171"
+        "GroupId": "3060884600",
+        "Id": "493461511",
+        "Name": "Chased",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup\\Chased",
+        "GUID": "{F27B355F-CFC9-4BA7-8C85-D4B70DE44E5C}"
        }
       ]
      }
     ],
-    "GameParameters": [
+    "StateGroups": [
      {
-      "Id": "1493153371",
-      "Name": "PlayerSpeed",
-      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PlayerSpeed",
-      "GUID": "{E25294AF-93C8-4B62-B86F-4447C6D2C2D5}"
+      "Id": "3060884600",
+      "Name": "PlayerChasedStateGroup",
+      "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup",
+      "GUID": "{EE672E92-347B-4545-8120-1C668D97E78D}",
+      "States": [
+       {
+        "Id": "493461511",
+        "Name": "Chased",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup\\Chased",
+        "GUID": "{F27B355F-CFC9-4BA7-8C85-D4B70DE44E5C}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup\\None",
+        "GUID": "{A5447658-B540-4BC5-B1E4-59D200CF4E42}"
+       },
+       {
+        "Id": "3621873013",
+        "Name": "Hidden",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup\\Hidden",
+        "GUID": "{29A4E8D1-97D7-4D2F-B42B-A5E175D58A35}"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "4089554691",
+    "Type": "Event",
+    "GUID": "{75D0B19F-D998-4551-8A37-D9A0F38654B3}",
+    "Language": "SFX",
+    "Hash": "{2FCBA7CF-8CAD-5146-F91A-C6570E494870}",
+    "ObjectPath": "SetHidden",
+    "ShortName": "SetHidden",
+    "Path": "Event/SetHidden.bnk",
+    "Events": [
+     {
+      "Id": "4089554691",
+      "Name": "SetHidden",
+      "ObjectPath": "\\Events\\Default Work Unit\\DynamicMusic\\SetHidden",
+      "GUID": "{75D0B19F-D998-4551-8A37-D9A0F38654B3}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "3060884600",
+        "Id": "3621873013",
+        "Name": "Hidden",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup\\Hidden",
+        "GUID": "{29A4E8D1-97D7-4D2F-B42B-A5E175D58A35}"
+       }
+      ]
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "3060884600",
+      "Name": "PlayerChasedStateGroup",
+      "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup",
+      "GUID": "{EE672E92-347B-4545-8120-1C668D97E78D}",
+      "States": [
+       {
+        "Id": "493461511",
+        "Name": "Chased",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup\\Chased",
+        "GUID": "{F27B355F-CFC9-4BA7-8C85-D4B70DE44E5C}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup\\None",
+        "GUID": "{A5447658-B540-4BC5-B1E4-59D200CF4E42}"
+       },
+       {
+        "Id": "3621873013",
+        "Name": "Hidden",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup\\Hidden",
+        "GUID": "{29A4E8D1-97D7-4D2F-B42B-A5E175D58A35}"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "4244123813",
+    "Type": "Event",
+    "GUID": "{AD634FDE-E1BB-4FED-ABCF-F7C8744CE6B5}",
+    "Language": "SFX",
+    "Hash": "{F5CE5A86-6400-DBE7-CF1E-B92DE619F90D}",
+    "ObjectPath": "BeginHiddenMusic",
+    "ShortName": "BeginHiddenMusic",
+    "Path": "Event/BeginHiddenMusic.bnk",
+    "Media": [
+     {
+      "Id": "279993006",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "PianoEdited.wav",
+      "Path": "Media/279993006.wem",
+      "CachePath": "SFX/PianoEdited_FBC78EF0.wem"
+     },
+     {
+      "Id": "342025362",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "TimbalesEdited.wav",
+      "Path": "Media/342025362.wem",
+      "CachePath": "SFX/TimbalesEdited_FBC78EF0.wem"
+     },
+     {
+      "Id": "449572488",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "TheFastTrackEdited.wav",
+      "Path": "Media/449572488.wem",
+      "CachePath": "SFX/TheFastTrackEdited_FBC78EF0.wem"
+     },
+     {
+      "Id": "484453395",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "BassEdited.wav",
+      "Path": "Media/484453395.wem",
+      "CachePath": "SFX/BassEdited_FBC78EF0.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4244123813",
+      "Name": "BeginHiddenMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\DynamicMusic\\BeginHiddenMusic",
+      "GUID": "{AD634FDE-E1BB-4FED-ABCF-F7C8744CE6B5}",
+      "DurationType": "Infinite",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "3060884600",
+         "Id": "493461511",
+         "GUID": "{F27B355F-CFC9-4BA7-8C85-D4B70DE44E5C}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "279993006"
+         },
+         {
+          "Id": "342025362"
+         },
+         {
+          "Id": "484453395"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "3060884600",
+         "Id": "3621873013",
+         "GUID": "{29A4E8D1-97D7-4D2F-B42B-A5E175D58A35}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "279993006"
+         },
+         {
+          "Id": "342025362"
+         },
+         {
+          "Id": "449572488"
+         }
+        ]
+       }
+      ],
+      "ActionSetState": [
+       {
+        "GroupId": "3060884600",
+        "Id": "3621873013",
+        "Name": "Hidden",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup\\Hidden",
+        "GUID": "{29A4E8D1-97D7-4D2F-B42B-A5E175D58A35}"
+       }
+      ]
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "3060884600",
+      "Name": "PlayerChasedStateGroup",
+      "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup",
+      "GUID": "{EE672E92-347B-4545-8120-1C668D97E78D}",
+      "States": [
+       {
+        "Id": "493461511",
+        "Name": "Chased",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup\\Chased",
+        "GUID": "{F27B355F-CFC9-4BA7-8C85-D4B70DE44E5C}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup\\None",
+        "GUID": "{A5447658-B540-4BC5-B1E4-59D200CF4E42}"
+       },
+       {
+        "Id": "3621873013",
+        "Name": "Hidden",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup\\Hidden",
+        "GUID": "{29A4E8D1-97D7-4D2F-B42B-A5E175D58A35}"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{EA92E915-F773-2CAB-9965-FED96C8DD338}"
+  "FileHash": "{10BA43C2-596F-8F50-9679-932095EC660F}"
  }
 }
