@@ -3,11 +3,13 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Pawn.h"
+#include "GameFramework/Character.h"
 #include "AudioEnemy.generated.h"
 
+class UAIPerceptionComponent;
+
 UCLASS()
-class CMP407PROJECT_API AAudioEnemy : public APawn
+class CMP407PROJECT_API AAudioEnemy : public ACharacter
 {
 	GENERATED_BODY()
 
@@ -19,4 +21,9 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	TObjectPtr<AActor> PlayerActor;
+
+	// Work on this tomorrow
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	TObjectPtr<UAIPerceptionComponent> PerceptionComponent;
 };

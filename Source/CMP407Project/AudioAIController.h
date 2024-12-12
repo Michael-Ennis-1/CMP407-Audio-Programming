@@ -6,9 +6,6 @@
 #include "AIController.h"
 #include "AudioAIController.generated.h"
 
-/**
- * 
- */
 UCLASS()
 class CMP407PROJECT_API AAudioAIController : public AAIController
 {
