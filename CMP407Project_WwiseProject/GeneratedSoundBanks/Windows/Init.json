@@ -83,9 +83,37 @@
        }
       ]
      }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "2470013375",
+      "Name": "FootstepsSwitchGroup",
+      "ObjectPath": "\\Switches\\Default Work Unit\\FootstepsSwitchGroup",
+      "GUID": "{20DC6370-37A7-46DC-B665-8C8C4FF76E58}",
+      "Switches": [
+       {
+        "Id": "1200189234",
+        "Name": "WaterSwitch",
+        "ObjectPath": "\\Switches\\Default Work Unit\\FootstepsSwitchGroup\\WaterSwitch",
+        "GUID": "{40070A92-7E58-4F78-B6F6-0B3E57EFAB5D}"
+       },
+       {
+        "Id": "1629235638",
+        "Name": "MetalSwitch",
+        "ObjectPath": "\\Switches\\Default Work Unit\\FootstepsSwitchGroup\\MetalSwitch",
+        "GUID": "{3BE7B528-1199-41E4-9D33-2C0B6DF53C60}"
+       },
+       {
+        "Id": "3466136041",
+        "Name": "GrassSwitch",
+        "ObjectPath": "\\Switches\\Default Work Unit\\FootstepsSwitchGroup\\GrassSwitch",
+        "GUID": "{D3A66A90-821F-42E4-96F9-00485382B1F1}"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{DC4FAB30-01E0-C885-8B1B-729DFF33C4BF}"
+  "FileHash": "{A79CC85E-5ADC-CAF9-AF33-E28DB3243219}"
  }
 }

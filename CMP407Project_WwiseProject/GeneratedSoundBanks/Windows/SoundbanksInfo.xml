@@ -9,6 +9,97 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
+		<SoundBank Id="1088348632" Type="Event" GUID="{11EFE650-9670-42D6-97FA-95E7D171C8F2}" Language="SFX" Hash="{7D4A8E92-6307-2620-F963-B45CFCE0AB3F}">
+			<ObjectPath>PlayFootsteps</ObjectPath>
+			<ShortName>PlayFootsteps</ShortName>
+			<Path>Event/PlayFootsteps.bnk</Path>
+			<Media>
+				<File Id="238955772" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Footstep2Metal.wav</ShortName>
+					<Path>Media/238955772.wem</Path>
+					<CachePath>SFX/Footstep2Metal_818F3B66.wem</CachePath>
+				</File>
+				<File Id="429420079" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Footstep3Water.wav</ShortName>
+					<Path>Media/429420079.wem</Path>
+					<CachePath>SFX/Footstep3Water_818F3B66.wem</CachePath>
+				</File>
+				<File Id="541099542" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Footstep1Water.wav</ShortName>
+					<Path>Media/541099542.wem</Path>
+					<CachePath>SFX/Footstep1Water_818F3B66.wem</CachePath>
+				</File>
+				<File Id="541635670" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Footstep1Metal.wav</ShortName>
+					<Path>Media/541635670.wem</Path>
+					<CachePath>SFX/Footstep1Metal_818F3B66.wem</CachePath>
+				</File>
+				<File Id="611863334" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Footstep2Grass.wav</ShortName>
+					<Path>Media/611863334.wem</Path>
+					<CachePath>SFX/Footstep2Grass_818F3B66.wem</CachePath>
+				</File>
+				<File Id="635343868" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Footstep2Water.wav</ShortName>
+					<Path>Media/635343868.wem</Path>
+					<CachePath>SFX/Footstep2Water_818F3B66.wem</CachePath>
+				</File>
+				<File Id="644720478" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Footstep1Grass.wav</ShortName>
+					<Path>Media/644720478.wem</Path>
+					<CachePath>SFX/Footstep1Grass_818F3B66.wem</CachePath>
+				</File>
+				<File Id="779536952" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Footstep3Metal.wav</ShortName>
+					<Path>Media/779536952.wem</Path>
+					<CachePath>SFX/Footstep3Metal_818F3B66.wem</CachePath>
+				</File>
+				<File Id="880258513" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Footstep3Grass.wav</ShortName>
+					<Path>Media/880258513.wem</Path>
+					<CachePath>SFX/Footstep3Grass_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1088348632" Name="PlayFootsteps" ObjectPath="\Events\Default Work Unit\SoundEffects\PlayFootsteps" GUID="{11EFE650-9670-42D6-97FA-95E7D171C8F2}" DurationType="OneShot" DurationMin="0.3809375" DurationMax="1.2697709">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2470013375" Id="1629235638" GUID="{3BE7B528-1199-41E4-9D33-2C0B6DF53C60}" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="238955772"/>
+								<MediaRef Id="541635670"/>
+								<MediaRef Id="779536952"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2470013375" Id="3466136041" GUID="{D3A66A90-821F-42E4-96F9-00485382B1F1}"/>
+							<MediaRefs>
+								<MediaRef Id="611863334"/>
+								<MediaRef Id="644720478"/>
+								<MediaRef Id="880258513"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2470013375" Id="1200189234" GUID="{40070A92-7E58-4F78-B6F6-0B3E57EFAB5D}"/>
+							<MediaRefs>
+								<MediaRef Id="429420079"/>
+								<MediaRef Id="541099542"/>
+								<MediaRef Id="635343868"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</Events>
+			<SwitchGroups>
+				<SwitchGroup Id="2470013375" Name="FootstepsSwitchGroup" ObjectPath="\Switches\Default Work Unit\FootstepsSwitchGroup" GUID="{20DC6370-37A7-46DC-B665-8C8C4FF76E58}">
+					<Switches>
+						<Switch Id="1200189234" Name="WaterSwitch" ObjectPath="\Switches\Default Work Unit\FootstepsSwitchGroup\WaterSwitch" GUID="{40070A92-7E58-4F78-B6F6-0B3E57EFAB5D}"/>
+						<Switch Id="1629235638" Name="MetalSwitch" ObjectPath="\Switches\Default Work Unit\FootstepsSwitchGroup\MetalSwitch" GUID="{3BE7B528-1199-41E4-9D33-2C0B6DF53C60}"/>
+						<Switch Id="3466136041" Name="GrassSwitch" ObjectPath="\Switches\Default Work Unit\FootstepsSwitchGroup\GrassSwitch" GUID="{D3A66A90-821F-42E4-96F9-00485382B1F1}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
 		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{3CC2F5A3-FBC7-A2BA-C772-1786A6154F52}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
@@ -35,6 +126,15 @@
 					</States>
 				</StateGroup>
 			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="2470013375" Name="FootstepsSwitchGroup" ObjectPath="\Switches\Default Work Unit\FootstepsSwitchGroup" GUID="{20DC6370-37A7-46DC-B665-8C8C4FF76E58}">
+					<Switches>
+						<Switch Id="1200189234" Name="WaterSwitch" ObjectPath="\Switches\Default Work Unit\FootstepsSwitchGroup\WaterSwitch" GUID="{40070A92-7E58-4F78-B6F6-0B3E57EFAB5D}"/>
+						<Switch Id="1629235638" Name="MetalSwitch" ObjectPath="\Switches\Default Work Unit\FootstepsSwitchGroup\MetalSwitch" GUID="{3BE7B528-1199-41E4-9D33-2C0B6DF53C60}"/>
+						<Switch Id="3466136041" Name="GrassSwitch" ObjectPath="\Switches\Default Work Unit\FootstepsSwitchGroup\GrassSwitch" GUID="{D3A66A90-821F-42E4-96F9-00485382B1F1}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 		<SoundBank Id="1377933095" Type="Event" GUID="{EDA2D3EF-9B78-4B3E-8607-E6835CE32334}" Language="SFX" Hash="{85DF42C3-0AAC-CDBA-8140-9872B2C1152B}">
 			<ObjectPath>BeginChaseMusic</ObjectPath>
@@ -96,37 +196,6 @@
 					</States>
 				</StateGroup>
 			</StateGroups>
-		</SoundBank>
-		<SoundBank Id="2734173067" Type="Event" GUID="{11EFE650-9670-42D6-97FA-95E7D171C8F2}" Language="SFX" Hash="{9C0E00D8-AE90-B307-2C40-5A4882DE6820}">
-			<ObjectPath>MetalFootsteps</ObjectPath>
-			<ShortName>MetalFootsteps</ShortName>
-			<Path>Event/MetalFootsteps.bnk</Path>
-			<Media>
-				<File Id="238955772" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>Footstep2Metal.wav</ShortName>
-					<Path>Media/238955772.wem</Path>
-					<CachePath>SFX/Footstep2Metal_818F3B66.wem</CachePath>
-				</File>
-				<File Id="541635670" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>Footstep1Metal.wav</ShortName>
-					<Path>Media/541635670.wem</Path>
-					<CachePath>SFX/Footstep1Metal_818F3B66.wem</CachePath>
-				</File>
-				<File Id="779536952" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>Footstep3Metal.wav</ShortName>
-					<Path>Media/779536952.wem</Path>
-					<CachePath>SFX/Footstep3Metal_818F3B66.wem</CachePath>
-				</File>
-			</Media>
-			<Events>
-				<Event Id="2734173067" Name="MetalFootsteps" ObjectPath="\Events\Default Work Unit\MetalFootsteps" GUID="{11EFE650-9670-42D6-97FA-95E7D171C8F2}" DurationType="OneShot" DurationMin="0.3809375" DurationMax="0.4045">
-					<MediaRefs>
-						<MediaRef Id="238955772"/>
-						<MediaRef Id="541635670"/>
-						<MediaRef Id="779536952"/>
-					</MediaRefs>
-				</Event>
-			</Events>
 		</SoundBank>
 		<SoundBank Id="3531571417" Type="Event" GUID="{09EEC311-8EA0-41D7-848B-C3FD401D13D0}" Language="SFX" Hash="{99EA3602-51A8-AFBA-94CD-B8DDC6435C09}">
 			<ObjectPath>SetChased</ObjectPath>
@@ -232,5 +301,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{AA986454-9BFC-6AA0-EB6A-350A8313C163}</FileHash>
+	<FileHash>{435880BD-0A90-73B8-DE58-B251BD455F3D}</FileHash>
 </SoundBanksInfo>

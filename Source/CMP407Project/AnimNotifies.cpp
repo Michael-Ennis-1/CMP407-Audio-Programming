@@ -11,6 +11,30 @@ void UFootstepAnimNotify::Notify(USkeletalMeshComponent* MeshComp, UAnimSequence
 		AActor* OwningActor = MeshComp->GetOwner();
 		if (OwningActor)
 		{
+			UWorld* World = GetWorld();
+			if (ensure(World))
+			{
+				float LinetraceLength = 100.0f;
+
+				FVector TargetPosition = -OwningActor->GetActorUpVector() * LinetraceLength;
+
+				FHitResult OutHit;
+				World->LineTraceSingleByChannel(OutHit, OwningActor->GetActorLocation(), TargetPosition, ECollisionChannel::ECC_Visibility);
+				
+				if (OutHit.bBlockingHit)
+				{
+					AActor* HitActor = OutHit.GetActor();
+					if (HitActor != OwningActor)
+					{
+						UStaticMeshComponent* HitMesh = HitActor->GetComponentByClass<UStaticMeshComponent>();
+						if (ensure(HitMesh))
+						{
+
+						}
+					}
+				}
+			}
+
 			UAudioPlayerComponent* AudioComponent = OwningActor->GetComponentByClass<UAudioPlayerComponent>();
 			if (AudioComponent)
 			{

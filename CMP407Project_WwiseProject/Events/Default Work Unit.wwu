@@ -3,17 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{94AC3D50-D660-4BD5-A899-BFA0976C5A44}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="MetalFootsteps" ID="{11EFE650-9670-42D6-97FA-95E7D171C8F2}">
-					<ChildrenList>
-						<Action Name="" ID="{B3DE7E3E-0E02-46FF-8B01-A74BDE97A18C}" ShortID="874470923">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="RandomMetalFootsteps" ID="{74B44712-AE60-4013-A7EF-FFFCE9E62858}" WorkUnitID="{D9FE4D5A-44BA-434B-8F15-7E6272591F65}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="StartDynamicLoop" ID="{8B739BA1-DFB9-4EF4-8CD7-6942C7C807DA}">
 					<PropertyList>
 						<Property Name="Inclusion" Type="bool" Value="False"/>
@@ -115,6 +104,21 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Hidden" ID="{29A4E8D1-97D7-4D2F-B42B-A5E175D58A35}" WorkUnitID="{D8D1B017-C1C8-4084-8C58-5278EFED9B42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="SoundEffects" ID="{2CD172ED-0FBD-4C9C-AEC6-9954858E0740}" ShortID="964253074">
+					<ChildrenList>
+						<Event Name="PlayFootsteps" ID="{11EFE650-9670-42D6-97FA-95E7D171C8F2}">
+							<ChildrenList>
+								<Action Name="" ID="{48068BB8-279D-4BE6-8A1A-9561CE1DE278}" ShortID="58328714">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SwitchFootsteps" ID="{C9ABC84D-9DB1-4CDE-9618-6FFDB441153C}" WorkUnitID="{D9FE4D5A-44BA-434B-8F15-7E6272591F65}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

@@ -27,7 +27,16 @@
 					</States>
 				</StateGroup>
 			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="2470013375" Name="FootstepsSwitchGroup" ObjectPath="\Switches\Default Work Unit\FootstepsSwitchGroup" GUID="{20DC6370-37A7-46DC-B665-8C8C4FF76E58}">
+					<Switches>
+						<Switch Id="1200189234" Name="WaterSwitch" ObjectPath="\Switches\Default Work Unit\FootstepsSwitchGroup\WaterSwitch" GUID="{40070A92-7E58-4F78-B6F6-0B3E57EFAB5D}"/>
+						<Switch Id="1629235638" Name="MetalSwitch" ObjectPath="\Switches\Default Work Unit\FootstepsSwitchGroup\MetalSwitch" GUID="{3BE7B528-1199-41E4-9D33-2C0B6DF53C60}"/>
+						<Switch Id="3466136041" Name="GrassSwitch" ObjectPath="\Switches\Default Work Unit\FootstepsSwitchGroup\GrassSwitch" GUID="{D3A66A90-821F-42E4-96F9-00485382B1F1}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{263586FE-28B0-64E5-F954-CDB67F22ACC1}</FileHash>
+	<FileHash>{5C60A1EB-C3F7-759F-D660-26F36CB46B28}</FileHash>
 </SoundBanksInfo>

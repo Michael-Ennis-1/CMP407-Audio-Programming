@@ -1,0 +1,11 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1088348632	PlayFootsteps			\Default Work Unit\SoundEffects\PlayFootsteps	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2470013375	FootstepsSwitchGroup			\Default Work Unit\FootstepsSwitchGroup	
+
+Switch	ID	Name	Switch Group			Notes
+	1200189234	WaterSwitch	FootstepsSwitchGroup			
+	1629235638	MetalSwitch	FootstepsSwitchGroup			
+	3466136041	GrassSwitch	FootstepsSwitchGroup			
+

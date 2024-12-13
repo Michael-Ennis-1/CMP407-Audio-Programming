@@ -404,8 +404,14 @@
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{90025334-F6E4-4397-94DB-005B571AFF8A}"/>
 						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="MetalSwitch" ID="{3BE7B528-1199-41E4-9D33-2C0B6DF53C60}" WorkUnitID="{B83F3059-7324-4C06-9C30-66DF193CF66D}"/>
+						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6DCF3559-4F7F-4265-9DF4-A8C70F54E169}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="FootstepsSwitchGroup" ID="{20DC6370-37A7-46DC-B665-8C8C4FF76E58}" WorkUnitID="{B83F3059-7324-4C06-9C30-66DF193CF66D}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -656,6 +662,26 @@
 								<ItemRef Name="RandomWaterFootsteps" ID="{6FD5E4E6-C7E6-40A8-A5A2-0AD53F524639}"/>
 							</GroupingBehavior>
 						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="MetalSwitch" ID="{3BE7B528-1199-41E4-9D33-2C0B6DF53C60}"/>
+								<ItemList>
+									<ItemRef Name="RandomMetalFootsteps" ID="{74B44712-AE60-4013-A7EF-FFFCE9E62858}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="GrassSwitch" ID="{D3A66A90-821F-42E4-96F9-00485382B1F1}"/>
+								<ItemList>
+									<ItemRef Name="RandomGrassFootsteps" ID="{2129004F-3DB5-4E91-ACD8-E1E2314FE126}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="WaterSwitch" ID="{40070A92-7E58-4F78-B6F6-0B3E57EFAB5D}"/>
+								<ItemList>
+									<ItemRef Name="RandomWaterFootsteps" ID="{6FD5E4E6-C7E6-40A8-A5A2-0AD53F524639}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
 			</ChildrenList>
