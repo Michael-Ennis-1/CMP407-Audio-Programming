@@ -29,10 +29,10 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-	UFUNCTION()
-		void TargetPerceptionUpdated(AActor* InActor, FAIStimulus InStimulus);
-
 	UAudioEnemySubsystem* GetAudioEnemySubsystem();
+
+	UFUNCTION()
+	void TargetPerceptionUpdated(AActor* InActor, FAIStimulus InStimulus);
 
 	TObjectPtr<AActor> PlayerActor;
 

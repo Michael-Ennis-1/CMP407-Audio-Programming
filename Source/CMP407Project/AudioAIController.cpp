@@ -7,7 +7,6 @@
 
 AAudioAIController::AAudioAIController(const FObjectInitializer& ObjectInitializer) : bIsChasingPlayer(false)
 {
-
 }
 
 void AAudioAIController::BeginPlay()
