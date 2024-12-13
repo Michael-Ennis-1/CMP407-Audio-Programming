@@ -19,6 +19,12 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void FireProjectile(AActor* InTarget);
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float MaxReloadTime;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	float CurrentReloadTime;
+
 protected:
 	virtual void BeginPlay() override;
 
@@ -33,5 +39,4 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TObjectPtr<USceneComponent> ProjectileSpawnTransform;
-
 };

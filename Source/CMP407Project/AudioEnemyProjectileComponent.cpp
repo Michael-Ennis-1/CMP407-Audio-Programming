@@ -5,7 +5,7 @@
 #include "AudioProjectile.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 
-UAudioEnemyProjectileComponent::UAudioEnemyProjectileComponent()
+UAudioEnemyProjectileComponent::UAudioEnemyProjectileComponent() : MaxReloadTime(5.0f), CurrentReloadTime(MaxReloadTime)
 {
 	PrimaryComponentTick.bCanEverTick = true;
 }

@@ -7,7 +7,7 @@
 #include "Components/SphereComponent.h"
 #include "Components/SceneComponent.h"
 
-AAudioProjectile::AAudioProjectile() : ProjectileSpeed(100.0f)
+AAudioProjectile::AAudioProjectile() : ProjectileSpeed(250.0f), ProjectileLifespan(5.0f)
 {
 	PrimaryActorTick.bCanEverTick = false;
 
@@ -30,6 +30,8 @@ AAudioProjectile::AAudioProjectile() : ProjectileSpeed(100.0f)
 	}
 
 	ProjectileMovementComponent = CreateDefaultSubobject<UProjectileMovementComponent>("ProjectileMovementComponent");
+
+	SetLifeSpan(ProjectileLifespan);
 }
 
 void AAudioProjectile::BeginPlay()
