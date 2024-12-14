@@ -38,12 +38,14 @@ void AAudioEnemy::BeginPlay()
 
 void AAudioEnemy::TargetPerceptionUpdated(AActor* InActor, FAIStimulus InStimulus)
 {
+	// Updates visual information for enemy AI when an actor becomes visible/is no longer visible
 	if (ensure(InActor) && ensure(PlayerActor))
 	{
 		if(InActor == PlayerActor)
 		{
 			UAudioEnemySubsystem* AudioSubsystem = GetAudioEnemySubsystem();
 
+			// If player successfully sensed, register this AI with subsystem
 			if (InStimulus.WasSuccessfullySensed())
 			{
 				if (!AudioSubsystem->IsCurrentlyRegistered(this))
@@ -54,6 +56,7 @@ void AAudioEnemy::TargetPerceptionUpdated(AActor* InActor, FAIStimulus InStimulu
 			}
 			else
 			{
+				// If player is no longer sensed, remove from audio subsystem
 				if (AudioSubsystem->IsCurrentlyRegistered(this))
 				{
 					AudioSubsystem->UnRegisterAudioEnemy(this);

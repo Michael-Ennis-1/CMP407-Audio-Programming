@@ -9,6 +9,7 @@
 
 EBTNodeResult::Type UBTTask_FireProjectile::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
 {
+	// Return "InProgress" for now to continuously execute Tick Task every frame
 	bNotifyTick = true;
 	return EBTNodeResult::InProgress;
 }
@@ -17,6 +18,7 @@ void UBTTask_FireProjectile::TickTask(UBehaviorTreeComponent& OwnerComp, uint8* 
 {
 	UBlackboardComponent* BlackboardComponent = OwnerComp.GetBlackboardComponent();
 
+	// Determine if bullet fires this frame, if so exit task with succeeded otherwise continue this task indefinitely
 	AAIController* AIController = OwnerComp.GetAIOwner();
 	if (ensure(AIController))
 	{
@@ -48,6 +50,7 @@ bool UBTTask_FireProjectile::ProcessFiringLogic(UAudioEnemyProjectileComponent* 
 {
 	InProjectileComponent->CurrentReloadTime += InDeltaTime;
 
+	// Fire bullet if current reload time exceeds maximum
 	if (InProjectileComponent->CurrentReloadTime >= InProjectileComponent->MaxReloadTime)
 	{
 		InProjectileComponent->CurrentReloadTime = 0;

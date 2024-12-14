@@ -6,39 +6,36 @@
 
 void UFootstepAnimNotify::Notify(USkeletalMeshComponent* MeshComp, UAnimSequenceBase* Animation, const FAnimNotifyEventReference& EventReference)
 {
+	// Play footstep audio event and switch based on physical material of the ground
 	if (MeshComp)
 	{
 		AActor* OwningActor = MeshComp->GetOwner();
 		if (OwningActor)
 		{
-			UWorld* World = GetWorld();
+			UWorld* World = OwningActor->GetWorld();
 			if (ensure(World))
 			{
-				float LinetraceLength = 100.0f;
-
+				float LinetraceLength = 200.0f;
 				FVector TargetPosition = -OwningActor->GetActorUpVector() * LinetraceLength;
 
 				FHitResult OutHit;
-				World->LineTraceSingleByChannel(OutHit, OwningActor->GetActorLocation(), TargetPosition, ECollisionChannel::ECC_Visibility);
+				World->LineTraceSingleByChannel(OutHit, OwningActor->GetActorLocation(), OwningActor->GetActorLocation() + TargetPosition, ECollisionChannel::ECC_Visibility);
 				
 				if (OutHit.bBlockingHit)
 				{
-					AActor* HitActor = OutHit.GetActor();
-					if (HitActor != OwningActor)
+					UAudioPlayerComponent* AudioComponent = OwningActor->GetComponentByClass<UAudioPlayerComponent>();
+					if (AudioComponent)
 					{
-						UStaticMeshComponent* HitMesh = HitActor->GetComponentByClass<UStaticMeshComponent>();
-						if (ensure(HitMesh))
+						AActor* OtherActor = OutHit.GetActor();
+						if (OtherActor != OwningActor)
 						{
-
+							AudioComponent->SwitchFootsteps(OtherActor);
 						}
+
+						// Play footstep audio even if no physics material attached. Ensures consistency with audio events
+						AudioComponent->PlayFootsteps();
 					}
 				}
-			}
-
-			UAudioPlayerComponent* AudioComponent = OwningActor->GetComponentByClass<UAudioPlayerComponent>();
-			if (AudioComponent)
-			{
-				AudioComponent->PlayFootsteps();
 			}
 		}
 	}

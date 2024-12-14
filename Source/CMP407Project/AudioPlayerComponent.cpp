@@ -13,6 +13,7 @@ void UAudioPlayerComponent::BeginPlay()
 {
 	Super::BeginPlay();
 
+	// Bind to audio enemy subsystem delegates to inform player when they are being chased by enemies
 	UAudioEnemySubsystem* AudioEnemySubsystem = GetAudioEnemySubsystem();
 	if (ensure(AudioEnemySubsystem))
 	{

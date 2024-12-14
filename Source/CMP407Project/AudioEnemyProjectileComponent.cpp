@@ -15,8 +15,9 @@ void UAudioEnemyProjectileComponent::BeginPlay()
 	Super::BeginPlay();
 }
 
-FVector UAudioEnemyProjectileComponent::CalculateProjectileVelocity(AActor* InTarget)
+FVector UAudioEnemyProjectileComponent::CalculateProjectileDirection(AActor* InTarget)
 {
+	// Determine projectile direction, based on target 
 	AActor* OwningActor = GetOwner();
 	if (ensure(InTarget) && ensure(OwningActor))
 	{
@@ -33,6 +34,7 @@ FVector UAudioEnemyProjectileComponent::CalculateProjectileVelocity(AActor* InTa
 
 AAudioProjectile* UAudioEnemyProjectileComponent::SpawnProjectile()
 {
+	// Spawn projectile in the world with a given location and rotation, based on scene component inside enemy BP
 	if (ensureMsgf(ProjectileSpawnTransform, TEXT("'ProjectileSpawnTransform' scene component not set")))
 	{
 		UWorld* World = GetWorld();
@@ -52,6 +54,7 @@ AAudioProjectile* UAudioEnemyProjectileComponent::SpawnProjectile()
 
 void UAudioEnemyProjectileComponent::ApplyProjectileParameters(AAudioProjectile* InProjectile, FVector InProjectileDirection)
 {
+	// Apply any projectile parameters after spawning projecitle
 	if (ensure(InProjectile))
 	{
 		UProjectileMovementComponent* ProjectileMovementComponent = InProjectile->FindComponentByClass<UProjectileMovementComponent>();
@@ -66,7 +69,7 @@ void UAudioEnemyProjectileComponent::FireProjectile(AActor* InTarget)
 {
 	if (ensure(InTarget))
 	{
-		FVector ProjectileVelocity = CalculateProjectileVelocity(InTarget);
+		FVector ProjectileVelocity = CalculateProjectileDirection(InTarget);
 
 		AAudioProjectile* SpawnedProjectile = SpawnProjectile();
 

@@ -28,8 +28,10 @@ public:
 protected:
 	virtual void BeginPlay() override;
 
-	FVector CalculateProjectileVelocity(AActor* InTarget);
+	// Calculates direction for projectile to travel in
+	FVector CalculateProjectileDirection(AActor* InTarget);
 
+	// Spawns a projectile in the world 
 	AAudioProjectile* SpawnProjectile();
 
 	void ApplyProjectileParameters(AAudioProjectile* InProjectile, FVector InProjectileDirection);

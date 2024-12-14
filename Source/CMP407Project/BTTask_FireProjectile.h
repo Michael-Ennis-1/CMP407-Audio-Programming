@@ -17,6 +17,7 @@ class CMP407PROJECT_API UBTTask_FireProjectile : public UBTTask_BlackboardBase
 
 	virtual void TickTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds) override;
 
+	// Determine if bullet is ready to fire, then fire projectile
 	bool ProcessFiringLogic(UAudioEnemyProjectileComponent* InProjectileComponent, AActor* InTarget, float InDeltaTime);
 
 };
