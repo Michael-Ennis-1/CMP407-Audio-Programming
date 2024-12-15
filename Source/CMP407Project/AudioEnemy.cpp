@@ -32,20 +32,20 @@ void AAudioEnemy::BeginPlay()
 
 	if (ensure(PerceptionComponent))
 	{
+		// Utilize perception component in Unreal to detect when player is spotted
 		PerceptionComponent->OnTargetPerceptionUpdated.AddUniqueDynamic(this, &AAudioEnemy::TargetPerceptionUpdated);
 	}
 }
 
 void AAudioEnemy::TargetPerceptionUpdated(AActor* InActor, FAIStimulus InStimulus)
 {
-	// Updates visual information for enemy AI when an actor becomes visible/is no longer visible
 	if (ensure(InActor) && ensure(PlayerActor))
 	{
 		if(InActor == PlayerActor)
 		{
 			UAudioEnemySubsystem* AudioSubsystem = GetAudioEnemySubsystem();
 
-			// If player successfully sensed, register this AI with subsystem
+			// If player successfully sensed, register this AI with subsystem and inform behaviour tree
 			if (InStimulus.WasSuccessfullySensed())
 			{
 				if (!AudioSubsystem->IsCurrentlyRegistered(this))
@@ -56,7 +56,7 @@ void AAudioEnemy::TargetPerceptionUpdated(AActor* InActor, FAIStimulus InStimulu
 			}
 			else
 			{
-				// If player is no longer sensed, remove from audio subsystem
+				// If player is no longer sensed, remove from audio subsystem and inform behaviour tree
 				if (AudioSubsystem->IsCurrentlyRegistered(this))
 				{
 					AudioSubsystem->UnRegisterAudioEnemy(this);

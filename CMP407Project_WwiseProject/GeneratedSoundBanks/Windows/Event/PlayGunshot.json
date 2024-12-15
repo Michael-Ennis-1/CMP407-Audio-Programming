@@ -1,0 +1,81 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "150",
+  "SoundBanks": [
+   {
+    "Id": "3533507663",
+    "Type": "Event",
+    "GUID": "{042604ED-1C3C-478B-AF40-60D9DD0498BD}",
+    "Language": "SFX",
+    "Hash": "{066B3CFF-63FD-FE2B-2E37-BCA66DC902B3}",
+    "ObjectPath": "PlayGunshot",
+    "ShortName": "PlayGunshot",
+    "Path": "Event/PlayGunshot.bnk",
+    "Media": [
+     {
+      "Id": "591637442",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Gunshot3.wav",
+      "Path": "Media/591637442.wem",
+      "CachePath": "SFX/Gunshot3_818F3B66.wem"
+     },
+     {
+      "Id": "607122471",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Gunshot2.wav",
+      "Path": "Media/607122471.wem",
+      "CachePath": "SFX/Gunshot2_818F3B66.wem"
+     },
+     {
+      "Id": "735651581",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Gunshot1.wav",
+      "Path": "Media/735651581.wem",
+      "CachePath": "SFX/Gunshot1_818F3B66.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3533507663",
+      "Name": "PlayGunshot",
+      "ObjectPath": "\\Events\\Default Work Unit\\SoundEffects\\PlayGunshot",
+      "GUID": "{042604ED-1C3C-478B-AF40-60D9DD0498BD}",
+      "MaxAttenuation": "1700",
+      "DurationType": "OneShot",
+      "DurationMin": "0.9054059",
+      "DurationMax": "1.6456093",
+      "MediaRefs": [
+       {
+        "Id": "591637442"
+       },
+       {
+        "Id": "607122471"
+       },
+       {
+        "Id": "735651581"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "3237550251",
+      "Name": "CameraDirection",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\CameraDirection",
+      "GUID": "{C1CC14D2-C77C-4899-B2B7-CFFC6A779A05}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{E5CF1A3F-7666-6FCC-17B2-60C9040D1DE5}"
+ }
+}

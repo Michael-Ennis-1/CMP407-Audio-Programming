@@ -17,6 +17,8 @@ class CMP407PROJECT_API UAudioEnemySubsystem : public UGameInstanceSubsystem
 	
 public:
 
+	// This subsystem ensures that chased music is playing while at least one enemy is registered, utilizing an event-driven approach, avoiding the update loop entirely.
+
 	void RegisterAudioEnemy(AAudioEnemy* InEnemy);
 	void UnRegisterAudioEnemy(AAudioEnemy* InEnemy);
 	bool IsCurrentlyRegistered(AAudioEnemy* InEnemy);

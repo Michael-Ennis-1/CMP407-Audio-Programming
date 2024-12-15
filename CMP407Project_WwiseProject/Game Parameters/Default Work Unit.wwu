@@ -8,9 +8,12 @@
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="DistanceFromEnemy" ID="{50BF7DC5-CFDD-4211-8E17-0D2DA6D11F89}">
+				<GameParameter Name="CameraDirection" ID="{C1CC14D2-C77C-4899-B2B7-CFFC6A779A05}">
 					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="2"/>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="180"/>
+						<Property Name="Min" Type="Real64" Value="-180"/>
 					</PropertyList>
 				</GameParameter>
 			</ChildrenList>

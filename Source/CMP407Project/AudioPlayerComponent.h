@@ -29,6 +29,12 @@ public:
 	UFUNCTION(BlueprintImplementableEvent)
 	void PlayHiddenMusic();
 
+	UFUNCTION(BlueprintImplementableEvent)
+	void PlayHitByBullet();
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void PlayPassbyBullet();
+
 protected:
 	virtual void BeginPlay() override;
 

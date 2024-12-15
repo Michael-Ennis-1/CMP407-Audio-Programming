@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{668AD278-C065-DF2F-60C1-FB55424E71FC}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{F761DD89-032E-D313-850F-0B03A81CCAD2}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -16,7 +16,7 @@
 			</Busses>
 			<GameParameters>
 				<GameParameter Id="1493153371" Name="PlayerSpeed" ObjectPath="\Game Parameters\Default Work Unit\PlayerSpeed" GUID="{E25294AF-93C8-4B62-B86F-4447C6D2C2D5}"/>
-				<GameParameter Id="3441729996" Name="DistanceFromEnemy" ObjectPath="\Game Parameters\Default Work Unit\DistanceFromEnemy" GUID="{50BF7DC5-CFDD-4211-8E17-0D2DA6D11F89}"/>
+				<GameParameter Id="3237550251" Name="CameraDirection" ObjectPath="\Game Parameters\Default Work Unit\CameraDirection" GUID="{C1CC14D2-C77C-4899-B2B7-CFFC6A779A05}"/>
 			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="3060884600" Name="PlayerChasedStateGroup" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup" GUID="{EE672E92-347B-4545-8120-1C668D97E78D}">
@@ -38,5 +38,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5C60A1EB-C3F7-759F-D660-26F36CB46B28}</FileHash>
+	<FileHash>{81500B60-7EF1-8774-C0D4-5A472E944C55}</FileHash>
 </SoundBanksInfo>

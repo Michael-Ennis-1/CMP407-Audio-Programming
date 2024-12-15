@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3533507663	PlayGunshot			\Default Work Unit\SoundEffects\PlayGunshot	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3237550251	CameraDirection			\Default Work Unit\CameraDirection	
+

@@ -1,0 +1,85 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "150",
+  "SoundBanks": [
+   {
+    "Id": "995613051",
+    "Type": "Event",
+    "GUID": "{5E931EA9-AF1E-427D-A33F-B3236DCC79C3}",
+    "Language": "SFX",
+    "Hash": "{4D681A74-0ED3-C762-0B1C-76C32E600F84}",
+    "ObjectPath": "PlayBulletPassby",
+    "ShortName": "PlayBulletPassby",
+    "Path": "Event/PlayBulletPassby.bnk",
+    "Media": [
+     {
+      "Id": "131165634",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "BulletPassby2.wav",
+      "Path": "Media/131165634.wem",
+      "CachePath": "SFX/BulletPassby2_818F3B66.wem"
+     },
+     {
+      "Id": "630476986",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "BulletPassby1.wav",
+      "Path": "Media/630476986.wem",
+      "CachePath": "SFX/BulletPassby1_818F3B66.wem"
+     },
+     {
+      "Id": "822178653",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "BulletPassby4.wav",
+      "Path": "Media/822178653.wem",
+      "CachePath": "SFX/BulletPassby4_818F3B66.wem"
+     },
+     {
+      "Id": "861769943",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "BulletPassby3.wav",
+      "Path": "Media/861769943.wem",
+      "CachePath": "SFX/BulletPassby3_818F3B66.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "995613051",
+      "Name": "PlayBulletPassby",
+      "ObjectPath": "\\Events\\Default Work Unit\\SoundEffects\\PlayBulletPassby",
+      "GUID": "{5E931EA9-AF1E-427D-A33F-B3236DCC79C3}",
+      "MaxAttenuation": "100",
+      "DurationType": "OneShot",
+      "DurationMin": "0.18794513",
+      "DurationMax": "0.49139583",
+      "MediaRefs": [
+       {
+        "Id": "131165634"
+       },
+       {
+        "Id": "630476986"
+       },
+       {
+        "Id": "822178653"
+       },
+       {
+        "Id": "861769943"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{9E300BED-9511-2929-DD1B-F7C93C31F5A3}"
+ }
+}

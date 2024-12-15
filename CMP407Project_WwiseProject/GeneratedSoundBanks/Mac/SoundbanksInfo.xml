@@ -9,6 +9,43 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
+		<SoundBank Id="995613051" Type="Event" GUID="{5E931EA9-AF1E-427D-A33F-B3236DCC79C3}" Language="SFX" Hash="{4D681A74-0ED3-C762-0B1C-76C32E600F84}">
+			<ObjectPath>PlayBulletPassby</ObjectPath>
+			<ShortName>PlayBulletPassby</ShortName>
+			<Path>Event/PlayBulletPassby.bnk</Path>
+			<Media>
+				<File Id="131165634" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>BulletPassby2.wav</ShortName>
+					<Path>Media/131165634.wem</Path>
+					<CachePath>SFX/BulletPassby2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="630476986" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>BulletPassby1.wav</ShortName>
+					<Path>Media/630476986.wem</Path>
+					<CachePath>SFX/BulletPassby1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="822178653" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>BulletPassby4.wav</ShortName>
+					<Path>Media/822178653.wem</Path>
+					<CachePath>SFX/BulletPassby4_818F3B66.wem</CachePath>
+				</File>
+				<File Id="861769943" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>BulletPassby3.wav</ShortName>
+					<Path>Media/861769943.wem</Path>
+					<CachePath>SFX/BulletPassby3_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="995613051" Name="PlayBulletPassby" ObjectPath="\Events\Default Work Unit\SoundEffects\PlayBulletPassby" GUID="{5E931EA9-AF1E-427D-A33F-B3236DCC79C3}" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.18794513" DurationMax="0.49139583">
+					<MediaRefs>
+						<MediaRef Id="131165634"/>
+						<MediaRef Id="630476986"/>
+						<MediaRef Id="822178653"/>
+						<MediaRef Id="861769943"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 		<SoundBank Id="1088348632" Type="Event" GUID="{11EFE650-9670-42D6-97FA-95E7D171C8F2}" Language="SFX" Hash="{7D4A8E92-6307-2620-F963-B45CFCE0AB3F}">
 			<ObjectPath>PlayFootsteps</ObjectPath>
 			<ShortName>PlayFootsteps</ShortName>
@@ -100,7 +137,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{668AD278-C065-DF2F-60C1-FB55424E71FC}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{F761DD89-032E-D313-850F-0B03A81CCAD2}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -115,7 +152,7 @@
 			</Busses>
 			<GameParameters>
 				<GameParameter Id="1493153371" Name="PlayerSpeed" ObjectPath="\Game Parameters\Default Work Unit\PlayerSpeed" GUID="{E25294AF-93C8-4B62-B86F-4447C6D2C2D5}"/>
-				<GameParameter Id="3441729996" Name="DistanceFromEnemy" ObjectPath="\Game Parameters\Default Work Unit\DistanceFromEnemy" GUID="{50BF7DC5-CFDD-4211-8E17-0D2DA6D11F89}"/>
+				<GameParameter Id="3237550251" Name="CameraDirection" ObjectPath="\Game Parameters\Default Work Unit\CameraDirection" GUID="{C1CC14D2-C77C-4899-B2B7-CFFC6A779A05}"/>
 			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="3060884600" Name="PlayerChasedStateGroup" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup" GUID="{EE672E92-347B-4545-8120-1C668D97E78D}">
@@ -218,6 +255,40 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
+		<SoundBank Id="3533507663" Type="Event" GUID="{042604ED-1C3C-478B-AF40-60D9DD0498BD}" Language="SFX" Hash="{066B3CFF-63FD-FE2B-2E37-BCA66DC902B3}">
+			<ObjectPath>PlayGunshot</ObjectPath>
+			<ShortName>PlayGunshot</ShortName>
+			<Path>Event/PlayGunshot.bnk</Path>
+			<Media>
+				<File Id="591637442" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Gunshot3.wav</ShortName>
+					<Path>Media/591637442.wem</Path>
+					<CachePath>SFX/Gunshot3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="607122471" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Gunshot2.wav</ShortName>
+					<Path>Media/607122471.wem</Path>
+					<CachePath>SFX/Gunshot2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="735651581" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Gunshot1.wav</ShortName>
+					<Path>Media/735651581.wem</Path>
+					<CachePath>SFX/Gunshot1_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3533507663" Name="PlayGunshot" ObjectPath="\Events\Default Work Unit\SoundEffects\PlayGunshot" GUID="{042604ED-1C3C-478B-AF40-60D9DD0498BD}" MaxAttenuation="1700" DurationType="OneShot" DurationMin="0.9054059" DurationMax="1.6456093">
+					<MediaRefs>
+						<MediaRef Id="591637442"/>
+						<MediaRef Id="607122471"/>
+						<MediaRef Id="735651581"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="3237550251" Name="CameraDirection" ObjectPath="\Game Parameters\Default Work Unit\CameraDirection" GUID="{C1CC14D2-C77C-4899-B2B7-CFFC6A779A05}"/>
+			</GameParameters>
+		</SoundBank>
 		<SoundBank Id="4089554691" Type="Event" GUID="{75D0B19F-D998-4551-8A37-D9A0F38654B3}" Language="SFX" Hash="{2FCBA7CF-8CAD-5146-F91A-C6570E494870}">
 			<ObjectPath>SetHidden</ObjectPath>
 			<ShortName>SetHidden</ShortName>
@@ -301,5 +372,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{60E6F85B-CF28-A6ED-3BC1-B1184C33A35A}</FileHash>
+	<FileHash>{CFDC4C94-DEE3-4E45-7DF5-BB5471D8E423}</FileHash>
 </SoundBanksInfo>

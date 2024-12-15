@@ -20,4 +20,7 @@ class CMP407PROJECT_API UBTTask_FireProjectile : public UBTTask_BlackboardBase
 	// Determine if bullet is ready to fire, then fire projectile
 	bool ProcessFiringLogic(UAudioEnemyProjectileComponent* InProjectileComponent, AActor* InTarget, float InDeltaTime);
 
+	// Compartmentalize bullet audio from main firing logic
+	void PlayBulletAudio(APawn* InOwnerPawn);
+
 };

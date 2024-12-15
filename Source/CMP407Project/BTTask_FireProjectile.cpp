@@ -6,6 +6,7 @@
 #include "AIController.h"
 #include "AudioEnemyProjectileComponent.h"
 #include "BehaviorTree/BlackboardComponent.h"
+#include "EnemyAudioComponent.h"
 
 EBTNodeResult::Type UBTTask_FireProjectile::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
 {
@@ -36,6 +37,9 @@ void UBTTask_FireProjectile::TickTask(UBehaviorTreeComponent& OwnerComp, uint8* 
 					{
 						if (ProcessFiringLogic(ProjectileComponent, PlayerActor, DeltaSeconds))
 						{
+							PlayBulletAudio(OwnerPawn);
+
+							// Return Succeeded on behaviour tree after firing projectile
 							FinishLatentTask(OwnerComp, EBTNodeResult::Succeeded);
 						}
 					}
@@ -60,4 +64,13 @@ bool UBTTask_FireProjectile::ProcessFiringLogic(UAudioEnemyProjectileComponent* 
 	}
 
 	return false;
+}
+
+void UBTTask_FireProjectile::PlayBulletAudio(APawn* InOwnerPawn)
+{
+	UEnemyAudioComponent* EnemyAudioComponent = InOwnerPawn->GetComponentByClass<UEnemyAudioComponent>();
+	if (ensure(EnemyAudioComponent))
+	{
+		EnemyAudioComponent->PlayBulletSFX();
+	}
 }

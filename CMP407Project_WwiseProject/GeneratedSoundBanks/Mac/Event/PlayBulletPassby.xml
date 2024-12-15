@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="150">
+	<SoundBanks>
+		<SoundBank Id="995613051" Type="Event" GUID="{5E931EA9-AF1E-427D-A33F-B3236DCC79C3}" Language="SFX" Hash="{4D681A74-0ED3-C762-0B1C-76C32E600F84}">
+			<ObjectPath>PlayBulletPassby</ObjectPath>
+			<ShortName>PlayBulletPassby</ShortName>
+			<Path>Event/PlayBulletPassby.bnk</Path>
+			<Media>
+				<File Id="131165634" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>BulletPassby2.wav</ShortName>
+					<Path>Media/131165634.wem</Path>
+					<CachePath>SFX/BulletPassby2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="630476986" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>BulletPassby1.wav</ShortName>
+					<Path>Media/630476986.wem</Path>
+					<CachePath>SFX/BulletPassby1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="822178653" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>BulletPassby4.wav</ShortName>
+					<Path>Media/822178653.wem</Path>
+					<CachePath>SFX/BulletPassby4_818F3B66.wem</CachePath>
+				</File>
+				<File Id="861769943" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>BulletPassby3.wav</ShortName>
+					<Path>Media/861769943.wem</Path>
+					<CachePath>SFX/BulletPassby3_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="995613051" Name="PlayBulletPassby" ObjectPath="\Events\Default Work Unit\SoundEffects\PlayBulletPassby" GUID="{5E931EA9-AF1E-427D-A33F-B3236DCC79C3}" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.18794513" DurationMax="0.49139583">
+					<MediaRefs>
+						<MediaRef Id="131165634"/>
+						<MediaRef Id="630476986"/>
+						<MediaRef Id="822178653"/>
+						<MediaRef Id="861769943"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{DEF1138B-B21F-4BEA-38AD-07BA2D7FEAAE}</FileHash>
+</SoundBanksInfo>

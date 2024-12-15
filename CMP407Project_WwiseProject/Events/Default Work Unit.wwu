@@ -3,20 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{94AC3D50-D660-4BD5-A899-BFA0976C5A44}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="StartDynamicLoop" ID="{8B739BA1-DFB9-4EF4-8CD7-6942C7C807DA}">
-					<PropertyList>
-						<Property Name="Inclusion" Type="bool" Value="False"/>
-					</PropertyList>
-					<ChildrenList>
-						<Action Name="" ID="{CBC65BA9-15E9-4E3F-89F6-1A60B4511670}" ShortID="92846425">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="VerticalDynamicMusic" ID="{ADF308F8-0D01-4A7D-B29F-EFA984E56C5E}" WorkUnitID="{45DC0039-BAA1-4FBA-AAE4-3BD71AF33185}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="DynamicMusic" ID="{F7F1638B-9A25-4917-AC19-3A8E6E3628A0}" ShortID="375594220">
 					<ChildrenList>
 						<Event Name="BeginChaseMusic" ID="{EDA2D3EF-9B78-4B3E-8607-E6835CE32334}">
@@ -119,6 +105,28 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="SwitchFootsteps" ID="{C9ABC84D-9DB1-4CDE-9618-6FFDB441153C}" WorkUnitID="{D9FE4D5A-44BA-434B-8F15-7E6272591F65}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PlayBulletPassby" ID="{5E931EA9-AF1E-427D-A33F-B3236DCC79C3}">
+							<ChildrenList>
+								<Action Name="" ID="{CD72F705-D716-4ED3-A4FA-0ED7BF31EA0B}" ShortID="428463226">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BulletPassbyContainer" ID="{7A0436C4-0BE6-4CEF-B1F8-0CCE828417BE}" WorkUnitID="{D9FE4D5A-44BA-434B-8F15-7E6272591F65}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PlayGunshot" ID="{042604ED-1C3C-478B-AF40-60D9DD0498BD}">
+							<ChildrenList>
+								<Action Name="" ID="{CE403A44-3195-4001-9B36-53937C3E3C41}" ShortID="787255738">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BulletFiredContainer" ID="{03A2CD70-A1B5-44AA-960D-B8AFD5868CD7}" WorkUnitID="{D9FE4D5A-44BA-434B-8F15-7E6272591F65}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

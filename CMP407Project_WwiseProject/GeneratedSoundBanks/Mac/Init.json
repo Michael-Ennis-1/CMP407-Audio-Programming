@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{668AD278-C065-DF2F-60C1-FB55424E71FC}",
+    "Hash": "{F761DD89-032E-D313-850F-0B03A81CCAD2}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -50,10 +50,10 @@
       "GUID": "{E25294AF-93C8-4B62-B86F-4447C6D2C2D5}"
      },
      {
-      "Id": "3441729996",
-      "Name": "DistanceFromEnemy",
-      "ObjectPath": "\\Game Parameters\\Default Work Unit\\DistanceFromEnemy",
-      "GUID": "{50BF7DC5-CFDD-4211-8E17-0D2DA6D11F89}"
+      "Id": "3237550251",
+      "Name": "CameraDirection",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\CameraDirection",
+      "GUID": "{C1CC14D2-C77C-4899-B2B7-CFFC6A779A05}"
      }
     ],
     "StateGroups": [
@@ -114,6 +114,6 @@
     ]
    }
   ],
-  "FileHash": "{51750A95-F54C-29E6-593A-C56443E667E7}"
+  "FileHash": "{CAC90212-9DDF-A045-78DD-FA883F6E14A2}"
  }
 }

@@ -23,17 +23,21 @@ void AAudioAIController::BeginPlay()
 		}
 	}
 
-	if (ensure(PlayerActor) && ensure(Blackboard))
-	{
-		Blackboard->SetValueAsObject(FName("PlayerActor"), PlayerActor);
-	}
-
 	APawn* PossessedEnemy = GetPawn();
 	if (ensure(PossessedEnemy))
 	{
+		if (ensure(PlayerActor) && ensure(Blackboard))
+		{
+			FVector StartLocation = PossessedEnemy->GetActorLocation();
+
+			Blackboard->SetValueAsObject(FName("PlayerActor"), PlayerActor);
+			Blackboard->SetValueAsVector(FName("CachedPosition"), StartLocation);
+		}
+
 		AAudioEnemy* AudioEnemy = Cast<AAudioEnemy>(PossessedEnemy);
 		if (ensure(AudioEnemy))
 		{
+			// Bind to delegates on possessed enemy to inform behaviour tree if player is spotted
 			AudioEnemy->OnEnemyStartedChasing.AddUniqueDynamic(this, &AAudioAIController::StartChasingPlayer);
 			AudioEnemy->OnEnemyStoppedChasing.AddUniqueDynamic(this, &AAudioAIController::StopChasingPlayer);
 		}
@@ -42,6 +46,7 @@ void AAudioAIController::BeginPlay()
 
 void AAudioAIController::StartChasingPlayer()
 {
+	// Set blackboard variable to true when player is being chased
 	bIsChasingPlayer = true;
 	if (ensure(Blackboard))
 	{
@@ -51,6 +56,7 @@ void AAudioAIController::StartChasingPlayer()
 
 void AAudioAIController::StopChasingPlayer()
 {
+	// Set blackboard variable to false when player is no longer being chased
 	bIsChasingPlayer = false;
 	if (ensure(Blackboard))
 	{
