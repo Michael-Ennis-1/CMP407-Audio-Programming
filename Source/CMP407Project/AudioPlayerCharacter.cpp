@@ -6,6 +6,7 @@
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "AudioPlayerComponent.h"
 #include "Components/BoxComponent.h"
+#include "ProjectileAudioComponent.h"
 
 AAudioPlayerCharacter::AAudioPlayerCharacter()
 {
@@ -55,10 +56,10 @@ void AAudioPlayerCharacter::OnBeginPassbyOverlap(UPrimitiveComponent* Overlapped
 		{
 			if (!PredictProjectileCollision(OtherActor, ProjectileMovementComponent))
 			{
-				UAudioPlayerComponent* AudioPlayerComponent = GetComponentByClass<UAudioPlayerComponent>();
-				if (AudioPlayerComponent)
+				UProjectileAudioComponent* ProjectileAudioComponent = OtherActor->GetComponentByClass<UProjectileAudioComponent>();
+				if (ProjectileAudioComponent)
 				{
-					AudioPlayerComponent->PlayPassbyBullet();
+					ProjectileAudioComponent->PlayProjectileWhizzEffect();
 				}
 			}
 		}

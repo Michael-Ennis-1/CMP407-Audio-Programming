@@ -18,7 +18,7 @@
     "Type": "Event",
     "GUID": "{5E931EA9-AF1E-427D-A33F-B3236DCC79C3}",
     "Language": "SFX",
-    "Hash": "{4D681A74-0ED3-C762-0B1C-76C32E600F84}",
+    "Hash": "{7FD57269-11A0-3BC9-708C-F3409D76E21B}",
     "ObjectPath": "PlayBulletPassby",
     "ShortName": "PlayBulletPassby",
     "Path": "Event/PlayBulletPassby.bnk",
@@ -66,7 +66,7 @@
       "Name": "PlayBulletPassby",
       "ObjectPath": "\\Events\\Default Work Unit\\SoundEffects\\PlayBulletPassby",
       "GUID": "{5E931EA9-AF1E-427D-A33F-B3236DCC79C3}",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "1000",
       "DurationType": "OneShot",
       "DurationMin": "0.18794513",
       "DurationMax": "0.49139583",
@@ -844,6 +844,6 @@
     ]
    }
   ],
-  "FileHash": "{1595F870-889C-BC14-9C5A-FF464A1C93AA}"
+  "FileHash": "{21CEC777-723E-7119-D81B-6521EB9CF5EF}"
  }
 }

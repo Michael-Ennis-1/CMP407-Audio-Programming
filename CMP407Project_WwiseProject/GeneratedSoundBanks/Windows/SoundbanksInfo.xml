@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="995613051" Type="Event" GUID="{5E931EA9-AF1E-427D-A33F-B3236DCC79C3}" Language="SFX" Hash="{4D681A74-0ED3-C762-0B1C-76C32E600F84}">
+		<SoundBank Id="995613051" Type="Event" GUID="{5E931EA9-AF1E-427D-A33F-B3236DCC79C3}" Language="SFX" Hash="{7FD57269-11A0-3BC9-708C-F3409D76E21B}">
 			<ObjectPath>PlayBulletPassby</ObjectPath>
 			<ShortName>PlayBulletPassby</ShortName>
 			<Path>Event/PlayBulletPassby.bnk</Path>
@@ -36,7 +36,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="995613051" Name="PlayBulletPassby" ObjectPath="\Events\Default Work Unit\SoundEffects\PlayBulletPassby" GUID="{5E931EA9-AF1E-427D-A33F-B3236DCC79C3}" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.18794513" DurationMax="0.49139583">
+				<Event Id="995613051" Name="PlayBulletPassby" ObjectPath="\Events\Default Work Unit\SoundEffects\PlayBulletPassby" GUID="{5E931EA9-AF1E-427D-A33F-B3236DCC79C3}" MaxAttenuation="1000" DurationType="OneShot" DurationMin="0.18794513" DurationMax="0.49139583">
 					<MediaRefs>
 						<MediaRef Id="131165634"/>
 						<MediaRef Id="630476986"/>
@@ -372,5 +372,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7868EA2C-2441-74D7-E7E2-4CB7EF0C310D}</FileHash>
+	<FileHash>{FE1F5D61-8C57-2D1B-FB1D-DDC1476FA353}</FileHash>
 </SoundBanksInfo>

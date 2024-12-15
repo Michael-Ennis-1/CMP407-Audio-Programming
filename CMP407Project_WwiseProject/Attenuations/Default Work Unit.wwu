@@ -6,6 +6,9 @@
 				<Folder Name="AttenuationSets" ID="{9F0BA7C6-76BF-48FE-A524-8F10AE84BE6B}" ShortID="645025698">
 					<ChildrenList>
 						<Attenuation Name="BulletPassbyAttenuationSet" ID="{6006E618-6E47-44DF-BE9C-B9004FAC41D3}" ShortID="474637002">
+							<PropertyList>
+								<Property Name="RadiusMax" Type="Real64" Value="1000"/>
+							</PropertyList>
 							<CurveUsageInfoList>
 								<VolumeDryUsage>
 									<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
@@ -20,7 +23,7 @@
 													<Flags>5</Flags>
 												</Point>
 												<Point>
-													<XPos>100</XPos>
+													<XPos>1000</XPos>
 													<YPos>-200</YPos>
 													<Flags>37</Flags>
 												</Point>
