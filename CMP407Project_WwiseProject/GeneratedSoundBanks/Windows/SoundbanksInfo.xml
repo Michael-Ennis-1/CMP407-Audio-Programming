@@ -388,7 +388,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3533507663" Type="Event" GUID="{042604ED-1C3C-478B-AF40-60D9DD0498BD}" Language="SFX" Hash="{EE2C79C9-5CFC-4069-9A7D-BECE13E9C3C5}">
+		<SoundBank Id="3533507663" Type="Event" GUID="{042604ED-1C3C-478B-AF40-60D9DD0498BD}" Language="SFX" Hash="{650CA40D-DF61-E573-337A-B10B2A05B1DB}">
 			<ObjectPath>PlayGunshot</ObjectPath>
 			<ShortName>PlayGunshot</ShortName>
 			<Path>Event/PlayGunshot.bnk</Path>
@@ -520,5 +520,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C3D27C1D-7FF9-E0AE-E32A-36C8FA958B68}</FileHash>
+	<FileHash>{67515515-2677-2AEF-61C9-7F57770C9D8C}</FileHash>
 </SoundBanksInfo>

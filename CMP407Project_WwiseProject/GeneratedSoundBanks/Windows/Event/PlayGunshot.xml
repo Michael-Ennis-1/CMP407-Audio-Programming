@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="3533507663" Type="Event" GUID="{042604ED-1C3C-478B-AF40-60D9DD0498BD}" Language="SFX" Hash="{EE2C79C9-5CFC-4069-9A7D-BECE13E9C3C5}">
+		<SoundBank Id="3533507663" Type="Event" GUID="{042604ED-1C3C-478B-AF40-60D9DD0498BD}" Language="SFX" Hash="{650CA40D-DF61-E573-337A-B10B2A05B1DB}">
 			<ObjectPath>PlayGunshot</ObjectPath>
 			<ShortName>PlayGunshot</ShortName>
 			<Path>Event/PlayGunshot.bnk</Path>
@@ -36,5 +36,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F7F1EC53-2AFC-F9C0-C4D4-0A421CBD6D9B}</FileHash>
+	<FileHash>{385CAAAD-1740-53D2-C207-25EC8528FBD1}</FileHash>
 </SoundBanksInfo>
