@@ -543,7 +543,7 @@
     "Type": "Event",
     "GUID": "{EDA2D3EF-9B78-4B3E-8607-E6835CE32334}",
     "Language": "SFX",
-    "Hash": "{8D3AC63F-8924-57AF-B835-B6B545EB5C5D}",
+    "Hash": "{50DEE1AC-01C1-0341-1E41-2C64B168D8DA}",
     "ObjectPath": "BeginChaseMusic",
     "ShortName": "BeginChaseMusic",
     "Path": "Event/BeginChaseMusic.bnk",
@@ -710,7 +710,7 @@
     "Type": "Event",
     "GUID": "{A6B2086B-256A-4ED6-B4F2-527DFDFA72DC}",
     "Language": "SFX",
-    "Hash": "{506AC7CB-0043-D62A-0531-CC2A17ED27DF}",
+    "Hash": "{7F9506BD-B3B0-FFD2-8432-A0B5B7A0DC6F}",
     "ObjectPath": "PlayBulletImpact",
     "ShortName": "PlayBulletImpact",
     "Path": "Event/PlayBulletImpact.bnk",
@@ -1027,7 +1027,7 @@
     "Type": "Event",
     "GUID": "{AD634FDE-E1BB-4FED-ABCF-F7C8744CE6B5}",
     "Language": "SFX",
-    "Hash": "{B1C03669-576F-86ED-A2EE-D408D47039B7}",
+    "Hash": "{8EBE7223-E643-1822-C375-636867911045}",
     "ObjectPath": "BeginHiddenMusic",
     "ShortName": "BeginHiddenMusic",
     "Path": "Event/BeginHiddenMusic.bnk",
@@ -1190,6 +1190,6 @@
     ]
    }
   ],
-  "FileHash": "{AE704575-3A40-EAC3-51F6-677E6A6900BB}"
+  "FileHash": "{D5101BFE-DBD7-9A39-9A9F-E492BE2B6AA3}"
  }
 }

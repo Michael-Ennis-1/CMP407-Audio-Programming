@@ -236,7 +236,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1377933095" Type="Event" GUID="{EDA2D3EF-9B78-4B3E-8607-E6835CE32334}" Language="SFX" Hash="{8D3AC63F-8924-57AF-B835-B6B545EB5C5D}">
+		<SoundBank Id="1377933095" Type="Event" GUID="{EDA2D3EF-9B78-4B3E-8607-E6835CE32334}" Language="SFX" Hash="{50DEE1AC-01C1-0341-1E41-2C64B168D8DA}">
 			<ObjectPath>BeginChaseMusic</ObjectPath>
 			<ShortName>BeginChaseMusic</ShortName>
 			<Path>Event/BeginChaseMusic.bnk</Path>
@@ -309,7 +309,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="2817782225" Type="Event" GUID="{A6B2086B-256A-4ED6-B4F2-527DFDFA72DC}" Language="SFX" Hash="{506AC7CB-0043-D62A-0531-CC2A17ED27DF}">
+		<SoundBank Id="2817782225" Type="Event" GUID="{A6B2086B-256A-4ED6-B4F2-527DFDFA72DC}" Language="SFX" Hash="{7F9506BD-B3B0-FFD2-8432-A0B5B7A0DC6F}">
 			<ObjectPath>PlayBulletImpact</ObjectPath>
 			<ShortName>PlayBulletImpact</ShortName>
 			<Path>Event/PlayBulletImpact.bnk</Path>
@@ -442,7 +442,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="4244123813" Type="Event" GUID="{AD634FDE-E1BB-4FED-ABCF-F7C8744CE6B5}" Language="SFX" Hash="{B1C03669-576F-86ED-A2EE-D408D47039B7}">
+		<SoundBank Id="4244123813" Type="Event" GUID="{AD634FDE-E1BB-4FED-ABCF-F7C8744CE6B5}" Language="SFX" Hash="{8EBE7223-E643-1822-C375-636867911045}">
 			<ObjectPath>BeginHiddenMusic</ObjectPath>
 			<ShortName>BeginHiddenMusic</ShortName>
 			<Path>Event/BeginHiddenMusic.bnk</Path>
@@ -516,5 +516,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{66288B74-7803-2094-7716-69DD0229CC6D}</FileHash>
+	<FileHash>{A554BE02-68A4-D63A-6F4A-C9178DA20482}</FileHash>
 </SoundBanksInfo>

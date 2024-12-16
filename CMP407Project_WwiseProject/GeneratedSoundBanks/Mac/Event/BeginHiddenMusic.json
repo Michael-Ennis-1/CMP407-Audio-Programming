@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{AD634FDE-E1BB-4FED-ABCF-F7C8744CE6B5}",
     "Language": "SFX",
-    "Hash": "{B1C03669-576F-86ED-A2EE-D408D47039B7}",
+    "Hash": "{8EBE7223-E643-1822-C375-636867911045}",
     "ObjectPath": "BeginHiddenMusic",
     "ShortName": "BeginHiddenMusic",
     "Path": "Event/BeginHiddenMusic.bnk",
@@ -173,6 +173,6 @@
     ]
    }
   ],
-  "FileHash": "{F341B569-51FB-CB8D-B927-52A8594D7586}"
+  "FileHash": "{D1097FF3-0AA5-0126-C123-FAA0C34A22C6}"
  }
 }

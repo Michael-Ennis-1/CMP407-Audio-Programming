@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="1377933095" Type="Event" GUID="{EDA2D3EF-9B78-4B3E-8607-E6835CE32334}" Language="SFX" Hash="{8D3AC63F-8924-57AF-B835-B6B545EB5C5D}">
+		<SoundBank Id="1377933095" Type="Event" GUID="{EDA2D3EF-9B78-4B3E-8607-E6835CE32334}" Language="SFX" Hash="{50DEE1AC-01C1-0341-1E41-2C64B168D8DA}">
 			<ObjectPath>BeginChaseMusic</ObjectPath>
 			<ShortName>BeginChaseMusic</ShortName>
 			<Path>Event/BeginChaseMusic.bnk</Path>
@@ -75,5 +75,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{54029D94-1F02-06EA-828C-AABD8E224578}</FileHash>
+	<FileHash>{B2990466-A915-6449-5CED-F42162BC4127}</FileHash>
 </SoundBanksInfo>

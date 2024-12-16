@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="2817782225" Type="Event" GUID="{A6B2086B-256A-4ED6-B4F2-527DFDFA72DC}" Language="SFX" Hash="{506AC7CB-0043-D62A-0531-CC2A17ED27DF}">
+		<SoundBank Id="2817782225" Type="Event" GUID="{A6B2086B-256A-4ED6-B4F2-527DFDFA72DC}" Language="SFX" Hash="{7F9506BD-B3B0-FFD2-8432-A0B5B7A0DC6F}">
 			<ObjectPath>PlayBulletImpact</ObjectPath>
 			<ShortName>PlayBulletImpact</ShortName>
 			<Path>Event/PlayBulletImpact.bnk</Path>
@@ -57,5 +57,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{625EE619-E0CE-39C4-CFAF-89D38E53186D}</FileHash>
+	<FileHash>{10A00740-0177-9A14-95EA-5D3EEB9F54F0}</FileHash>
 </SoundBanksInfo>
