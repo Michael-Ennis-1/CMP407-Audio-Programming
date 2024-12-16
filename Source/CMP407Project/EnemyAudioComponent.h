@@ -18,6 +18,9 @@ public:
 	UFUNCTION(BlueprintImplementableEvent)
 	void PlayBulletSFX();
 
+	UFUNCTION(BlueprintImplementableEvent)
+	void PlayExplosionSFX();
+
 protected:
 	virtual void BeginPlay() override;
 		

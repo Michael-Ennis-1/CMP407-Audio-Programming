@@ -5,17 +5,32 @@
 #include "Perception/AIPerceptionComponent.h"
 #include "Perception/AIPerceptionTypes.h"
 #include "AudioEnemySubsystem.h"
+#include "EnemyAudioComponent.h"
 
-// Sets default values
 AAudioEnemy::AAudioEnemy()
 {
- 	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
-
 	PerceptionComponent = CreateDefaultSubobject<UAIPerceptionComponent>("Perception Component");
 }
 
-// Called when the game starts or when spawned
+void AAudioEnemy::DisableEnemy()
+{
+	SetActorHiddenInGame(true);
+
+	UEnemyAudioComponent* AudioComponent = GetComponentByClass<UEnemyAudioComponent>();
+	if (ensure(AudioComponent))
+	{
+		AudioComponent->PlayExplosionSFX();
+	}
+
+	UAudioEnemySubsystem* AudioSubsystem = GetAudioEnemySubsystem();
+	if (ensure(AudioSubsystem))
+	{
+		AudioSubsystem->UnRegisterAudioEnemy(this);
+	}
+
+	SetLifeSpan(2.0f);
+}
+
 void AAudioEnemy::BeginPlay()
 {
 	Super::BeginPlay();

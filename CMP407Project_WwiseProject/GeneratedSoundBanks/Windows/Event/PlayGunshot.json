@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{042604ED-1C3C-478B-AF40-60D9DD0498BD}",
     "Language": "SFX",
-    "Hash": "{066B3CFF-63FD-FE2B-2E37-BCA66DC902B3}",
+    "Hash": "{EE2C79C9-5CFC-4069-9A7D-BECE13E9C3C5}",
     "ObjectPath": "PlayGunshot",
     "ShortName": "PlayGunshot",
     "Path": "Event/PlayGunshot.bnk",
@@ -49,7 +49,7 @@
       "Name": "PlayGunshot",
       "ObjectPath": "\\Events\\Default Work Unit\\SoundEffects\\PlayGunshot",
       "GUID": "{042604ED-1C3C-478B-AF40-60D9DD0498BD}",
-      "MaxAttenuation": "1700",
+      "MaxAttenuation": "1500",
       "DurationType": "OneShot",
       "DurationMin": "0.9054059",
       "DurationMax": "1.6456093",
@@ -76,6 +76,6 @@
     ]
    }
   ],
-  "FileHash": "{E5CF1A3F-7666-6FCC-17B2-60C9040D1DE5}"
+  "FileHash": "{BBCA312D-6055-289C-73B3-F8E039284D35}"
  }
 }

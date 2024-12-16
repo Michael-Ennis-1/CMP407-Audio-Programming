@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "150",
+  "SoundBanks": [
+   {
+    "Id": "585150322",
+    "Type": "Bus",
+    "GUID": "{CB4DF897-C74D-4E9E-9974-FED2837977CB}",
+    "Language": "SFX",
+    "Hash": "{5B33FF29-DD9A-F75F-0485-9E6CD72B5D9B}",
+    "ObjectPath": "ReverbAuxillaryBus",
+    "ShortName": "ReverbAuxillaryBus",
+    "Path": "Bus/ReverbAuxillaryBus.bnk",
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "1990128658",
+       "Name": "Room_Medium",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Medium",
+       "GUID": "{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ]
+    },
+    "AuxBusses": [
+     {
+      "Id": "585150322",
+      "Name": "ReverbAuxillaryBus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\ReverbAuxillaryBus",
+      "GUID": "{CB4DF897-C74D-4E9E-9974-FED2837977CB}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1990128658"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "FileHash": "{20E52C98-E1E1-AC9E-B955-AD86E4ADCF17}"
+ }
+}

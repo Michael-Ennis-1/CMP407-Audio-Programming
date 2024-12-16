@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<SoundBanks>
+		<SoundBank Id="182906760" Type="Event" GUID="{7697D898-A9EB-46F3-8BC6-4DE680D4D0CE}" Language="SFX" Hash="{BEB07301-EDD8-86CE-E42B-A88645A4C4C0}">
+			<ObjectPath>PlayExplosion</ObjectPath>
+			<ShortName>PlayExplosion</ShortName>
+			<Path>Event/PlayExplosion.bnk</Path>
+			<Media>
+				<File Id="126313435" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>ExplosionStereo.wav</ShortName>
+					<Path>Media/126313435.wem</Path>
+					<CachePath>SFX/ExplosionStereo_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="182906760" Name="PlayExplosion" ObjectPath="\Events\Default Work Unit\SoundEffects\PlayExplosion" GUID="{7697D898-A9EB-46F3-8BC6-4DE680D4D0CE}" DurationType="OneShot" DurationMin="0.79624426" DurationMax="1.1299689">
+					<MediaRefs>
+						<MediaRef Id="126313435"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="3237550251" Name="CameraDirection" ObjectPath="\Game Parameters\Default Work Unit\CameraDirection" GUID="{C1CC14D2-C77C-4899-B2B7-CFFC6A779A05}"/>
+			</GameParameters>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{5B181491-D93C-C250-350A-C5CE4E84BB69}</FileHash>
+</SoundBanksInfo>

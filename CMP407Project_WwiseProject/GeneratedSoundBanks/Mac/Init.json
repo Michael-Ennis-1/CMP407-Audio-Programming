@@ -10,11 +10,21 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{F761DD89-032E-D313-850F-0B03A81CCAD2}",
+    "Hash": "{1F3BD0DA-5DF5-8E2F-4340-635EE6A12F7F}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "1990128658",
+       "Name": "Room_Medium",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Medium",
+       "GUID": "{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ],
      "AudioDevices": [
       {
        "Id": "2317455096",
@@ -42,12 +52,45 @@
       "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
      }
     ],
+    "AuxBusses": [
+     {
+      "Id": "585150322",
+      "Name": "ReverbAuxillaryBus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\ReverbAuxillaryBus",
+      "GUID": "{CB4DF897-C74D-4E9E-9974-FED2837977CB}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1990128658"
+        }
+       ]
+      }
+     }
+    ],
     "GameParameters": [
+     {
+      "Id": "255912898",
+      "Name": "DynamicEnemyAmountVolume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\DynamicEnemyAmountVolume",
+      "GUID": "{0A02C79E-164F-4934-88F5-8D80805F0FB8}"
+     },
      {
       "Id": "1493153371",
       "Name": "PlayerSpeed",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\PlayerSpeed",
       "GUID": "{E25294AF-93C8-4B62-B86F-4447C6D2C2D5}"
+     },
+     {
+      "Id": "1789676941",
+      "Name": "MusicMuffle",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\MusicMuffle",
+      "GUID": "{89A1870C-D397-4A0B-AFC5-BE524A06B849}"
+     },
+     {
+      "Id": "2346531308",
+      "Name": "MusicVolume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\MusicVolume",
+      "GUID": "{BEEF7FC8-87EB-4AA6-B809-8CB2D7FBA2EB}"
      },
      {
       "Id": "3237550251",
@@ -76,6 +119,12 @@
         "GUID": "{A5447658-B540-4BC5-B1E4-59D200CF4E42}"
        },
        {
+        "Id": "938058686",
+        "Name": "Safe",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup\\Safe",
+        "GUID": "{F90595E5-53B8-40C0-AF23-51CB4F9132C4}"
+       },
+       {
         "Id": "3621873013",
         "Name": "Hidden",
         "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup\\Hidden",
@@ -85,6 +134,26 @@
      }
     ],
     "SwitchGroups": [
+     {
+      "Id": "2048498592",
+      "Name": "BulletImpactSwitchGroup",
+      "ObjectPath": "\\Switches\\Default Work Unit\\BulletImpactSwitchGroup",
+      "GUID": "{9A41939D-D05B-43DC-9639-30138F889E2E}",
+      "Switches": [
+       {
+        "Id": "1791853674",
+        "Name": "ActorImpact",
+        "ObjectPath": "\\Switches\\Default Work Unit\\BulletImpactSwitchGroup\\ActorImpact",
+        "GUID": "{7CD2D981-CCA7-499B-A96C-DBB91EBF70A2}"
+       },
+       {
+        "Id": "3121599344",
+        "Name": "MetalImpact",
+        "ObjectPath": "\\Switches\\Default Work Unit\\BulletImpactSwitchGroup\\MetalImpact",
+        "GUID": "{B00E73F9-8E0B-48E6-8410-01165B821C01}"
+       }
+      ]
+     },
      {
       "Id": "2470013375",
       "Name": "FootstepsSwitchGroup",
@@ -114,6 +183,6 @@
     ]
    }
   ],
-  "FileHash": "{CAC90212-9DDF-A045-78DD-FA883F6E14A2}"
+  "FileHash": "{02734BA7-3685-06E9-AC23-73B82640EDA6}"
  }
 }

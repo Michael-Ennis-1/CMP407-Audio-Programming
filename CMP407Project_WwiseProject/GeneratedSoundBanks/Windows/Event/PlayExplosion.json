@@ -1,0 +1,56 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "150",
+  "SoundBanks": [
+   {
+    "Id": "182906760",
+    "Type": "Event",
+    "GUID": "{7697D898-A9EB-46F3-8BC6-4DE680D4D0CE}",
+    "Language": "SFX",
+    "Hash": "{BEB07301-EDD8-86CE-E42B-A88645A4C4C0}",
+    "ObjectPath": "PlayExplosion",
+    "ShortName": "PlayExplosion",
+    "Path": "Event/PlayExplosion.bnk",
+    "Media": [
+     {
+      "Id": "126313435",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "ExplosionStereo.wav",
+      "Path": "Media/126313435.wem",
+      "CachePath": "SFX/ExplosionStereo_818F3B66.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "182906760",
+      "Name": "PlayExplosion",
+      "ObjectPath": "\\Events\\Default Work Unit\\SoundEffects\\PlayExplosion",
+      "GUID": "{7697D898-A9EB-46F3-8BC6-4DE680D4D0CE}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.79624426",
+      "DurationMax": "1.1299689",
+      "MediaRefs": [
+       {
+        "Id": "126313435"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "3237550251",
+      "Name": "CameraDirection",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\CameraDirection",
+      "GUID": "{C1CC14D2-C77C-4899-B2B7-CFFC6A779A05}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{9E61CA03-7629-7498-1601-BC5A1EAA20DC}"
+ }
+}

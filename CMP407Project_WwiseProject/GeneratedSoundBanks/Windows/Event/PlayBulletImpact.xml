@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<SoundBanks>
+		<SoundBank Id="2817782225" Type="Event" GUID="{A6B2086B-256A-4ED6-B4F2-527DFDFA72DC}" Language="SFX" Hash="{506AC7CB-0043-D62A-0531-CC2A17ED27DF}">
+			<ObjectPath>PlayBulletImpact</ObjectPath>
+			<ShortName>PlayBulletImpact</ShortName>
+			<Path>Event/PlayBulletImpact.bnk</Path>
+			<Media>
+				<File Id="196386843" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>BulletImpactMetal1.wav</ShortName>
+					<Path>Media/196386843.wem</Path>
+					<CachePath>SFX/BulletImpactMetal1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="235542516" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>BulletImpactBody1.wav</ShortName>
+					<Path>Media/235542516.wem</Path>
+					<CachePath>SFX/BulletImpactBody1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="354532968" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>BulletImpactBody2.wav</ShortName>
+					<Path>Media/354532968.wem</Path>
+					<CachePath>SFX/BulletImpactBody2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="792091043" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>BulletImpactMetal2.wav</ShortName>
+					<Path>Media/792091043.wem</Path>
+					<CachePath>SFX/BulletImpactMetal2_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2817782225" Name="PlayBulletImpact" ObjectPath="\Events\Default Work Unit\SoundEffects\PlayBulletImpact" GUID="{A6B2086B-256A-4ED6-B4F2-527DFDFA72DC}" MaxAttenuation="1000" DurationType="OneShot" DurationMin="0.39499173" DurationMax="0.7433523">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2048498592" Id="1791853674" GUID="{7CD2D981-CCA7-499B-A96C-DBB91EBF70A2}"/>
+							<MediaRefs>
+								<MediaRef Id="235542516"/>
+								<MediaRef Id="354532968"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2048498592" Id="3121599344" GUID="{B00E73F9-8E0B-48E6-8410-01165B821C01}" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="196386843"/>
+								<MediaRef Id="792091043"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</Events>
+			<SwitchGroups>
+				<SwitchGroup Id="2048498592" Name="BulletImpactSwitchGroup" ObjectPath="\Switches\Default Work Unit\BulletImpactSwitchGroup" GUID="{9A41939D-D05B-43DC-9639-30138F889E2E}">
+					<Switches>
+						<Switch Id="1791853674" Name="ActorImpact" ObjectPath="\Switches\Default Work Unit\BulletImpactSwitchGroup\ActorImpact" GUID="{7CD2D981-CCA7-499B-A96C-DBB91EBF70A2}"/>
+						<Switch Id="3121599344" Name="MetalImpact" ObjectPath="\Switches\Default Work Unit\BulletImpactSwitchGroup\MetalImpact" GUID="{B00E73F9-8E0B-48E6-8410-01165B821C01}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{8D3586D6-FF47-5050-2114-5CF5FE7B4CD0}</FileHash>
+</SoundBanksInfo>

@@ -19,18 +19,23 @@ class CMP407PROJECT_API AAudioEnemy : public ACharacter
 	GENERATED_BODY()
 
 public:
-	// Sets default values for this pawn's properties
 	AAudioEnemy();
 
+	// Informs AIController when this enemy starts/stops chasing player
 	FOnGenericEnemyEvent OnEnemyStartedChasing;
 	FOnGenericEnemyEvent OnEnemyStoppedChasing;
 
+	// Disables enemy when hit by projecile
+	void DisableEnemy();
+
+	FOnGenericEnemyEvent OnEnemyDisabled;
+
 protected:
-	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
 	UAudioEnemySubsystem* GetAudioEnemySubsystem();
 
+	// Updates whether the player is spotted by this enemy
 	UFUNCTION()
 	void TargetPerceptionUpdated(AActor* InActor, FAIStimulus InStimulus);
 

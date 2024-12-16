@@ -8,6 +8,7 @@
 
 class UBoxComponent;
 class UProjectileMovementComponent;
+class UAudioProjectileSubsystem;
 
 /**
  * 
@@ -31,7 +32,10 @@ public:
 	UFUNCTION()
 	void OnBeginPassbyOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 
+	// Predict if we're about to hit the player, so whizz only plays on a miss
 	bool PredictProjectileCollision(AActor* InOtherActor, UProjectileMovementComponent* InProjectileMovementComponent);
+
+	UAudioProjectileSubsystem* GetAudioProjectileSubsystem();
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	TObjectPtr<UBoxComponent> BulletPassbyBoxCollider;

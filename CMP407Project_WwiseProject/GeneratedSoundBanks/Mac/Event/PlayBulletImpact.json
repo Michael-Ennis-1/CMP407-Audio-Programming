@@ -1,0 +1,128 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "150",
+  "SoundBanks": [
+   {
+    "Id": "2817782225",
+    "Type": "Event",
+    "GUID": "{A6B2086B-256A-4ED6-B4F2-527DFDFA72DC}",
+    "Language": "SFX",
+    "Hash": "{506AC7CB-0043-D62A-0531-CC2A17ED27DF}",
+    "ObjectPath": "PlayBulletImpact",
+    "ShortName": "PlayBulletImpact",
+    "Path": "Event/PlayBulletImpact.bnk",
+    "Media": [
+     {
+      "Id": "196386843",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "BulletImpactMetal1.wav",
+      "Path": "Media/196386843.wem",
+      "CachePath": "SFX/BulletImpactMetal1_818F3B66.wem"
+     },
+     {
+      "Id": "235542516",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "BulletImpactBody1.wav",
+      "Path": "Media/235542516.wem",
+      "CachePath": "SFX/BulletImpactBody1_818F3B66.wem"
+     },
+     {
+      "Id": "354532968",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "BulletImpactBody2.wav",
+      "Path": "Media/354532968.wem",
+      "CachePath": "SFX/BulletImpactBody2_818F3B66.wem"
+     },
+     {
+      "Id": "792091043",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "BulletImpactMetal2.wav",
+      "Path": "Media/792091043.wem",
+      "CachePath": "SFX/BulletImpactMetal2_818F3B66.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2817782225",
+      "Name": "PlayBulletImpact",
+      "ObjectPath": "\\Events\\Default Work Unit\\SoundEffects\\PlayBulletImpact",
+      "GUID": "{A6B2086B-256A-4ED6-B4F2-527DFDFA72DC}",
+      "MaxAttenuation": "1000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.39499173",
+      "DurationMax": "0.7433523",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2048498592",
+         "Id": "1791853674",
+         "GUID": "{7CD2D981-CCA7-499B-A96C-DBB91EBF70A2}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "235542516"
+         },
+         {
+          "Id": "354532968"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2048498592",
+         "Id": "3121599344",
+         "GUID": "{B00E73F9-8E0B-48E6-8410-01165B821C01}",
+         "Default": "true"
+        },
+        "MediaRefs": [
+         {
+          "Id": "196386843"
+         },
+         {
+          "Id": "792091043"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "2048498592",
+      "Name": "BulletImpactSwitchGroup",
+      "ObjectPath": "\\Switches\\Default Work Unit\\BulletImpactSwitchGroup",
+      "GUID": "{9A41939D-D05B-43DC-9639-30138F889E2E}",
+      "Switches": [
+       {
+        "Id": "1791853674",
+        "Name": "ActorImpact",
+        "ObjectPath": "\\Switches\\Default Work Unit\\BulletImpactSwitchGroup\\ActorImpact",
+        "GUID": "{7CD2D981-CCA7-499B-A96C-DBB91EBF70A2}"
+       },
+       {
+        "Id": "3121599344",
+        "Name": "MetalImpact",
+        "ObjectPath": "\\Switches\\Default Work Unit\\BulletImpactSwitchGroup\\MetalImpact",
+        "GUID": "{B00E73F9-8E0B-48E6-8410-01165B821C01}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{450ED9FA-B340-ECB3-C05B-3B30C8485E10}"
+ }
+}

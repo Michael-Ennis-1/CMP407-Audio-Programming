@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="995613051" Type="Event" GUID="{5E931EA9-AF1E-427D-A33F-B3236DCC79C3}" Language="SFX" Hash="{7FD57269-11A0-3BC9-708C-F3409D76E21B}">
+		<SoundBank Id="995613051" Type="Event" GUID="{5E931EA9-AF1E-427D-A33F-B3236DCC79C3}" Language="SFX" Hash="{8939B0A6-E6F4-E9B2-AEA9-D0D3149C75D4}">
 			<ObjectPath>PlayBulletPassby</ObjectPath>
 			<ShortName>PlayBulletPassby</ShortName>
 			<Path>Event/PlayBulletPassby.bnk</Path>
@@ -28,7 +28,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="995613051" Name="PlayBulletPassby" ObjectPath="\Events\Default Work Unit\SoundEffects\PlayBulletPassby" GUID="{5E931EA9-AF1E-427D-A33F-B3236DCC79C3}" MaxAttenuation="1000" DurationType="OneShot" DurationMin="0.18794513" DurationMax="0.49139583">
+				<Event Id="995613051" Name="PlayBulletPassby" ObjectPath="\Events\Default Work Unit\SoundEffects\PlayBulletPassby" GUID="{5E931EA9-AF1E-427D-A33F-B3236DCC79C3}" MaxAttenuation="550" DurationType="OneShot" DurationMin="0.18794513" DurationMax="0.49139583">
 					<MediaRefs>
 						<MediaRef Id="131165634"/>
 						<MediaRef Id="630476986"/>
@@ -39,5 +39,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{494DB9EA-99B5-0A53-453C-A32F6130404E}</FileHash>
+	<FileHash>{5F503383-CE33-E373-E81C-1CF52405C5EA}</FileHash>
 </SoundBanksInfo>

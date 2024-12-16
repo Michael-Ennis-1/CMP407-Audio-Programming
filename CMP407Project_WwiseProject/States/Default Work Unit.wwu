@@ -8,6 +8,7 @@
 						<State Name="None" ID="{A5447658-B540-4BC5-B1E4-59D200CF4E42}"/>
 						<State Name="Chased" ID="{F27B355F-CFC9-4BA7-8C85-D4B70DE44E5C}"/>
 						<State Name="Hidden" ID="{29A4E8D1-97D7-4D2F-B42B-A5E175D58A35}"/>
+						<State Name="Safe" ID="{F90595E5-53B8-40C0-AF23-51CB4F9132C4}"/>
 					</ChildrenList>
 					<TransitionList>
 						<Transition>

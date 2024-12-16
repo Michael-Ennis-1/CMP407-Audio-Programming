@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="3531571417" Type="Event" GUID="{09EEC311-8EA0-41D7-848B-C3FD401D13D0}" Language="SFX" Hash="{99EA3602-51A8-AFBA-94CD-B8DDC6435C09}">
+		<SoundBank Id="3531571417" Type="Event" GUID="{09EEC311-8EA0-41D7-848B-C3FD401D13D0}" Language="SFX" Hash="{7D534FEE-CE67-6593-DAB6-AE4EDAC5FB44}">
 			<ObjectPath>SetChased</ObjectPath>
 			<ShortName>SetChased</ShortName>
 			<Path>Event/SetChased.bnk</Path>
@@ -17,11 +17,12 @@
 					<States>
 						<State Id="493461511" Name="Chased" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup\Chased" GUID="{F27B355F-CFC9-4BA7-8C85-D4B70DE44E5C}"/>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup\None" GUID="{A5447658-B540-4BC5-B1E4-59D200CF4E42}"/>
+						<State Id="938058686" Name="Safe" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup\Safe" GUID="{F90595E5-53B8-40C0-AF23-51CB4F9132C4}"/>
 						<State Id="3621873013" Name="Hidden" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup\Hidden" GUID="{29A4E8D1-97D7-4D2F-B42B-A5E175D58A35}"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C93DC6DE-5989-38EE-330A-F23E5431BA21}</FileHash>
+	<FileHash>{A2418E72-EF95-5F84-A5A2-95768C0090E6}</FileHash>
 </SoundBanksInfo>

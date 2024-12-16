@@ -9,7 +9,48 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="995613051" Type="Event" GUID="{5E931EA9-AF1E-427D-A33F-B3236DCC79C3}" Language="SFX" Hash="{7FD57269-11A0-3BC9-708C-F3409D76E21B}">
+		<SoundBank Id="182906760" Type="Event" GUID="{7697D898-A9EB-46F3-8BC6-4DE680D4D0CE}" Language="SFX" Hash="{BEB07301-EDD8-86CE-E42B-A88645A4C4C0}">
+			<ObjectPath>PlayExplosion</ObjectPath>
+			<ShortName>PlayExplosion</ShortName>
+			<Path>Event/PlayExplosion.bnk</Path>
+			<Media>
+				<File Id="126313435" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>ExplosionStereo.wav</ShortName>
+					<Path>Media/126313435.wem</Path>
+					<CachePath>SFX/ExplosionStereo_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="182906760" Name="PlayExplosion" ObjectPath="\Events\Default Work Unit\SoundEffects\PlayExplosion" GUID="{7697D898-A9EB-46F3-8BC6-4DE680D4D0CE}" DurationType="OneShot" DurationMin="0.79624426" DurationMax="1.1299689">
+					<MediaRefs>
+						<MediaRef Id="126313435"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="3237550251" Name="CameraDirection" ObjectPath="\Game Parameters\Default Work Unit\CameraDirection" GUID="{C1CC14D2-C77C-4899-B2B7-CFFC6A779A05}"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="585150322" Type="Bus" GUID="{CB4DF897-C74D-4E9E-9974-FED2837977CB}" Language="SFX" Hash="{5B33FF29-DD9A-F75F-0485-9E6CD72B5D9B}">
+			<ObjectPath>ReverbAuxillaryBus</ObjectPath>
+			<ShortName>ReverbAuxillaryBus</ShortName>
+			<Path>Bus/ReverbAuxillaryBus.bnk</Path>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="1990128658" Name="Room_Medium" ObjectPath="\Effects\Factory Effects\RoomVerb\Rooms\Room_Medium" GUID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
+			</Plugins>
+			<AuxBusses>
+				<AuxBus Id="585150322" Name="ReverbAuxillaryBus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ReverbAuxillaryBus" GUID="{CB4DF897-C74D-4E9E-9974-FED2837977CB}">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1990128658"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
+		</SoundBank>
+		<SoundBank Id="995613051" Type="Event" GUID="{5E931EA9-AF1E-427D-A33F-B3236DCC79C3}" Language="SFX" Hash="{8939B0A6-E6F4-E9B2-AEA9-D0D3149C75D4}">
 			<ObjectPath>PlayBulletPassby</ObjectPath>
 			<ShortName>PlayBulletPassby</ShortName>
 			<Path>Event/PlayBulletPassby.bnk</Path>
@@ -36,7 +77,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="995613051" Name="PlayBulletPassby" ObjectPath="\Events\Default Work Unit\SoundEffects\PlayBulletPassby" GUID="{5E931EA9-AF1E-427D-A33F-B3236DCC79C3}" MaxAttenuation="1000" DurationType="OneShot" DurationMin="0.18794513" DurationMax="0.49139583">
+				<Event Id="995613051" Name="PlayBulletPassby" ObjectPath="\Events\Default Work Unit\SoundEffects\PlayBulletPassby" GUID="{5E931EA9-AF1E-427D-A33F-B3236DCC79C3}" MaxAttenuation="550" DurationType="OneShot" DurationMin="0.18794513" DurationMax="0.49139583">
 					<MediaRefs>
 						<MediaRef Id="131165634"/>
 						<MediaRef Id="630476986"/>
@@ -46,7 +87,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1088348632" Type="Event" GUID="{11EFE650-9670-42D6-97FA-95E7D171C8F2}" Language="SFX" Hash="{7D4A8E92-6307-2620-F963-B45CFCE0AB3F}">
+		<SoundBank Id="1088348632" Type="Event" GUID="{11EFE650-9670-42D6-97FA-95E7D171C8F2}" Language="SFX" Hash="{DA4D535E-CCBD-3F0A-4D45-C7E94B4AA03A}">
 			<ObjectPath>PlayFootsteps</ObjectPath>
 			<ShortName>PlayFootsteps</ShortName>
 			<Path>Event/PlayFootsteps.bnk</Path>
@@ -98,7 +139,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1088348632" Name="PlayFootsteps" ObjectPath="\Events\Default Work Unit\SoundEffects\PlayFootsteps" GUID="{11EFE650-9670-42D6-97FA-95E7D171C8F2}" DurationType="OneShot" DurationMin="0.3809375" DurationMax="1.2697709">
+				<Event Id="1088348632" Name="PlayFootsteps" ObjectPath="\Events\Default Work Unit\SoundEffects\PlayFootsteps" GUID="{11EFE650-9670-42D6-97FA-95E7D171C8F2}" DurationType="OneShot" DurationMin="0.2500571" DurationMax="1.5126395">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2470013375" Id="1629235638" GUID="{3BE7B528-1199-41E4-9D33-2C0B6DF53C60}" Default="true"/>
@@ -137,11 +178,14 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{68F70FCE-B3EF-45A9-6AFF-E5AE38BD27CF}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{B05B6ADE-E5F8-8B56-C9AD-B8F7CEB2A99C}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<ShareSets>
+					<Plugin Id="1990128658" Name="Room_Medium" ObjectPath="\Effects\Factory Effects\RoomVerb\Rooms\Room_Medium" GUID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" ObjectPath="\Audio Devices\Default Work Unit\No_Output" GUID="{78E175C2-554A-42C3-B180-CA29DED39A66}" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" ObjectPath="\Audio Devices\Default Work Unit\System" GUID="{97DB15DC-1484-4684-9D05-838B4010AC7F}" LibName="System" LibId="11403271"/>
@@ -150,8 +194,20 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus" GUID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 			</Busses>
+			<AuxBusses>
+				<AuxBus Id="585150322" Name="ReverbAuxillaryBus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ReverbAuxillaryBus" GUID="{CB4DF897-C74D-4E9E-9974-FED2837977CB}">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1990128658"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
 			<GameParameters>
+				<GameParameter Id="255912898" Name="DynamicEnemyAmountVolume" ObjectPath="\Game Parameters\Default Work Unit\DynamicEnemyAmountVolume" GUID="{0A02C79E-164F-4934-88F5-8D80805F0FB8}"/>
 				<GameParameter Id="1493153371" Name="PlayerSpeed" ObjectPath="\Game Parameters\Default Work Unit\PlayerSpeed" GUID="{E25294AF-93C8-4B62-B86F-4447C6D2C2D5}"/>
+				<GameParameter Id="1789676941" Name="MusicMuffle" ObjectPath="\Game Parameters\Default Work Unit\MusicMuffle" GUID="{89A1870C-D397-4A0B-AFC5-BE524A06B849}"/>
+				<GameParameter Id="2346531308" Name="MusicVolume" ObjectPath="\Game Parameters\Default Work Unit\MusicVolume" GUID="{BEEF7FC8-87EB-4AA6-B809-8CB2D7FBA2EB}"/>
 				<GameParameter Id="3237550251" Name="CameraDirection" ObjectPath="\Game Parameters\Default Work Unit\CameraDirection" GUID="{C1CC14D2-C77C-4899-B2B7-CFFC6A779A05}"/>
 			</GameParameters>
 			<StateGroups>
@@ -159,11 +215,18 @@
 					<States>
 						<State Id="493461511" Name="Chased" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup\Chased" GUID="{F27B355F-CFC9-4BA7-8C85-D4B70DE44E5C}"/>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup\None" GUID="{A5447658-B540-4BC5-B1E4-59D200CF4E42}"/>
+						<State Id="938058686" Name="Safe" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup\Safe" GUID="{F90595E5-53B8-40C0-AF23-51CB4F9132C4}"/>
 						<State Id="3621873013" Name="Hidden" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup\Hidden" GUID="{29A4E8D1-97D7-4D2F-B42B-A5E175D58A35}"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
 			<SwitchGroups>
+				<SwitchGroup Id="2048498592" Name="BulletImpactSwitchGroup" ObjectPath="\Switches\Default Work Unit\BulletImpactSwitchGroup" GUID="{9A41939D-D05B-43DC-9639-30138F889E2E}">
+					<Switches>
+						<Switch Id="1791853674" Name="ActorImpact" ObjectPath="\Switches\Default Work Unit\BulletImpactSwitchGroup\ActorImpact" GUID="{7CD2D981-CCA7-499B-A96C-DBB91EBF70A2}"/>
+						<Switch Id="3121599344" Name="MetalImpact" ObjectPath="\Switches\Default Work Unit\BulletImpactSwitchGroup\MetalImpact" GUID="{B00E73F9-8E0B-48E6-8410-01165B821C01}"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="2470013375" Name="FootstepsSwitchGroup" ObjectPath="\Switches\Default Work Unit\FootstepsSwitchGroup" GUID="{20DC6370-37A7-46DC-B665-8C8C4FF76E58}">
 					<Switches>
 						<Switch Id="1200189234" Name="WaterSwitch" ObjectPath="\Switches\Default Work Unit\FootstepsSwitchGroup\WaterSwitch" GUID="{40070A92-7E58-4F78-B6F6-0B3E57EFAB5D}"/>
@@ -173,11 +236,16 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1377933095" Type="Event" GUID="{EDA2D3EF-9B78-4B3E-8607-E6835CE32334}" Language="SFX" Hash="{85DF42C3-0AAC-CDBA-8140-9872B2C1152B}">
+		<SoundBank Id="1377933095" Type="Event" GUID="{EDA2D3EF-9B78-4B3E-8607-E6835CE32334}" Language="SFX" Hash="{8D3AC63F-8924-57AF-B835-B6B545EB5C5D}">
 			<ObjectPath>BeginChaseMusic</ObjectPath>
 			<ShortName>BeginChaseMusic</ShortName>
 			<Path>Event/BeginChaseMusic.bnk</Path>
 			<Media>
+				<File Id="8511986" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>BassEdited.wav</ShortName>
+					<Path>Media/8511986.wem</Path>
+					<CachePath>SFX/BassEdited_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="279993006" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>PianoEdited.wav</ShortName>
 					<Path>Media/279993006.wem</Path>
@@ -193,11 +261,6 @@
 					<Path>Media/449572488.wem</Path>
 					<CachePath>SFX/TheFastTrackEdited_FBC78EF0.wem</CachePath>
 				</File>
-				<File Id="484453395" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>BassEdited.wav</ShortName>
-					<Path>Media/484453395.wem</Path>
-					<CachePath>SFX/BassEdited_FBC78EF0.wem</CachePath>
-				</File>
 			</Media>
 			<Events>
 				<Event Id="1377933095" Name="BeginChaseMusic" ObjectPath="\Events\Default Work Unit\DynamicMusic\BeginChaseMusic" GUID="{EDA2D3EF-9B78-4B3E-8607-E6835CE32334}" DurationType="Infinite">
@@ -205,13 +268,21 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="3060884600" Id="493461511" GUID="{F27B355F-CFC9-4BA7-8C85-D4B70DE44E5C}"/>
 							<MediaRefs>
+								<MediaRef Id="8511986"/>
 								<MediaRef Id="279993006"/>
 								<MediaRef Id="342025362"/>
-								<MediaRef Id="484453395"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="3060884600" Id="3621873013" GUID="{29A4E8D1-97D7-4D2F-B42B-A5E175D58A35}"/>
+							<MediaRefs>
+								<MediaRef Id="279993006"/>
+								<MediaRef Id="342025362"/>
+								<MediaRef Id="449572488"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3060884600" Id="938058686" GUID="{F90595E5-53B8-40C0-AF23-51CB4F9132C4}"/>
 							<MediaRefs>
 								<MediaRef Id="279993006"/>
 								<MediaRef Id="342025362"/>
@@ -224,17 +295,76 @@
 					</ActionSetState>
 				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="255912898" Name="DynamicEnemyAmountVolume" ObjectPath="\Game Parameters\Default Work Unit\DynamicEnemyAmountVolume" GUID="{0A02C79E-164F-4934-88F5-8D80805F0FB8}"/>
+			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="3060884600" Name="PlayerChasedStateGroup" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup" GUID="{EE672E92-347B-4545-8120-1C668D97E78D}">
 					<States>
 						<State Id="493461511" Name="Chased" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup\Chased" GUID="{F27B355F-CFC9-4BA7-8C85-D4B70DE44E5C}"/>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup\None" GUID="{A5447658-B540-4BC5-B1E4-59D200CF4E42}"/>
+						<State Id="938058686" Name="Safe" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup\Safe" GUID="{F90595E5-53B8-40C0-AF23-51CB4F9132C4}"/>
 						<State Id="3621873013" Name="Hidden" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup\Hidden" GUID="{29A4E8D1-97D7-4D2F-B42B-A5E175D58A35}"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3531571417" Type="Event" GUID="{09EEC311-8EA0-41D7-848B-C3FD401D13D0}" Language="SFX" Hash="{99EA3602-51A8-AFBA-94CD-B8DDC6435C09}">
+		<SoundBank Id="2817782225" Type="Event" GUID="{A6B2086B-256A-4ED6-B4F2-527DFDFA72DC}" Language="SFX" Hash="{506AC7CB-0043-D62A-0531-CC2A17ED27DF}">
+			<ObjectPath>PlayBulletImpact</ObjectPath>
+			<ShortName>PlayBulletImpact</ShortName>
+			<Path>Event/PlayBulletImpact.bnk</Path>
+			<Media>
+				<File Id="196386843" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>BulletImpactMetal1.wav</ShortName>
+					<Path>Media/196386843.wem</Path>
+					<CachePath>SFX/BulletImpactMetal1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="235542516" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>BulletImpactBody1.wav</ShortName>
+					<Path>Media/235542516.wem</Path>
+					<CachePath>SFX/BulletImpactBody1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="354532968" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>BulletImpactBody2.wav</ShortName>
+					<Path>Media/354532968.wem</Path>
+					<CachePath>SFX/BulletImpactBody2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="792091043" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>BulletImpactMetal2.wav</ShortName>
+					<Path>Media/792091043.wem</Path>
+					<CachePath>SFX/BulletImpactMetal2_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2817782225" Name="PlayBulletImpact" ObjectPath="\Events\Default Work Unit\SoundEffects\PlayBulletImpact" GUID="{A6B2086B-256A-4ED6-B4F2-527DFDFA72DC}" MaxAttenuation="1000" DurationType="OneShot" DurationMin="0.39499173" DurationMax="0.7433523">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2048498592" Id="1791853674" GUID="{7CD2D981-CCA7-499B-A96C-DBB91EBF70A2}"/>
+							<MediaRefs>
+								<MediaRef Id="235542516"/>
+								<MediaRef Id="354532968"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2048498592" Id="3121599344" GUID="{B00E73F9-8E0B-48E6-8410-01165B821C01}" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="196386843"/>
+								<MediaRef Id="792091043"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</Events>
+			<SwitchGroups>
+				<SwitchGroup Id="2048498592" Name="BulletImpactSwitchGroup" ObjectPath="\Switches\Default Work Unit\BulletImpactSwitchGroup" GUID="{9A41939D-D05B-43DC-9639-30138F889E2E}">
+					<Switches>
+						<Switch Id="1791853674" Name="ActorImpact" ObjectPath="\Switches\Default Work Unit\BulletImpactSwitchGroup\ActorImpact" GUID="{7CD2D981-CCA7-499B-A96C-DBB91EBF70A2}"/>
+						<Switch Id="3121599344" Name="MetalImpact" ObjectPath="\Switches\Default Work Unit\BulletImpactSwitchGroup\MetalImpact" GUID="{B00E73F9-8E0B-48E6-8410-01165B821C01}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+		<SoundBank Id="3531571417" Type="Event" GUID="{09EEC311-8EA0-41D7-848B-C3FD401D13D0}" Language="SFX" Hash="{7D534FEE-CE67-6593-DAB6-AE4EDAC5FB44}">
 			<ObjectPath>SetChased</ObjectPath>
 			<ShortName>SetChased</ShortName>
 			<Path>Event/SetChased.bnk</Path>
@@ -250,12 +380,13 @@
 					<States>
 						<State Id="493461511" Name="Chased" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup\Chased" GUID="{F27B355F-CFC9-4BA7-8C85-D4B70DE44E5C}"/>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup\None" GUID="{A5447658-B540-4BC5-B1E4-59D200CF4E42}"/>
+						<State Id="938058686" Name="Safe" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup\Safe" GUID="{F90595E5-53B8-40C0-AF23-51CB4F9132C4}"/>
 						<State Id="3621873013" Name="Hidden" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup\Hidden" GUID="{29A4E8D1-97D7-4D2F-B42B-A5E175D58A35}"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3533507663" Type="Event" GUID="{042604ED-1C3C-478B-AF40-60D9DD0498BD}" Language="SFX" Hash="{066B3CFF-63FD-FE2B-2E37-BCA66DC902B3}">
+		<SoundBank Id="3533507663" Type="Event" GUID="{042604ED-1C3C-478B-AF40-60D9DD0498BD}" Language="SFX" Hash="{EE2C79C9-5CFC-4069-9A7D-BECE13E9C3C5}">
 			<ObjectPath>PlayGunshot</ObjectPath>
 			<ShortName>PlayGunshot</ShortName>
 			<Path>Event/PlayGunshot.bnk</Path>
@@ -277,7 +408,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3533507663" Name="PlayGunshot" ObjectPath="\Events\Default Work Unit\SoundEffects\PlayGunshot" GUID="{042604ED-1C3C-478B-AF40-60D9DD0498BD}" MaxAttenuation="1700" DurationType="OneShot" DurationMin="0.9054059" DurationMax="1.6456093">
+				<Event Id="3533507663" Name="PlayGunshot" ObjectPath="\Events\Default Work Unit\SoundEffects\PlayGunshot" GUID="{042604ED-1C3C-478B-AF40-60D9DD0498BD}" MaxAttenuation="1500" DurationType="OneShot" DurationMin="0.9054059" DurationMax="1.6456093">
 					<MediaRefs>
 						<MediaRef Id="591637442"/>
 						<MediaRef Id="607122471"/>
@@ -289,7 +420,7 @@
 				<GameParameter Id="3237550251" Name="CameraDirection" ObjectPath="\Game Parameters\Default Work Unit\CameraDirection" GUID="{C1CC14D2-C77C-4899-B2B7-CFFC6A779A05}"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="4089554691" Type="Event" GUID="{75D0B19F-D998-4551-8A37-D9A0F38654B3}" Language="SFX" Hash="{2FCBA7CF-8CAD-5146-F91A-C6570E494870}">
+		<SoundBank Id="4089554691" Type="Event" GUID="{75D0B19F-D998-4551-8A37-D9A0F38654B3}" Language="SFX" Hash="{080738C1-5FE0-311B-F9A9-33E842A1D3D6}">
 			<ObjectPath>SetHidden</ObjectPath>
 			<ShortName>SetHidden</ShortName>
 			<Path>Event/SetHidden.bnk</Path>
@@ -305,16 +436,22 @@
 					<States>
 						<State Id="493461511" Name="Chased" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup\Chased" GUID="{F27B355F-CFC9-4BA7-8C85-D4B70DE44E5C}"/>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup\None" GUID="{A5447658-B540-4BC5-B1E4-59D200CF4E42}"/>
+						<State Id="938058686" Name="Safe" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup\Safe" GUID="{F90595E5-53B8-40C0-AF23-51CB4F9132C4}"/>
 						<State Id="3621873013" Name="Hidden" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup\Hidden" GUID="{29A4E8D1-97D7-4D2F-B42B-A5E175D58A35}"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="4244123813" Type="Event" GUID="{AD634FDE-E1BB-4FED-ABCF-F7C8744CE6B5}" Language="SFX" Hash="{F5CE5A86-6400-DBE7-CF1E-B92DE619F90D}">
+		<SoundBank Id="4244123813" Type="Event" GUID="{AD634FDE-E1BB-4FED-ABCF-F7C8744CE6B5}" Language="SFX" Hash="{B1C03669-576F-86ED-A2EE-D408D47039B7}">
 			<ObjectPath>BeginHiddenMusic</ObjectPath>
 			<ShortName>BeginHiddenMusic</ShortName>
 			<Path>Event/BeginHiddenMusic.bnk</Path>
 			<Media>
+				<File Id="8511986" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>BassEdited.wav</ShortName>
+					<Path>Media/8511986.wem</Path>
+					<CachePath>SFX/BassEdited_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="279993006" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>PianoEdited.wav</ShortName>
 					<Path>Media/279993006.wem</Path>
@@ -330,11 +467,6 @@
 					<Path>Media/449572488.wem</Path>
 					<CachePath>SFX/TheFastTrackEdited_FBC78EF0.wem</CachePath>
 				</File>
-				<File Id="484453395" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>BassEdited.wav</ShortName>
-					<Path>Media/484453395.wem</Path>
-					<CachePath>SFX/BassEdited_FBC78EF0.wem</CachePath>
-				</File>
 			</Media>
 			<Events>
 				<Event Id="4244123813" Name="BeginHiddenMusic" ObjectPath="\Events\Default Work Unit\DynamicMusic\BeginHiddenMusic" GUID="{AD634FDE-E1BB-4FED-ABCF-F7C8744CE6B5}" DurationType="Infinite">
@@ -342,13 +474,21 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="3060884600" Id="493461511" GUID="{F27B355F-CFC9-4BA7-8C85-D4B70DE44E5C}"/>
 							<MediaRefs>
+								<MediaRef Id="8511986"/>
 								<MediaRef Id="279993006"/>
 								<MediaRef Id="342025362"/>
-								<MediaRef Id="484453395"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="3060884600" Id="3621873013" GUID="{29A4E8D1-97D7-4D2F-B42B-A5E175D58A35}"/>
+							<MediaRefs>
+								<MediaRef Id="279993006"/>
+								<MediaRef Id="342025362"/>
+								<MediaRef Id="449572488"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3060884600" Id="938058686" GUID="{F90595E5-53B8-40C0-AF23-51CB4F9132C4}"/>
 							<MediaRefs>
 								<MediaRef Id="279993006"/>
 								<MediaRef Id="342025362"/>
@@ -361,16 +501,20 @@
 					</ActionSetState>
 				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="255912898" Name="DynamicEnemyAmountVolume" ObjectPath="\Game Parameters\Default Work Unit\DynamicEnemyAmountVolume" GUID="{0A02C79E-164F-4934-88F5-8D80805F0FB8}"/>
+			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="3060884600" Name="PlayerChasedStateGroup" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup" GUID="{EE672E92-347B-4545-8120-1C668D97E78D}">
 					<States>
 						<State Id="493461511" Name="Chased" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup\Chased" GUID="{F27B355F-CFC9-4BA7-8C85-D4B70DE44E5C}"/>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup\None" GUID="{A5447658-B540-4BC5-B1E4-59D200CF4E42}"/>
+						<State Id="938058686" Name="Safe" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup\Safe" GUID="{F90595E5-53B8-40C0-AF23-51CB4F9132C4}"/>
 						<State Id="3621873013" Name="Hidden" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup\Hidden" GUID="{29A4E8D1-97D7-4D2F-B42B-A5E175D58A35}"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FE1F5D61-8C57-2D1B-FB1D-DDC1476FA353}</FileHash>
+	<FileHash>{66288B74-7803-2094-7716-69DD0229CC6D}</FileHash>
 </SoundBanksInfo>

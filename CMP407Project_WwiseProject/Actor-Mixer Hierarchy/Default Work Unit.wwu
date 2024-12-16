@@ -4,6 +4,11 @@
 		<WorkUnit Name="Default Work Unit" ID="{D9FE4D5A-44BA-434B-8F15-7E6272591F65}" PersistMode="Standalone">
 			<ChildrenList>
 				<SwitchContainer Name="SwitchFootsteps" ID="{C9ABC84D-9DB1-4CDE-9618-6FFDB441153C}" ShortID="609654790">
+					<PropertyList>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{90025334-F6E4-4397-94DB-005B571AFF8A}"/>
@@ -20,6 +25,33 @@
 					</ReferenceList>
 					<ChildrenList>
 						<RandomSequenceContainer Name="RandomGrassFootsteps" ID="{2129004F-3DB5-4E91-ACD8-E1E2314FE126}" ShortID="196246784">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{F6B5BFFD-3386-421F-895C-3C384557D6DC}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="20"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{77591440-F225-4E16-AD0A-46BBB4D5F6E5}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="303"/>
+													<Property Name="Min" Type="Real64" Value="-303"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{90025334-F6E4-4397-94DB-005B571AFF8A}"/>
@@ -29,7 +61,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Footstep1Grass" ID="{7C8349CB-61ED-4F08-9FED-FA020233563D}" ShortID="864250375">
+								<Sound Name="Footstep1Grass" ID="{93B8BBA3-14B5-4D04-B05D-FAA498E41F4A}" ShortID="1072742215">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{90025334-F6E4-4397-94DB-005B571AFF8A}"/>
@@ -39,7 +71,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Footstep1Grass" ID="{50846C21-92F7-4ADB-AF83-F38F7D2F49C8}">
+										<AudioFileSource Name="Footstep1Grass" ID="{B3A2F6A2-91AC-4882-87BF-9AF66FC8B6DC}">
 											<Language>SFX</Language>
 											<AudioFile>Footstep1Grass.wav</AudioFile>
 											<MediaIDList>
@@ -48,10 +80,10 @@
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Footstep1Grass" ID="{50846C21-92F7-4ADB-AF83-F38F7D2F49C8}" Platform="Linked"/>
+										<ActiveSource Name="Footstep1Grass" ID="{B3A2F6A2-91AC-4882-87BF-9AF66FC8B6DC}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Footstep3Grass" ID="{5969B26A-61E5-41C5-BD93-95FF88701EBD}" ShortID="124651904">
+								<Sound Name="Footstep2Grass" ID="{05BCE22C-D170-4943-8997-D4E4157ACA59}" ShortID="406164873">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{90025334-F6E4-4397-94DB-005B571AFF8A}"/>
@@ -61,29 +93,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Footstep3Grass" ID="{C1B4DEE2-1245-43CE-844B-6D618EF493A8}">
-											<Language>SFX</Language>
-											<AudioFile>Footstep3Grass.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="880258513"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Footstep3Grass" ID="{C1B4DEE2-1245-43CE-844B-6D618EF493A8}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Footstep2Grass" ID="{CC737DD0-BF85-4A9D-8B8C-CC49A0BF6300}" ShortID="765136355">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{90025334-F6E4-4397-94DB-005B571AFF8A}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6DCF3559-4F7F-4265-9DF4-A8C70F54E169}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Footstep2Grass" ID="{D4F31382-B0AE-4D51-A307-D8E46543F80A}">
+										<AudioFileSource Name="Footstep2Grass" ID="{29626A32-22AA-4774-957E-61AEA13D46D2}">
 											<Language>SFX</Language>
 											<AudioFile>Footstep2Grass.wav</AudioFile>
 											<MediaIDList>
@@ -92,12 +102,61 @@
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Footstep2Grass" ID="{D4F31382-B0AE-4D51-A307-D8E46543F80A}" Platform="Linked"/>
+										<ActiveSource Name="Footstep2Grass" ID="{29626A32-22AA-4774-957E-61AEA13D46D2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep3Grass" ID="{F6F1078F-1867-4DB3-81B3-7486493933EA}" ShortID="564406064">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{90025334-F6E4-4397-94DB-005B571AFF8A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6DCF3559-4F7F-4265-9DF4-A8C70F54E169}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep3Grass" ID="{785C8CC6-AB14-41F5-9195-9ADE540747B9}">
+											<Language>SFX</Language>
+											<AudioFile>Footstep3Grass.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="880258513"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep3Grass" ID="{785C8CC6-AB14-41F5-9195-9ADE540747B9}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="RandomMetalFootsteps" ID="{74B44712-AE60-4013-A7EF-FFFCE9E62858}" ShortID="953709803">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{BAC44F31-1198-4C01-B6F8-8E3116DC079C}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="20"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{E32CE4DF-EC09-4351-9ED3-A3F965EEF1C0}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="303"/>
+													<Property Name="Min" Type="Real64" Value="-303"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{90025334-F6E4-4397-94DB-005B571AFF8A}"/>
@@ -176,6 +235,33 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="RandomWaterFootsteps" ID="{6FD5E4E6-C7E6-40A8-A5A2-0AD53F524639}" ShortID="509395474">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{20896232-6E95-404C-9BDA-71254221663C}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="20"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{EFE233EF-BCDB-48EE-BD4E-8177E810C9E2}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="303"/>
+													<Property Name="Min" Type="Real64" Value="-303"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{90025334-F6E4-4397-94DB-005B571AFF8A}"/>
@@ -254,6 +340,9 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 					</ChildrenList>
+					<PositioningInfo>
+						<Position Name="" ID="{B72EDE34-D291-4992-9536-D982EE02CCC7}"/>
+					</PositioningInfo>
 					<GroupingInfo>
 						<GroupingBehaviorList>
 							<GroupingBehavior>
@@ -291,6 +380,14 @@
 				<RandomSequenceContainer Name="BulletPassbyContainer" ID="{7A0436C4-0BE6-4CEF-B1F8-0CCE828417BE}" ShortID="2882358">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>3</Value>
+							</ValueList>
+						</Property>
+						<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
@@ -302,6 +399,12 @@
 									</Modifier>
 								</ModifierInfo>
 							</ModifierList>
+						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
@@ -409,6 +512,13 @@
 				<RandomSequenceContainer Name="BulletFiredContainer" ID="{03A2CD70-A1B5-44AA-960D-B8AFD5868CD7}" ShortID="242157578">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
@@ -421,6 +531,12 @@
 									</Modifier>
 								</ModifierInfo>
 							</ModifierList>
+						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
@@ -526,6 +642,341 @@
 											<Reference Name="Curve">
 												<Custom>
 													<Curve Name="" ID="{2F8A9267-88EF-4989-94AB-C521BB4E3E63}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-180</XPos>
+																<YPos>50</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>-150</XPos>
+																<YPos>50</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Exp3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>-80</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Log3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>80</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Log3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>150</XPos>
+																<YPos>50</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>180</XPos>
+																<YPos>50</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</RandomSequenceContainer>
+				<SwitchContainer Name="SwitchBulletImpacts" ID="{2CBB51E0-D9F3-412A-9DA5-72FEEAE40BEC}" ShortID="127518519">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
+						<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{FB50C874-A1BE-4F39-99F0-4F9D9A7E8FBF}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="303"/>
+											<Property Name="Min" Type="Real64" Value="-303"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="BulletImpactAttenuationSet" ID="{0C80100A-C52A-46D9-8788-AB8A2342CFC8}" WorkUnitID="{BF62E9E4-75E8-4B78-AC73-86282943CDEE}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{90025334-F6E4-4397-94DB-005B571AFF8A}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="MetalImpact" ID="{B00E73F9-8E0B-48E6-8410-01165B821C01}" WorkUnitID="{B83F3059-7324-4C06-9C30-66DF193CF66D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6DCF3559-4F7F-4265-9DF4-A8C70F54E169}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="BulletImpactSwitchGroup" ID="{9A41939D-D05B-43DC-9639-30138F889E2E}" WorkUnitID="{B83F3059-7324-4C06-9C30-66DF193CF66D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="RandomActorImpact" ID="{0C1ADDD2-EAD1-45BC-A5F1-BB0AAFE12819}" ShortID="248109318">
+							<PropertyList>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{99523E50-7A91-4B51-A4A8-09C86BE8E13F}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="303"/>
+													<Property Name="Min" Type="Real64" Value="-303"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{90025334-F6E4-4397-94DB-005B571AFF8A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6DCF3559-4F7F-4265-9DF4-A8C70F54E169}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="BulletImpactBody1" ID="{44D79E2C-BE05-433F-A272-394574CA245C}" ShortID="339200185">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{90025334-F6E4-4397-94DB-005B571AFF8A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6DCF3559-4F7F-4265-9DF4-A8C70F54E169}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="BulletImpactBody1" ID="{74FA4C59-0980-464E-83F9-7EEDDD091CBE}">
+											<Language>SFX</Language>
+											<AudioFile>BulletImpactBody1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="235542516"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="BulletImpactBody1" ID="{74FA4C59-0980-464E-83F9-7EEDDD091CBE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="BulletImpactBody2" ID="{449E1414-EBBA-4B5D-B95F-50E9793E8449}" ShortID="467084357">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{90025334-F6E4-4397-94DB-005B571AFF8A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6DCF3559-4F7F-4265-9DF4-A8C70F54E169}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="BulletImpactBody2" ID="{72275CF2-E541-4A43-B45F-746B2792D49C}">
+											<Language>SFX</Language>
+											<AudioFile>BulletImpactBody2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="354532968"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="BulletImpactBody2" ID="{72275CF2-E541-4A43-B45F-746B2792D49C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="RandomMetalImpact" ID="{E8AFBD0D-BA5E-4B6A-9444-B16C201F664C}" ShortID="265556612">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{BB9711E3-9BF5-4DBA-ACB8-EA9E88A1836B}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="303"/>
+													<Property Name="Min" Type="Real64" Value="-303"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{90025334-F6E4-4397-94DB-005B571AFF8A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6DCF3559-4F7F-4265-9DF4-A8C70F54E169}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="BulletImpactMetal1" ID="{C44C51A1-64B6-4485-B221-2AB5B631F764}" ShortID="888369831">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{90025334-F6E4-4397-94DB-005B571AFF8A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6DCF3559-4F7F-4265-9DF4-A8C70F54E169}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="BulletImpactMetal1" ID="{C8B0EBDF-0F63-4925-85BE-739CB4218C7A}">
+											<Language>SFX</Language>
+											<AudioFile>BulletImpactMetal1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="196386843"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="BulletImpactMetal1" ID="{C8B0EBDF-0F63-4925-85BE-739CB4218C7A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="BulletImpactMetal2" ID="{1CAB745C-5D25-4210-8C2C-2C3F33332460}" ShortID="609056449">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{90025334-F6E4-4397-94DB-005B571AFF8A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6DCF3559-4F7F-4265-9DF4-A8C70F54E169}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="BulletImpactMetal2" ID="{A9FB12C1-4EDE-413C-8C3A-39C81CB7E88C}">
+											<Language>SFX</Language>
+											<AudioFile>BulletImpactMetal2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="792091043"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="BulletImpactMetal2" ID="{A9FB12C1-4EDE-413C-8C3A-39C81CB7E88C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<PositioningInfo>
+						<Position Name="" ID="{B92F0BD6-80A1-4CCA-83B8-4AE2571276FD}"/>
+					</PositioningInfo>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="RandomMetalImpact" ID="{E8AFBD0D-BA5E-4B6A-9444-B16C201F664C}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="RandomActorImpact" ID="{0C1ADDD2-EAD1-45BC-A5F1-BB0AAFE12819}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="ActorImpact" ID="{7CD2D981-CCA7-499B-A96C-DBB91EBF70A2}"/>
+								<ItemList>
+									<ItemRef Name="RandomActorImpact" ID="{0C1ADDD2-EAD1-45BC-A5F1-BB0AAFE12819}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="MetalImpact" ID="{B00E73F9-8E0B-48E6-8410-01165B821C01}"/>
+								<ItemList>
+									<ItemRef Name="RandomMetalImpact" ID="{E8AFBD0D-BA5E-4B6A-9444-B16C201F664C}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+				<RandomSequenceContainer Name="ExplosionsContainer" ID="{5E2BF4FB-6F3B-4C66-B74F-F4FB1BA2C942}" ShortID="597594534">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{5F4E0373-FDCB-4D19-8BF0-D8BC708CF565}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="303"/>
+											<Property Name="Min" Type="Real64" Value="-303"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{90025334-F6E4-4397-94DB-005B571AFF8A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6DCF3559-4F7F-4265-9DF4-A8C70F54E169}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="ExplosionStereo" ID="{FE69BF16-3666-4821-8AE5-88D3BFC8F1CF}" ShortID="796390865">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{90025334-F6E4-4397-94DB-005B571AFF8A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6DCF3559-4F7F-4265-9DF4-A8C70F54E169}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ExplosionStereo" ID="{4E564B51-9A1E-4EC0-8FDE-1AA2D65999CE}">
+									<Language>SFX</Language>
+									<AudioFile>ExplosionStereo.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="126313435"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ExplosionStereo" ID="{4E564B51-9A1E-4EC0-8FDE-1AA2D65999CE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{3D80784D-C67C-423D-86EC-8507483D0129}" ShortID="42039708">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="CameraDirection" ID="{C1CC14D2-C77C-4899-B2B7-CFFC6A779A05}" WorkUnitID="{6C36F32B-C9C0-4E20-AEE6-C82CBE441F3B}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{617D44AD-F034-42A3-AEB9-ACC7C4A1F36F}">
 														<PropertyList>
 															<Property Name="Flags" Type="int32" Value="65537"/>
 														</PropertyList>

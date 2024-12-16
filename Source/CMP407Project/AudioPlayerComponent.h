@@ -32,6 +32,12 @@ public:
 	UFUNCTION(BlueprintImplementableEvent)
 	void PlayHitByBullet();
 
+	UFUNCTION(BlueprintImplementableEvent)
+	void IncreaseAmountOfEnemiesRTPC();
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void DecreaseAmountOfEnemiesRTPC();
+
 protected:
 	virtual void BeginPlay() override;
 

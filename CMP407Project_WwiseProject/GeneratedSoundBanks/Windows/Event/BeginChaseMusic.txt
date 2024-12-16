@@ -7,5 +7,9 @@ State Group	ID	Name			Wwise Object Path	Notes
 State	ID	Name	State Group			Notes
 	493461511	Chased	PlayerChasedStateGroup			
 	748895195	None	PlayerChasedStateGroup			
+	938058686	Safe	PlayerChasedStateGroup			
 	3621873013	Hidden	PlayerChasedStateGroup			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	255912898	DynamicEnemyAmountVolume			\Default Work Unit\DynamicEnemyAmountVolume	
 

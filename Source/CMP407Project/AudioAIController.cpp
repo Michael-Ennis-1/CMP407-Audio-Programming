@@ -4,6 +4,7 @@
 #include "BehaviorTree/BlackboardComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "AudioEnemy.h"
+#include "BrainComponent.h"
 
 AAudioAIController::AAudioAIController(const FObjectInitializer& ObjectInitializer) : bIsChasingPlayer(false)
 {
@@ -40,6 +41,9 @@ void AAudioAIController::BeginPlay()
 			// Bind to delegates on possessed enemy to inform behaviour tree if player is spotted
 			AudioEnemy->OnEnemyStartedChasing.AddUniqueDynamic(this, &AAudioAIController::StartChasingPlayer);
 			AudioEnemy->OnEnemyStoppedChasing.AddUniqueDynamic(this, &AAudioAIController::StopChasingPlayer);
+
+			// Bind to delegate to disable behaviour tree when enemy destroyed, but still playing explosion VFX
+			AudioEnemy->OnEnemyDisabled.AddUniqueDynamic(this, &AAudioAIController::DisableBehaviourTree);
 		}
 	}
 }
@@ -61,5 +65,13 @@ void AAudioAIController::StopChasingPlayer()
 	if (ensure(Blackboard))
 	{
 		Blackboard->SetValueAsBool(FName("bIsChasingPlayer"), bIsChasingPlayer);
+	}
+}
+
+void AAudioAIController::DisableBehaviourTree()
+{
+	if (ensure(BrainComponent))
+	{
+		BrainComponent->StopLogic("Destroyed");
 	}
 }

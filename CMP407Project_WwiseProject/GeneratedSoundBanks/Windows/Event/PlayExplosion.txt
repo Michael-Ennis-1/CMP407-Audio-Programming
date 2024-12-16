@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	182906760	PlayExplosion			\Default Work Unit\SoundEffects\PlayExplosion	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3237550251	CameraDirection			\Default Work Unit\CameraDirection	
+

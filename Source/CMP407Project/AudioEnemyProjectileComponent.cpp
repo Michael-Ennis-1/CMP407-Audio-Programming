@@ -57,6 +57,8 @@ void UAudioEnemyProjectileComponent::ApplyProjectileParameters(AAudioProjectile*
 	// Apply any projectile parameters after spawning projecitle
 	if (ensure(InProjectile))
 	{
+		InProjectile->CachedTurretActor = GetOwner();
+
 		UProjectileMovementComponent* ProjectileMovementComponent = InProjectile->FindComponentByClass<UProjectileMovementComponent>();
 		if (ensure(ProjectileMovementComponent))
 		{

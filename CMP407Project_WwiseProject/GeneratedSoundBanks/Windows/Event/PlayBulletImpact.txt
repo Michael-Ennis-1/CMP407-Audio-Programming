@@ -1,0 +1,10 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2817782225	PlayBulletImpact			\Default Work Unit\SoundEffects\PlayBulletImpact	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2048498592	BulletImpactSwitchGroup			\Default Work Unit\BulletImpactSwitchGroup	
+
+Switch	ID	Name	Switch Group			Notes
+	1791853674	ActorImpact	BulletImpactSwitchGroup			
+	3121599344	MetalImpact	BulletImpactSwitchGroup			
+

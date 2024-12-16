@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="150">
+	<SoundBanks>
+		<SoundBank Id="585150322" Type="Bus" GUID="{CB4DF897-C74D-4E9E-9974-FED2837977CB}" Language="SFX" Hash="{5B33FF29-DD9A-F75F-0485-9E6CD72B5D9B}">
+			<ObjectPath>ReverbAuxillaryBus</ObjectPath>
+			<ShortName>ReverbAuxillaryBus</ShortName>
+			<Path>Bus/ReverbAuxillaryBus.bnk</Path>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="1990128658" Name="Room_Medium" ObjectPath="\Effects\Factory Effects\RoomVerb\Rooms\Room_Medium" GUID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
+			</Plugins>
+			<AuxBusses>
+				<AuxBus Id="585150322" Name="ReverbAuxillaryBus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ReverbAuxillaryBus" GUID="{CB4DF897-C74D-4E9E-9974-FED2837977CB}">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1990128658"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{D3DDA309-8697-D13B-2DE7-DB439F47306D}</FileHash>
+</SoundBanksInfo>

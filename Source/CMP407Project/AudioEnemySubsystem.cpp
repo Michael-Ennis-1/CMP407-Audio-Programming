@@ -15,6 +15,7 @@ void UAudioEnemySubsystem::RegisterAudioEnemy(AAudioEnemy* InEnemy)
 	if (ensure(InEnemy))
 	{
 		RegisteredEnemies.Add(InEnemy);
+		OnRegisteredEnemy.Broadcast();
 	}
 }
 
@@ -23,6 +24,7 @@ void UAudioEnemySubsystem::UnRegisterAudioEnemy(AAudioEnemy* InEnemy)
 	if (ensure(InEnemy))
 	{
 		RegisteredEnemies.Remove(InEnemy);
+		OnUnRegisteredEnemy.Broadcast();
 	}
 
 	// If empty after removing last enemy, player no longer being chased, swap music

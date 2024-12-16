@@ -13,12 +13,15 @@ void UAudioPlayerComponent::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// Bind to audio enemy subsystem delegates to inform player when they are being chased by enemies
+	// Bind to audio enemy subsystem delegates to inform player when they are being chased by enemies and when a new enemy is registered/de-registered
 	UAudioEnemySubsystem* AudioEnemySubsystem = GetAudioEnemySubsystem();
 	if (ensure(AudioEnemySubsystem))
 	{
 		AudioEnemySubsystem->OnStartedChasing.AddUniqueDynamic(this, &UAudioPlayerComponent::PlayChaseMusic);
 		AudioEnemySubsystem->OnFinishedChasing.AddUniqueDynamic(this, &UAudioPlayerComponent::PlayHiddenMusic);
+
+		AudioEnemySubsystem->OnRegisteredEnemy.AddUniqueDynamic(this, &UAudioPlayerComponent::IncreaseAmountOfEnemiesRTPC);
+		AudioEnemySubsystem->OnUnRegisteredEnemy.AddUniqueDynamic(this, &UAudioPlayerComponent::DecreaseAmountOfEnemiesRTPC);
 	}
 }
 

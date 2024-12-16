@@ -16,6 +16,21 @@
 						<Property Name="Min" Type="Real64" Value="-180"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="MusicVolume" ID="{BEEF7FC8-87EB-4AA6-B809-8CB2D7FBA2EB}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="MusicMuffle" ID="{89A1870C-D397-4A0B-AFC5-BE524A06B849}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="DynamicEnemyAmountVolume" ID="{0A02C79E-164F-4934-88F5-8D80805F0FB8}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

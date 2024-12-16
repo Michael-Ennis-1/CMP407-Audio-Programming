@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{09EEC311-8EA0-41D7-848B-C3FD401D13D0}",
     "Language": "SFX",
-    "Hash": "{99EA3602-51A8-AFBA-94CD-B8DDC6435C09}",
+    "Hash": "{7D534FEE-CE67-6593-DAB6-AE4EDAC5FB44}",
     "ObjectPath": "SetChased",
     "ShortName": "SetChased",
     "Path": "Event/SetChased.bnk",
@@ -55,6 +55,12 @@
         "GUID": "{A5447658-B540-4BC5-B1E4-59D200CF4E42}"
        },
        {
+        "Id": "938058686",
+        "Name": "Safe",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup\\Safe",
+        "GUID": "{F90595E5-53B8-40C0-AF23-51CB4F9132C4}"
+       },
+       {
         "Id": "3621873013",
         "Name": "Hidden",
         "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup\\Hidden",
@@ -65,6 +71,6 @@
     ]
    }
   ],
-  "FileHash": "{51193F0D-389A-BDC5-0F8D-8C78C48D3DF7}"
+  "FileHash": "{97C6C89D-E35A-C902-1A21-E69D809FD4BA}"
  }
 }

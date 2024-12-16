@@ -7,6 +7,7 @@
 #include "AudioPlayerComponent.h"
 #include "Components/BoxComponent.h"
 #include "ProjectileAudioComponent.h"
+#include "AudioProjectileSubsystem.h"
 
 AAudioPlayerCharacter::AAudioPlayerCharacter()
 {
@@ -51,7 +52,6 @@ void AAudioPlayerCharacter::OnBeginPassbyOverlap(UPrimitiveComponent* Overlapped
 	if (ensure(OtherActor))
 	{
 		UProjectileMovementComponent* ProjectileMovementComponent = OtherActor->GetComponentByClass<UProjectileMovementComponent>();
-
 		if (ProjectileMovementComponent)
 		{
 			if (!PredictProjectileCollision(OtherActor, ProjectileMovementComponent))
@@ -94,4 +94,15 @@ bool AAudioPlayerCharacter::PredictProjectileCollision(AActor* InOtherActor, UPr
 
 	// Return false if actor hit is not player or no actor hit
 	return false;
+}
+
+UAudioProjectileSubsystem* AAudioPlayerCharacter::GetAudioProjectileSubsystem()
+{
+	UGameInstance* GameInstance = GetGameInstance();
+	if (ensure(GameInstance))
+	{
+		return GameInstance->GetSubsystem<UAudioProjectileSubsystem>();
+	}
+
+	return nullptr;
 }

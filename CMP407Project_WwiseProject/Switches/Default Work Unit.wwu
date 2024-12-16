@@ -10,6 +10,12 @@
 						<Switch Name="WaterSwitch" ID="{40070A92-7E58-4F78-B6F6-0B3E57EFAB5D}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="BulletImpactSwitchGroup" ID="{9A41939D-D05B-43DC-9639-30138F889E2E}">
+					<ChildrenList>
+						<Switch Name="ActorImpact" ID="{7CD2D981-CCA7-499B-A96C-DBB91EBF70A2}"/>
+						<Switch Name="MetalImpact" ID="{B00E73F9-8E0B-48E6-8410-01165B821C01}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

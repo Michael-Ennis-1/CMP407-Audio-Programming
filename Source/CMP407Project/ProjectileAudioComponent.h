@@ -15,4 +15,7 @@ class CMP407PROJECT_API UProjectileAudioComponent : public UActorComponent
 public:
 	UFUNCTION(BlueprintImplementableEvent)
 	void PlayProjectileWhizzEffect();
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void PlayProjectileImpactEffect(FName InName);
 };

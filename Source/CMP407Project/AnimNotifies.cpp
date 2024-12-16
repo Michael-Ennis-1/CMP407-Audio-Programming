@@ -20,7 +20,7 @@ void UFootstepAnimNotify::Notify(USkeletalMeshComponent* MeshComp, UAnimSequence
 				FVector TargetPosition = OwningActor->GetActorLocation() + (- OwningActor->GetActorUpVector() * LinetraceLength);
 
 				FHitResult OutHit;
-				World->LineTraceSingleByChannel(OutHit, OwningActor->GetActorLocation(), TargetPosition, ECollisionChannel::ECC_Visibility);
+				World->LineTraceSingleByChannel(OutHit, OwningActor->GetActorLocation(), TargetPosition, ECollisionChannel::ECC_Camera);
 				
 				if (OutHit.bBlockingHit)
 				{

@@ -10,11 +10,20 @@
     "Type": "Event",
     "GUID": "{EDA2D3EF-9B78-4B3E-8607-E6835CE32334}",
     "Language": "SFX",
-    "Hash": "{85DF42C3-0AAC-CDBA-8140-9872B2C1152B}",
+    "Hash": "{8D3AC63F-8924-57AF-B835-B6B545EB5C5D}",
     "ObjectPath": "BeginChaseMusic",
     "ShortName": "BeginChaseMusic",
     "Path": "Event/BeginChaseMusic.bnk",
     "Media": [
+     {
+      "Id": "8511986",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "BassEdited.wav",
+      "Path": "Media/8511986.wem",
+      "CachePath": "SFX/BassEdited_FBC78EF0.wem"
+     },
      {
       "Id": "279993006",
       "Language": "SFX",
@@ -41,15 +50,6 @@
       "ShortName": "TheFastTrackEdited.wav",
       "Path": "Media/449572488.wem",
       "CachePath": "SFX/TheFastTrackEdited_FBC78EF0.wem"
-     },
-     {
-      "Id": "484453395",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "BassEdited.wav",
-      "Path": "Media/484453395.wem",
-      "CachePath": "SFX/BassEdited_FBC78EF0.wem"
      }
     ],
     "Events": [
@@ -69,13 +69,13 @@
         },
         "MediaRefs": [
          {
+          "Id": "8511986"
+         },
+         {
           "Id": "279993006"
          },
          {
           "Id": "342025362"
-         },
-         {
-          "Id": "484453395"
          }
         ]
        },
@@ -85,6 +85,25 @@
          "GroupId": "3060884600",
          "Id": "3621873013",
          "GUID": "{29A4E8D1-97D7-4D2F-B42B-A5E175D58A35}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "279993006"
+         },
+         {
+          "Id": "342025362"
+         },
+         {
+          "Id": "449572488"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "3060884600",
+         "Id": "938058686",
+         "GUID": "{F90595E5-53B8-40C0-AF23-51CB4F9132C4}"
         },
         "MediaRefs": [
          {
@@ -110,6 +129,14 @@
       ]
      }
     ],
+    "GameParameters": [
+     {
+      "Id": "255912898",
+      "Name": "DynamicEnemyAmountVolume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\DynamicEnemyAmountVolume",
+      "GUID": "{0A02C79E-164F-4934-88F5-8D80805F0FB8}"
+     }
+    ],
     "StateGroups": [
      {
       "Id": "3060884600",
@@ -130,6 +157,12 @@
         "GUID": "{A5447658-B540-4BC5-B1E4-59D200CF4E42}"
        },
        {
+        "Id": "938058686",
+        "Name": "Safe",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup\\Safe",
+        "GUID": "{F90595E5-53B8-40C0-AF23-51CB4F9132C4}"
+       },
+       {
         "Id": "3621873013",
         "Name": "Hidden",
         "ObjectPath": "\\States\\Default Work Unit\\PlayerChasedStateGroup\\Hidden",
@@ -140,6 +173,6 @@
     ]
    }
   ],
-  "FileHash": "{C94B6BF7-9015-72E3-3822-D9B201A28859}"
+  "FileHash": "{AFFDA861-4782-BB0A-0D59-EAF9C32409C3}"
  }
 }

@@ -16,11 +16,15 @@ class CMP407PROJECT_API AAudioAIController : public AAIController
 public:
 	virtual void BeginPlay() override;
 
+	// Bind to delegate on possessed enemy to update behaviour tree
 	UFUNCTION()
 	void StartChasingPlayer();
 
 	UFUNCTION()
 	void StopChasingPlayer();
+
+	UFUNCTION()
+	void DisableBehaviourTree();
 
 protected:
 	TObjectPtr<AActor> PlayerActor;

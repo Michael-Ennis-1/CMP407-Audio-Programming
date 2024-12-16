@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{11EFE650-9670-42D6-97FA-95E7D171C8F2}",
     "Language": "SFX",
-    "Hash": "{7D4A8E92-6307-2620-F963-B45CFCE0AB3F}",
+    "Hash": "{DA4D535E-CCBD-3F0A-4D45-C7E94B4AA03A}",
     "ObjectPath": "PlayFootsteps",
     "ShortName": "PlayFootsteps",
     "Path": "Event/PlayFootsteps.bnk",
@@ -104,8 +104,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\SoundEffects\\PlayFootsteps",
       "GUID": "{11EFE650-9670-42D6-97FA-95E7D171C8F2}",
       "DurationType": "OneShot",
-      "DurationMin": "0.3809375",
-      "DurationMax": "1.2697709",
+      "DurationMin": "0.2500571",
+      "DurationMax": "1.5126395",
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -198,6 +198,6 @@
     ]
    }
   ],
-  "FileHash": "{0C8CED8C-683F-BCC3-2F9A-0A4B9ACECB29}"
+  "FileHash": "{503E7023-2524-2415-3794-95A9D304CB2E}"
  }
 }

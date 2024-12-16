@@ -72,6 +72,7 @@
 								<Action Name="" ID="{BE0B0CD2-828D-4BF8-AA62-72A52287B667}" ShortID="645763475">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="22"/>
+										<Property Name="Delay" Type="Real64" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -86,6 +87,7 @@
 								<Action Name="" ID="{A6B6677D-094A-444D-A85B-6263575EC2CF}" ShortID="123199607">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="22"/>
+										<Property Name="Delay" Type="Real64" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -127,6 +129,28 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="BulletFiredContainer" ID="{03A2CD70-A1B5-44AA-960D-B8AFD5868CD7}" WorkUnitID="{D9FE4D5A-44BA-434B-8F15-7E6272591F65}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PlayBulletImpact" ID="{A6B2086B-256A-4ED6-B4F2-527DFDFA72DC}">
+							<ChildrenList>
+								<Action Name="" ID="{4245B18F-50C0-47E7-B419-130414A177E5}" ShortID="998053972">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SwitchBulletImpacts" ID="{2CBB51E0-D9F3-412A-9DA5-72FEEAE40BEC}" WorkUnitID="{D9FE4D5A-44BA-434B-8F15-7E6272591F65}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PlayExplosion" ID="{7697D898-A9EB-46F3-8BC6-4DE680D4D0CE}">
+							<ChildrenList>
+								<Action Name="" ID="{F7670494-D83C-46EA-AFCE-59C686392BE3}" ShortID="577614718">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ExplosionsContainer" ID="{5E2BF4FB-6F3B-4C66-B74F-F4FB1BA2C942}" WorkUnitID="{D9FE4D5A-44BA-434B-8F15-7E6272591F65}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
