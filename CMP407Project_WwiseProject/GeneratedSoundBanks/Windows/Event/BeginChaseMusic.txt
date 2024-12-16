@@ -12,4 +12,6 @@ State	ID	Name	State Group			Notes
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	255912898	DynamicEnemyAmountVolume			\Default Work Unit\DynamicEnemyAmountVolume	
+	1789676941	MusicMuffle			\Default Work Unit\MusicMuffle	
+	2346531308	MusicVolume			\Default Work Unit\MusicVolume	
 

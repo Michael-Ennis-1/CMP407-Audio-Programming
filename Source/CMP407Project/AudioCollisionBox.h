@@ -18,8 +18,4 @@ public:
 	AAudioCollisionBox();
 
 	virtual void BeginPlay() override;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	TObjectPtr<UBoxComponent> BoxCollider;
-
 };

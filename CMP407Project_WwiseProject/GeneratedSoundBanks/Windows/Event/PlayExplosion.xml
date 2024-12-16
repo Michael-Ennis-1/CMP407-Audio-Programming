@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="182906760" Type="Event" GUID="{7697D898-A9EB-46F3-8BC6-4DE680D4D0CE}" Language="SFX" Hash="{BEB07301-EDD8-86CE-E42B-A88645A4C4C0}">
+		<SoundBank Id="182906760" Type="Event" GUID="{7697D898-A9EB-46F3-8BC6-4DE680D4D0CE}" Language="SFX" Hash="{14927BB8-DEFE-8AEE-B081-440C7A257AEA}">
 			<ObjectPath>PlayExplosion</ObjectPath>
 			<ShortName>PlayExplosion</ShortName>
 			<Path>Event/PlayExplosion.bnk</Path>
@@ -13,7 +13,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="182906760" Name="PlayExplosion" ObjectPath="\Events\Default Work Unit\SoundEffects\PlayExplosion" GUID="{7697D898-A9EB-46F3-8BC6-4DE680D4D0CE}" DurationType="OneShot" DurationMin="0.79624426" DurationMax="1.1299689">
+				<Event Id="182906760" Name="PlayExplosion" ObjectPath="\Events\Default Work Unit\SoundEffects\PlayExplosion" GUID="{7697D898-A9EB-46F3-8BC6-4DE680D4D0CE}" MaxAttenuation="1000" DurationType="OneShot" DurationMin="0.79624426" DurationMax="1.1299689">
 					<MediaRefs>
 						<MediaRef Id="126313435"/>
 					</MediaRefs>
@@ -24,5 +24,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5B181491-D93C-C250-350A-C5CE4E84BB69}</FileHash>
+	<FileHash>{09D517A1-6609-53B9-A87B-EC5D4B00EE6F}</FileHash>
 </SoundBanksInfo>

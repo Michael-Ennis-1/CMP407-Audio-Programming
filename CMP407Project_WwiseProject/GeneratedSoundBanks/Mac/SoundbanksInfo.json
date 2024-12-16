@@ -18,7 +18,7 @@
     "Type": "Event",
     "GUID": "{7697D898-A9EB-46F3-8BC6-4DE680D4D0CE}",
     "Language": "SFX",
-    "Hash": "{BEB07301-EDD8-86CE-E42B-A88645A4C4C0}",
+    "Hash": "{14927BB8-DEFE-8AEE-B081-440C7A257AEA}",
     "ObjectPath": "PlayExplosion",
     "ShortName": "PlayExplosion",
     "Path": "Event/PlayExplosion.bnk",
@@ -39,6 +39,7 @@
       "Name": "PlayExplosion",
       "ObjectPath": "\\Events\\Default Work Unit\\SoundEffects\\PlayExplosion",
       "GUID": "{7697D898-A9EB-46F3-8BC6-4DE680D4D0CE}",
+      "MaxAttenuation": "1000",
       "DurationType": "OneShot",
       "DurationMin": "0.79624426",
       "DurationMax": "1.1299689",
@@ -543,7 +544,7 @@
     "Type": "Event",
     "GUID": "{EDA2D3EF-9B78-4B3E-8607-E6835CE32334}",
     "Language": "SFX",
-    "Hash": "{50DEE1AC-01C1-0341-1E41-2C64B168D8DA}",
+    "Hash": "{AC4FC502-83B4-BEFF-36E1-DDF4C078D965}",
     "ObjectPath": "BeginChaseMusic",
     "ShortName": "BeginChaseMusic",
     "Path": "Event/BeginChaseMusic.bnk",
@@ -668,6 +669,18 @@
       "Name": "DynamicEnemyAmountVolume",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\DynamicEnemyAmountVolume",
       "GUID": "{0A02C79E-164F-4934-88F5-8D80805F0FB8}"
+     },
+     {
+      "Id": "1789676941",
+      "Name": "MusicMuffle",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\MusicMuffle",
+      "GUID": "{89A1870C-D397-4A0B-AFC5-BE524A06B849}"
+     },
+     {
+      "Id": "2346531308",
+      "Name": "MusicVolume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\MusicVolume",
+      "GUID": "{BEEF7FC8-87EB-4AA6-B809-8CB2D7FBA2EB}"
      }
     ],
     "StateGroups": [
@@ -1027,7 +1040,7 @@
     "Type": "Event",
     "GUID": "{AD634FDE-E1BB-4FED-ABCF-F7C8744CE6B5}",
     "Language": "SFX",
-    "Hash": "{8EBE7223-E643-1822-C375-636867911045}",
+    "Hash": "{6B1FE4C4-9B2B-9F19-DD3C-AF56F390D5DC}",
     "ObjectPath": "BeginHiddenMusic",
     "ShortName": "BeginHiddenMusic",
     "Path": "Event/BeginHiddenMusic.bnk",
@@ -1152,6 +1165,18 @@
       "Name": "DynamicEnemyAmountVolume",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\DynamicEnemyAmountVolume",
       "GUID": "{0A02C79E-164F-4934-88F5-8D80805F0FB8}"
+     },
+     {
+      "Id": "1789676941",
+      "Name": "MusicMuffle",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\MusicMuffle",
+      "GUID": "{89A1870C-D397-4A0B-AFC5-BE524A06B849}"
+     },
+     {
+      "Id": "2346531308",
+      "Name": "MusicVolume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\MusicVolume",
+      "GUID": "{BEEF7FC8-87EB-4AA6-B809-8CB2D7FBA2EB}"
      }
     ],
     "StateGroups": [
@@ -1190,6 +1215,6 @@
     ]
    }
   ],
-  "FileHash": "{D5101BFE-DBD7-9A39-9A9F-E492BE2B6AA3}"
+  "FileHash": "{12F2F7C1-0D75-0BBD-62F8-FEC0C1F8B949}"
  }
 }

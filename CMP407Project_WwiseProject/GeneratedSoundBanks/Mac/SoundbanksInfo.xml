@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="182906760" Type="Event" GUID="{7697D898-A9EB-46F3-8BC6-4DE680D4D0CE}" Language="SFX" Hash="{BEB07301-EDD8-86CE-E42B-A88645A4C4C0}">
+		<SoundBank Id="182906760" Type="Event" GUID="{7697D898-A9EB-46F3-8BC6-4DE680D4D0CE}" Language="SFX" Hash="{14927BB8-DEFE-8AEE-B081-440C7A257AEA}">
 			<ObjectPath>PlayExplosion</ObjectPath>
 			<ShortName>PlayExplosion</ShortName>
 			<Path>Event/PlayExplosion.bnk</Path>
@@ -21,7 +21,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="182906760" Name="PlayExplosion" ObjectPath="\Events\Default Work Unit\SoundEffects\PlayExplosion" GUID="{7697D898-A9EB-46F3-8BC6-4DE680D4D0CE}" DurationType="OneShot" DurationMin="0.79624426" DurationMax="1.1299689">
+				<Event Id="182906760" Name="PlayExplosion" ObjectPath="\Events\Default Work Unit\SoundEffects\PlayExplosion" GUID="{7697D898-A9EB-46F3-8BC6-4DE680D4D0CE}" MaxAttenuation="1000" DurationType="OneShot" DurationMin="0.79624426" DurationMax="1.1299689">
 					<MediaRefs>
 						<MediaRef Id="126313435"/>
 					</MediaRefs>
@@ -236,7 +236,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1377933095" Type="Event" GUID="{EDA2D3EF-9B78-4B3E-8607-E6835CE32334}" Language="SFX" Hash="{50DEE1AC-01C1-0341-1E41-2C64B168D8DA}">
+		<SoundBank Id="1377933095" Type="Event" GUID="{EDA2D3EF-9B78-4B3E-8607-E6835CE32334}" Language="SFX" Hash="{AC4FC502-83B4-BEFF-36E1-DDF4C078D965}">
 			<ObjectPath>BeginChaseMusic</ObjectPath>
 			<ShortName>BeginChaseMusic</ShortName>
 			<Path>Event/BeginChaseMusic.bnk</Path>
@@ -297,6 +297,8 @@
 			</Events>
 			<GameParameters>
 				<GameParameter Id="255912898" Name="DynamicEnemyAmountVolume" ObjectPath="\Game Parameters\Default Work Unit\DynamicEnemyAmountVolume" GUID="{0A02C79E-164F-4934-88F5-8D80805F0FB8}"/>
+				<GameParameter Id="1789676941" Name="MusicMuffle" ObjectPath="\Game Parameters\Default Work Unit\MusicMuffle" GUID="{89A1870C-D397-4A0B-AFC5-BE524A06B849}"/>
+				<GameParameter Id="2346531308" Name="MusicVolume" ObjectPath="\Game Parameters\Default Work Unit\MusicVolume" GUID="{BEEF7FC8-87EB-4AA6-B809-8CB2D7FBA2EB}"/>
 			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="3060884600" Name="PlayerChasedStateGroup" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup" GUID="{EE672E92-347B-4545-8120-1C668D97E78D}">
@@ -442,7 +444,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="4244123813" Type="Event" GUID="{AD634FDE-E1BB-4FED-ABCF-F7C8744CE6B5}" Language="SFX" Hash="{8EBE7223-E643-1822-C375-636867911045}">
+		<SoundBank Id="4244123813" Type="Event" GUID="{AD634FDE-E1BB-4FED-ABCF-F7C8744CE6B5}" Language="SFX" Hash="{6B1FE4C4-9B2B-9F19-DD3C-AF56F390D5DC}">
 			<ObjectPath>BeginHiddenMusic</ObjectPath>
 			<ShortName>BeginHiddenMusic</ShortName>
 			<Path>Event/BeginHiddenMusic.bnk</Path>
@@ -503,6 +505,8 @@
 			</Events>
 			<GameParameters>
 				<GameParameter Id="255912898" Name="DynamicEnemyAmountVolume" ObjectPath="\Game Parameters\Default Work Unit\DynamicEnemyAmountVolume" GUID="{0A02C79E-164F-4934-88F5-8D80805F0FB8}"/>
+				<GameParameter Id="1789676941" Name="MusicMuffle" ObjectPath="\Game Parameters\Default Work Unit\MusicMuffle" GUID="{89A1870C-D397-4A0B-AFC5-BE524A06B849}"/>
+				<GameParameter Id="2346531308" Name="MusicVolume" ObjectPath="\Game Parameters\Default Work Unit\MusicVolume" GUID="{BEEF7FC8-87EB-4AA6-B809-8CB2D7FBA2EB}"/>
 			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="3060884600" Name="PlayerChasedStateGroup" ObjectPath="\States\Default Work Unit\PlayerChasedStateGroup" GUID="{EE672E92-347B-4545-8120-1C668D97E78D}">
@@ -516,5 +520,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{068E3ADD-4067-3DE4-1596-3E76527DF3C7}</FileHash>
+	<FileHash>{28D1B20B-932C-0389-BDF1-CDB143AB1672}</FileHash>
 </SoundBanksInfo>

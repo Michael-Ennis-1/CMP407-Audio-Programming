@@ -921,6 +921,7 @@
 				</SwitchContainer>
 				<RandomSequenceContainer Name="ExplosionsContainer" ID="{5E2BF4FB-6F3B-4C66-B74F-F4FB1BA2C942}" ShortID="597594534">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
@@ -936,6 +937,9 @@
 						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="ExplosionAttenuationSet" ID="{B9933138-5A28-4AB1-863E-0F733258837E}" WorkUnitID="{BF62E9E4-75E8-4B78-AC73-86282943CDEE}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{90025334-F6E4-4397-94DB-005B571AFF8A}"/>
 						</Reference>

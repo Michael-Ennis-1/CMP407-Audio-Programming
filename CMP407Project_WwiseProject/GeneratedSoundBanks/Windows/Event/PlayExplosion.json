@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{7697D898-A9EB-46F3-8BC6-4DE680D4D0CE}",
     "Language": "SFX",
-    "Hash": "{BEB07301-EDD8-86CE-E42B-A88645A4C4C0}",
+    "Hash": "{14927BB8-DEFE-8AEE-B081-440C7A257AEA}",
     "ObjectPath": "PlayExplosion",
     "ShortName": "PlayExplosion",
     "Path": "Event/PlayExplosion.bnk",
@@ -31,6 +31,7 @@
       "Name": "PlayExplosion",
       "ObjectPath": "\\Events\\Default Work Unit\\SoundEffects\\PlayExplosion",
       "GUID": "{7697D898-A9EB-46F3-8BC6-4DE680D4D0CE}",
+      "MaxAttenuation": "1000",
       "DurationType": "OneShot",
       "DurationMin": "0.79624426",
       "DurationMax": "1.1299689",
@@ -51,6 +52,6 @@
     ]
    }
   ],
-  "FileHash": "{9E61CA03-7629-7498-1601-BC5A1EAA20DC}"
+  "FileHash": "{877253A1-10CB-9BE8-7375-BDD662793878}"
  }
 }
