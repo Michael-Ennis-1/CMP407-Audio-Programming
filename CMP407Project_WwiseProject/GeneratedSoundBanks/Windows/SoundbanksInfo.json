@@ -175,7 +175,7 @@
     "Type": "Event",
     "GUID": "{11EFE650-9670-42D6-97FA-95E7D171C8F2}",
     "Language": "SFX",
-    "Hash": "{7DC643AE-89C2-83D4-12E4-76CCA11172C2}",
+    "Hash": "{C9783713-80C5-C3D0-E2CD-308CF9F38383}",
     "ObjectPath": "PlayFootsteps",
     "ShortName": "PlayFootsteps",
     "Path": "Event/PlayFootsteps.bnk",
@@ -367,7 +367,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{F96E12F7-344F-8676-C031-5B697560F3C2}",
+    "Hash": "{78D56D8F-7C63-207E-5589-8028E879A4F9}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -442,12 +442,6 @@
       "Name": "DynamicEnemyAmountVolume",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\DynamicEnemyAmountVolume",
       "GUID": "{0A02C79E-164F-4934-88F5-8D80805F0FB8}"
-     },
-     {
-      "Id": "1493153371",
-      "Name": "PlayerSpeed",
-      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PlayerSpeed",
-      "GUID": "{E25294AF-93C8-4B62-B86F-4447C6D2C2D5}"
      },
      {
       "Id": "1789676941",
@@ -737,41 +731,6 @@
     ]
    },
    {
-    "Id": "2539173996",
-    "Type": "Event",
-    "GUID": "{8BBFE927-DD4B-4348-9456-D0B5E6C2FCF2}",
-    "Language": "SFX",
-    "Hash": "{94EA5F64-6040-187E-FF9A-666257B8486F}",
-    "ObjectPath": "PlayHeatbeats",
-    "ShortName": "PlayHeatbeats",
-    "Path": "Event/PlayHeatbeats.bnk",
-    "Media": [
-     {
-      "Id": "566475053",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "heartbeat.wav",
-      "Path": "Media/566475053.wem",
-      "CachePath": "SFX/heartbeat_818F3B66.wem"
-     }
-    ],
-    "Events": [
-     {
-      "Id": "2539173996",
-      "Name": "PlayHeatbeats",
-      "ObjectPath": "\\Events\\Default Work Unit\\SoundEffects\\PlayHeatbeats",
-      "GUID": "{8BBFE927-DD4B-4348-9456-D0B5E6C2FCF2}",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "566475053"
-       }
-      ]
-     }
-    ]
-   },
-   {
     "Id": "2817782225",
     "Type": "Event",
     "GUID": "{A6B2086B-256A-4ED6-B4F2-527DFDFA72DC}",
@@ -883,6 +842,41 @@
         "Name": "MetalImpact",
         "ObjectPath": "\\Switches\\Default Work Unit\\BulletImpactSwitchGroup\\MetalImpact",
         "GUID": "{B00E73F9-8E0B-48E6-8410-01165B821C01}"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "3030334156",
+    "Type": "Event",
+    "GUID": "{8BBFE927-DD4B-4348-9456-D0B5E6C2FCF2}",
+    "Language": "SFX",
+    "Hash": "{4ABA8CD3-2E5E-0F0A-FAA4-6E7B315FB63B}",
+    "ObjectPath": "PlayHeartbeats",
+    "ShortName": "PlayHeartbeats",
+    "Path": "Event/PlayHeartbeats.bnk",
+    "Media": [
+     {
+      "Id": "566475053",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "heartbeat.wav",
+      "Path": "Media/566475053.wem",
+      "CachePath": "SFX/heartbeat_818F3B66.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3030334156",
+      "Name": "PlayHeartbeats",
+      "ObjectPath": "\\Events\\Default Work Unit\\SoundEffects\\PlayHeartbeats",
+      "GUID": "{8BBFE927-DD4B-4348-9456-D0B5E6C2FCF2}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "566475053"
        }
       ]
      }
@@ -1268,6 +1262,6 @@
     ]
    }
   ],
-  "FileHash": "{502E3409-085F-5CA9-EEE2-E8CE5F8AC8E1}"
+  "FileHash": "{4DA55CCD-097E-CD84-2E3F-89EDE5F90A97}"
  }
 }

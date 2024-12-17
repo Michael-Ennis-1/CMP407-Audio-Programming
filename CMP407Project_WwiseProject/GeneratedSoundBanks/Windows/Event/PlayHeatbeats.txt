@@ -1,3 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	2539173996	PlayHeatbeats			\Default Work Unit\SoundEffects\PlayHeatbeats	
-

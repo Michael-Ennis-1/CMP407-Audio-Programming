@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{EF52C16D-4E46-D90F-9E21-102E0A788848}",
+    "Hash": "{635CD513-E5F8-22D0-65BF-5303FFCB0B84}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -85,12 +85,6 @@
       "Name": "DynamicEnemyAmountVolume",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\DynamicEnemyAmountVolume",
       "GUID": "{0A02C79E-164F-4934-88F5-8D80805F0FB8}"
-     },
-     {
-      "Id": "1493153371",
-      "Name": "PlayerSpeed",
-      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PlayerSpeed",
-      "GUID": "{E25294AF-93C8-4B62-B86F-4447C6D2C2D5}"
      },
      {
       "Id": "1789676941",
@@ -201,6 +195,6 @@
     ]
    }
   ],
-  "FileHash": "{F1BA2854-8F0E-A1CA-5107-41F744D345C8}"
+  "FileHash": "{75A534E0-58ED-A6E7-8BC3-C39B866F1391}"
  }
 }

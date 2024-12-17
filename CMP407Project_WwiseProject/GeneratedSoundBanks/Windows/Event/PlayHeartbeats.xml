@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="2539173996" Type="Event" GUID="{8BBFE927-DD4B-4348-9456-D0B5E6C2FCF2}" Language="SFX" Hash="{94EA5F64-6040-187E-FF9A-666257B8486F}">
-			<ObjectPath>PlayHeatbeats</ObjectPath>
-			<ShortName>PlayHeatbeats</ShortName>
-			<Path>Event/PlayHeatbeats.bnk</Path>
+		<SoundBank Id="3030334156" Type="Event" GUID="{8BBFE927-DD4B-4348-9456-D0B5E6C2FCF2}" Language="SFX" Hash="{4ABA8CD3-2E5E-0F0A-FAA4-6E7B315FB63B}">
+			<ObjectPath>PlayHeartbeats</ObjectPath>
+			<ShortName>PlayHeartbeats</ShortName>
+			<Path>Event/PlayHeartbeats.bnk</Path>
 			<Media>
 				<File Id="566475053" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>heartbeat.wav</ShortName>
@@ -13,7 +13,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2539173996" Name="PlayHeatbeats" ObjectPath="\Events\Default Work Unit\SoundEffects\PlayHeatbeats" GUID="{8BBFE927-DD4B-4348-9456-D0B5E6C2FCF2}" DurationType="Infinite">
+				<Event Id="3030334156" Name="PlayHeartbeats" ObjectPath="\Events\Default Work Unit\SoundEffects\PlayHeartbeats" GUID="{8BBFE927-DD4B-4348-9456-D0B5E6C2FCF2}" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="566475053"/>
 					</MediaRefs>
@@ -21,5 +21,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FE3ABB14-DB1B-D369-D876-012015ED2014}</FileHash>
+	<FileHash>{FC217DE0-81EA-D348-3A5C-49D905168EA3}</FileHash>
 </SoundBanksInfo>

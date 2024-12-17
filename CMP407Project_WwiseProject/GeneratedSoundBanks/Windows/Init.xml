@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{F96E12F7-344F-8676-C031-5B697560F3C2}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{78D56D8F-7C63-207E-5589-8028E879A4F9}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -30,7 +30,6 @@
 			</AuxBusses>
 			<GameParameters>
 				<GameParameter Id="255912898" Name="DynamicEnemyAmountVolume" ObjectPath="\Game Parameters\Default Work Unit\DynamicEnemyAmountVolume" GUID="{0A02C79E-164F-4934-88F5-8D80805F0FB8}"/>
-				<GameParameter Id="1493153371" Name="PlayerSpeed" ObjectPath="\Game Parameters\Default Work Unit\PlayerSpeed" GUID="{E25294AF-93C8-4B62-B86F-4447C6D2C2D5}"/>
 				<GameParameter Id="1789676941" Name="MusicMuffle" ObjectPath="\Game Parameters\Default Work Unit\MusicMuffle" GUID="{89A1870C-D397-4A0B-AFC5-BE524A06B849}"/>
 				<GameParameter Id="2346531308" Name="MusicVolume" ObjectPath="\Game Parameters\Default Work Unit\MusicVolume" GUID="{BEEF7FC8-87EB-4AA6-B809-8CB2D7FBA2EB}"/>
 				<GameParameter Id="2676555662" Name="HasBeenDamaged" ObjectPath="\Game Parameters\Default Work Unit\HasBeenDamaged" GUID="{5D690D85-3DE9-43CB-9D2B-811EDC8BFE38}"/>
@@ -63,5 +62,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{09B6C51E-6303-32F2-CE69-A5FB6743429D}</FileHash>
+	<FileHash>{B97474C6-3046-6264-DA5F-D3154791BAFC}</FileHash>
 </SoundBanksInfo>

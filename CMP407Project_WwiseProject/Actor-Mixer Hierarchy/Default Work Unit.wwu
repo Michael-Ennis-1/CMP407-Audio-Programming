@@ -236,6 +236,8 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="RandomWaterFootsteps" ID="{6FD5E4E6-C7E6-40A8-A5A2-0AD53F524639}" ShortID="509395474">
 							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="Lowpass" Type="int16">
 									<ModifierList>
 										<ModifierInfo>
@@ -248,6 +250,12 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>

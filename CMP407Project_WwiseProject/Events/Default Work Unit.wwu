@@ -154,7 +154,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="PlayHeatbeats" ID="{8BBFE927-DD4B-4348-9456-D0B5E6C2FCF2}">
+						<Event Name="PlayHeartbeats" ID="{8BBFE927-DD4B-4348-9456-D0B5E6C2FCF2}">
 							<ChildrenList>
 								<Action Name="" ID="{3D81E273-8925-46A6-A02B-3E3554F32034}" ShortID="401951957">
 									<ReferenceList>

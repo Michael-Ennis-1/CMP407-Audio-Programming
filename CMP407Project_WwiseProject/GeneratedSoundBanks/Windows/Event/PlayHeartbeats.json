@@ -1,19 +1,19 @@
 {
  "SoundBanksInfo": {
-  "Platform": "Mac",
-  "BasePlatform": "Mac",
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
   "SchemaVersion": "16",
   "SoundBankVersion": "150",
   "SoundBanks": [
    {
-    "Id": "2539173996",
+    "Id": "3030334156",
     "Type": "Event",
     "GUID": "{8BBFE927-DD4B-4348-9456-D0B5E6C2FCF2}",
     "Language": "SFX",
-    "Hash": "{94EA5F64-6040-187E-FF9A-666257B8486F}",
-    "ObjectPath": "PlayHeatbeats",
-    "ShortName": "PlayHeatbeats",
-    "Path": "Event/PlayHeatbeats.bnk",
+    "Hash": "{4ABA8CD3-2E5E-0F0A-FAA4-6E7B315FB63B}",
+    "ObjectPath": "PlayHeartbeats",
+    "ShortName": "PlayHeartbeats",
+    "Path": "Event/PlayHeartbeats.bnk",
     "Media": [
      {
       "Id": "566475053",
@@ -27,9 +27,9 @@
     ],
     "Events": [
      {
-      "Id": "2539173996",
-      "Name": "PlayHeatbeats",
-      "ObjectPath": "\\Events\\Default Work Unit\\SoundEffects\\PlayHeatbeats",
+      "Id": "3030334156",
+      "Name": "PlayHeartbeats",
+      "ObjectPath": "\\Events\\Default Work Unit\\SoundEffects\\PlayHeartbeats",
       "GUID": "{8BBFE927-DD4B-4348-9456-D0B5E6C2FCF2}",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -41,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{AD7E8A4F-9882-B46E-A96D-608999183C50}"
+  "FileHash": "{625D6E9E-3D89-A93D-9219-56496FFA0E51}"
  }
 }
