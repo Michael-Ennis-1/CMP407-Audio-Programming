@@ -10,6 +10,123 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
+						<Bus Name="HeartbeatAudioBus" ID="{580A8381-4C94-4FB9-8CDC-545F109A0C18}">
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{F6899E26-2D26-4B2E-9E1F-3371A4E69C22}" ShortID="980742099">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="HasBeenDamaged" ID="{5D690D85-3DE9-43CB-9D2B-811EDC8BFE38}" WorkUnitID="{6C36F32B-C9C0-4E20-AEE6-C82CBE441F3B}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{715EF07D-F815-47D2-BF86-700B1071F476}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>2.5</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
+						<Bus Name="AffectedByHeartbeatAudioBus" ID="{82A6CA88-DF91-4C72-8930-FDDE526A586B}">
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{B98D55C1-642E-49C7-ABF8-140FAB5D59BE}" ShortID="820740280">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="HasBeenDamaged" ID="{5D690D85-3DE9-43CB-9D2B-811EDC8BFE38}" WorkUnitID="{6C36F32B-C9C0-4E20-AEE6-C82CBE441F3B}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{0462F970-20D1-4479-B601-5821A60A5341}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>60</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{2F222675-2C71-46D2-8C08-CB3E7D033402}" ShortID="991640049">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="HasBeenDamaged" ID="{5D690D85-3DE9-43CB-9D2B-811EDC8BFE38}" WorkUnitID="{6C36F32B-C9C0-4E20-AEE6-C82CBE441F3B}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{A321AAF9-F890-4FBE-A0E2-A3198D8CEB27}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-12</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
 						<AuxBus Name="ReverbAuxillaryBus" ID="{CB4DF897-C74D-4E9E-9974-FED2837977CB}">
 							<ObjectLists>
 								<ObjectList Name="Effects">

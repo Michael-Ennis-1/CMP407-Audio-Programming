@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="182906760" Type="Event" GUID="{7697D898-A9EB-46F3-8BC6-4DE680D4D0CE}" Language="SFX" Hash="{14927BB8-DEFE-8AEE-B081-440C7A257AEA}">
+		<SoundBank Id="182906760" Type="Event" GUID="{7697D898-A9EB-46F3-8BC6-4DE680D4D0CE}" Language="SFX" Hash="{B06476C1-9A2A-4EAD-29EB-1AC270742B68}">
 			<ObjectPath>PlayExplosion</ObjectPath>
 			<ShortName>PlayExplosion</ShortName>
 			<Path>Event/PlayExplosion.bnk</Path>
@@ -50,7 +50,7 @@
 				</AuxBus>
 			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="995613051" Type="Event" GUID="{5E931EA9-AF1E-427D-A33F-B3236DCC79C3}" Language="SFX" Hash="{8939B0A6-E6F4-E9B2-AEA9-D0D3149C75D4}">
+		<SoundBank Id="995613051" Type="Event" GUID="{5E931EA9-AF1E-427D-A33F-B3236DCC79C3}" Language="SFX" Hash="{5FE3EC03-8BEA-7861-1370-9A71DE5F246B}">
 			<ObjectPath>PlayBulletPassby</ObjectPath>
 			<ShortName>PlayBulletPassby</ShortName>
 			<Path>Event/PlayBulletPassby.bnk</Path>
@@ -87,7 +87,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1088348632" Type="Event" GUID="{11EFE650-9670-42D6-97FA-95E7D171C8F2}" Language="SFX" Hash="{DA4D535E-CCBD-3F0A-4D45-C7E94B4AA03A}">
+		<SoundBank Id="1088348632" Type="Event" GUID="{11EFE650-9670-42D6-97FA-95E7D171C8F2}" Language="SFX" Hash="{7DC643AE-89C2-83D4-12E4-76CCA11172C2}">
 			<ObjectPath>PlayFootsteps</ObjectPath>
 			<ShortName>PlayFootsteps</ShortName>
 			<Path>Event/PlayFootsteps.bnk</Path>
@@ -178,7 +178,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{1F3BD0DA-5DF5-8E2F-4340-635EE6A12F7F}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{EF52C16D-4E46-D90F-9E21-102E0A788848}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -192,6 +192,8 @@
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="761837322" Name="AffectedByHeartbeatAudioBus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AffectedByHeartbeatAudioBus" GUID="{82A6CA88-DF91-4C72-8930-FDDE526A586B}"/>
+				<Bus Id="1316478143" Name="HeartbeatAudioBus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\HeartbeatAudioBus" GUID="{580A8381-4C94-4FB9-8CDC-545F109A0C18}"/>
 				<Bus Id="3803692087" Name="Master Audio Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus" GUID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 			</Busses>
 			<AuxBusses>
@@ -208,6 +210,7 @@
 				<GameParameter Id="1493153371" Name="PlayerSpeed" ObjectPath="\Game Parameters\Default Work Unit\PlayerSpeed" GUID="{E25294AF-93C8-4B62-B86F-4447C6D2C2D5}"/>
 				<GameParameter Id="1789676941" Name="MusicMuffle" ObjectPath="\Game Parameters\Default Work Unit\MusicMuffle" GUID="{89A1870C-D397-4A0B-AFC5-BE524A06B849}"/>
 				<GameParameter Id="2346531308" Name="MusicVolume" ObjectPath="\Game Parameters\Default Work Unit\MusicVolume" GUID="{BEEF7FC8-87EB-4AA6-B809-8CB2D7FBA2EB}"/>
+				<GameParameter Id="2676555662" Name="HasBeenDamaged" ObjectPath="\Game Parameters\Default Work Unit\HasBeenDamaged" GUID="{5D690D85-3DE9-43CB-9D2B-811EDC8BFE38}"/>
 				<GameParameter Id="3237550251" Name="CameraDirection" ObjectPath="\Game Parameters\Default Work Unit\CameraDirection" GUID="{C1CC14D2-C77C-4899-B2B7-CFFC6A779A05}"/>
 			</GameParameters>
 			<StateGroups>
@@ -236,7 +239,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1377933095" Type="Event" GUID="{EDA2D3EF-9B78-4B3E-8607-E6835CE32334}" Language="SFX" Hash="{AC4FC502-83B4-BEFF-36E1-DDF4C078D965}">
+		<SoundBank Id="1377933095" Type="Event" GUID="{EDA2D3EF-9B78-4B3E-8607-E6835CE32334}" Language="SFX" Hash="{5D4E9C4C-B12B-8ECC-93FC-EB1E235AEE09}">
 			<ObjectPath>BeginChaseMusic</ObjectPath>
 			<ShortName>BeginChaseMusic</ShortName>
 			<Path>Event/BeginChaseMusic.bnk</Path>
@@ -311,7 +314,26 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="2817782225" Type="Event" GUID="{A6B2086B-256A-4ED6-B4F2-527DFDFA72DC}" Language="SFX" Hash="{7F9506BD-B3B0-FFD2-8432-A0B5B7A0DC6F}">
+		<SoundBank Id="2539173996" Type="Event" GUID="{8BBFE927-DD4B-4348-9456-D0B5E6C2FCF2}" Language="SFX" Hash="{94EA5F64-6040-187E-FF9A-666257B8486F}">
+			<ObjectPath>PlayHeatbeats</ObjectPath>
+			<ShortName>PlayHeatbeats</ShortName>
+			<Path>Event/PlayHeatbeats.bnk</Path>
+			<Media>
+				<File Id="566475053" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>heartbeat.wav</ShortName>
+					<Path>Media/566475053.wem</Path>
+					<CachePath>SFX/heartbeat_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2539173996" Name="PlayHeatbeats" ObjectPath="\Events\Default Work Unit\SoundEffects\PlayHeatbeats" GUID="{8BBFE927-DD4B-4348-9456-D0B5E6C2FCF2}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="566475053"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2817782225" Type="Event" GUID="{A6B2086B-256A-4ED6-B4F2-527DFDFA72DC}" Language="SFX" Hash="{0074660D-943E-226C-E674-3A71AE06D98D}">
 			<ObjectPath>PlayBulletImpact</ObjectPath>
 			<ShortName>PlayBulletImpact</ShortName>
 			<Path>Event/PlayBulletImpact.bnk</Path>
@@ -388,7 +410,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3533507663" Type="Event" GUID="{042604ED-1C3C-478B-AF40-60D9DD0498BD}" Language="SFX" Hash="{650CA40D-DF61-E573-337A-B10B2A05B1DB}">
+		<SoundBank Id="3533507663" Type="Event" GUID="{042604ED-1C3C-478B-AF40-60D9DD0498BD}" Language="SFX" Hash="{B2B952AA-804F-6A3B-F636-C6008930FF0E}">
 			<ObjectPath>PlayGunshot</ObjectPath>
 			<ShortName>PlayGunshot</ShortName>
 			<Path>Event/PlayGunshot.bnk</Path>
@@ -444,7 +466,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="4244123813" Type="Event" GUID="{AD634FDE-E1BB-4FED-ABCF-F7C8744CE6B5}" Language="SFX" Hash="{6B1FE4C4-9B2B-9F19-DD3C-AF56F390D5DC}">
+		<SoundBank Id="4244123813" Type="Event" GUID="{AD634FDE-E1BB-4FED-ABCF-F7C8744CE6B5}" Language="SFX" Hash="{61D1BB61-0931-DE7D-C613-453D6682655E}">
 			<ObjectPath>BeginHiddenMusic</ObjectPath>
 			<ShortName>BeginHiddenMusic</ShortName>
 			<Path>Event/BeginHiddenMusic.bnk</Path>
@@ -520,5 +542,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A7C8D3E6-6B94-0448-842E-B6D9EEEEDFEA}</FileHash>
+	<FileHash>{9E756B68-624C-AE6F-3E4A-1E1C47F16437}</FileHash>
 </SoundBanksInfo>

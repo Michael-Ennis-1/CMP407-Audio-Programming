@@ -8,6 +8,7 @@
 #include "Components/BoxComponent.h"
 #include "ProjectileAudioComponent.h"
 #include "AudioProjectileSubsystem.h"
+#include "AudioPlayerHealthComponent.h"
 
 AAudioPlayerCharacter::AAudioPlayerCharacter()
 {
@@ -42,6 +43,12 @@ void AAudioPlayerCharacter::OnBeginCharacterOverlap(UPrimitiveComponent* Overlap
 			if (AudioPlayerComponent)
 			{
 				AudioPlayerComponent->PlayHitByBullet();
+			}
+
+			UAudioPlayerHealthComponent* AudioPlayerHealthComponent = GetComponentByClass<UAudioPlayerHealthComponent>();
+			if (AudioPlayerHealthComponent)
+			{
+				AudioPlayerHealthComponent->DealProjectileDamage();
 			}
 		}
 	}

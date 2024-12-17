@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="995613051" Type="Event" GUID="{5E931EA9-AF1E-427D-A33F-B3236DCC79C3}" Language="SFX" Hash="{8939B0A6-E6F4-E9B2-AEA9-D0D3149C75D4}">
+		<SoundBank Id="995613051" Type="Event" GUID="{5E931EA9-AF1E-427D-A33F-B3236DCC79C3}" Language="SFX" Hash="{5FE3EC03-8BEA-7861-1370-9A71DE5F246B}">
 			<ObjectPath>PlayBulletPassby</ObjectPath>
 			<ShortName>PlayBulletPassby</ShortName>
 			<Path>Event/PlayBulletPassby.bnk</Path>
@@ -39,5 +39,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5F503383-CE33-E373-E81C-1CF52405C5EA}</FileHash>
+	<FileHash>{ECC00103-E47E-7FFA-4415-A9F5E021AA62}</FileHash>
 </SoundBanksInfo>

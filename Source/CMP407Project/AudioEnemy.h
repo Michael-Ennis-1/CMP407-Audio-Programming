@@ -33,6 +33,7 @@ public:
 protected:
 	virtual void BeginPlay() override;
 
+	UFUNCTION(BlueprintCallable)
 	UAudioEnemySubsystem* GetAudioEnemySubsystem();
 
 	// Updates whether the player is spotted by this enemy

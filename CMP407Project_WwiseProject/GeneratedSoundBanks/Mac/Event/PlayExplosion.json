@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{7697D898-A9EB-46F3-8BC6-4DE680D4D0CE}",
     "Language": "SFX",
-    "Hash": "{14927BB8-DEFE-8AEE-B081-440C7A257AEA}",
+    "Hash": "{B06476C1-9A2A-4EAD-29EB-1AC270742B68}",
     "ObjectPath": "PlayExplosion",
     "ShortName": "PlayExplosion",
     "Path": "Event/PlayExplosion.bnk",
@@ -52,6 +52,6 @@
     ]
    }
   ],
-  "FileHash": "{FF0C437A-C96A-6C69-99B3-DCA95CC53412}"
+  "FileHash": "{DB77593E-B1D1-B847-A70E-BC741017FC03}"
  }
 }

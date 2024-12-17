@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{5E931EA9-AF1E-427D-A33F-B3236DCC79C3}",
     "Language": "SFX",
-    "Hash": "{8939B0A6-E6F4-E9B2-AEA9-D0D3149C75D4}",
+    "Hash": "{5FE3EC03-8BEA-7861-1370-9A71DE5F246B}",
     "ObjectPath": "PlayBulletPassby",
     "ShortName": "PlayBulletPassby",
     "Path": "Event/PlayBulletPassby.bnk",
@@ -80,6 +80,6 @@
     ]
    }
   ],
-  "FileHash": "{6125E43E-2C64-FDA4-E6E9-C0B28BDFE6B2}"
+  "FileHash": "{3BA2946B-5516-3ABC-A01E-491483C702C9}"
  }
 }

@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{042604ED-1C3C-478B-AF40-60D9DD0498BD}",
     "Language": "SFX",
-    "Hash": "{650CA40D-DF61-E573-337A-B10B2A05B1DB}",
+    "Hash": "{B2B952AA-804F-6A3B-F636-C6008930FF0E}",
     "ObjectPath": "PlayGunshot",
     "ShortName": "PlayGunshot",
     "Path": "Event/PlayGunshot.bnk",
@@ -76,6 +76,6 @@
     ]
    }
   ],
-  "FileHash": "{BD31F069-0962-E598-1DF1-D8A9A41C6787}"
+  "FileHash": "{B3ACF52D-9727-F278-BAD6-818EF517F7AB}"
  }
 }

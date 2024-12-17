@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{B05B6ADE-E5F8-8B56-C9AD-B8F7CEB2A99C}",
+    "Hash": "{F96E12F7-344F-8676-C031-5B697560F3C2}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -45,6 +45,18 @@
      ]
     },
     "Busses": [
+     {
+      "Id": "761837322",
+      "Name": "AffectedByHeartbeatAudioBus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\AffectedByHeartbeatAudioBus",
+      "GUID": "{82A6CA88-DF91-4C72-8930-FDDE526A586B}"
+     },
+     {
+      "Id": "1316478143",
+      "Name": "HeartbeatAudioBus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\HeartbeatAudioBus",
+      "GUID": "{580A8381-4C94-4FB9-8CDC-545F109A0C18}"
+     },
      {
       "Id": "3803692087",
       "Name": "Master Audio Bus",
@@ -91,6 +103,12 @@
       "Name": "MusicVolume",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\MusicVolume",
       "GUID": "{BEEF7FC8-87EB-4AA6-B809-8CB2D7FBA2EB}"
+     },
+     {
+      "Id": "2676555662",
+      "Name": "HasBeenDamaged",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\HasBeenDamaged",
+      "GUID": "{5D690D85-3DE9-43CB-9D2B-811EDC8BFE38}"
      },
      {
       "Id": "3237550251",
@@ -183,6 +201,6 @@
     ]
    }
   ],
-  "FileHash": "{963B0433-F142-8A78-D675-5902C3554785}"
+  "FileHash": "{98416527-9043-91AC-5F2F-2A6F1CF3CA79}"
  }
 }

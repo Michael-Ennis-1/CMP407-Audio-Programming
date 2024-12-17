@@ -9,6 +9,7 @@
 #include "ProjectileAudioComponent.h"
 #include "AudioEnemy.h"
 #include "AudioTurretEnemy.h"
+#include "AudioPlayerHealthComponent.h"
 
 AAudioProjectile::AAudioProjectile() : ProjectileSpeed(250.0f), ProjectileLifespan(5.0f)
 {

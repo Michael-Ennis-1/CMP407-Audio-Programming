@@ -13,7 +13,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{90025334-F6E4-4397-94DB-005B571AFF8A}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6DCF3559-4F7F-4265-9DF4-A8C70F54E169}"/>
+							<ObjectRef Name="AffectedByHeartbeatAudioBus" ID="{82A6CA88-DF91-4C72-8930-FDDE526A586B}" WorkUnitID="{6DCF3559-4F7F-4265-9DF4-A8C70F54E169}"/>
 						</Reference>
 						<Reference Name="TransitionRoot">
 							<Custom>

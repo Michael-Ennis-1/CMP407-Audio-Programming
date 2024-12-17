@@ -23,7 +23,7 @@ public:
 	UFUNCTION()
 	void StopChasingPlayer();
 
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable)
 	void DisableBehaviourTree();
 
 protected:

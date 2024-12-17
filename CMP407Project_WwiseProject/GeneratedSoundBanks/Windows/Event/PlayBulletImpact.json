@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{A6B2086B-256A-4ED6-B4F2-527DFDFA72DC}",
     "Language": "SFX",
-    "Hash": "{7F9506BD-B3B0-FFD2-8432-A0B5B7A0DC6F}",
+    "Hash": "{0074660D-943E-226C-E674-3A71AE06D98D}",
     "ObjectPath": "PlayBulletImpact",
     "ShortName": "PlayBulletImpact",
     "Path": "Event/PlayBulletImpact.bnk",
@@ -123,6 +123,6 @@
     ]
    }
   ],
-  "FileHash": "{6F955536-A7AA-4823-AD1D-B6F28CB79FF3}"
+  "FileHash": "{802D1911-E956-7FAE-8F51-0BA7EFA5955E}"
  }
 }

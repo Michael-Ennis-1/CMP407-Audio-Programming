@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="4244123813" Type="Event" GUID="{AD634FDE-E1BB-4FED-ABCF-F7C8744CE6B5}" Language="SFX" Hash="{6B1FE4C4-9B2B-9F19-DD3C-AF56F390D5DC}">
+		<SoundBank Id="4244123813" Type="Event" GUID="{AD634FDE-E1BB-4FED-ABCF-F7C8744CE6B5}" Language="SFX" Hash="{61D1BB61-0931-DE7D-C613-453D6682655E}">
 			<ObjectPath>BeginHiddenMusic</ObjectPath>
 			<ShortName>BeginHiddenMusic</ShortName>
 			<Path>Event/BeginHiddenMusic.bnk</Path>
@@ -77,5 +77,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E7F44AFB-9098-EE5E-8A2D-1123C07D3F7D}</FileHash>
+	<FileHash>{2F3BA66B-3F9E-8AB1-26FE-8E4AA56FB181}</FileHash>
 </SoundBanksInfo>

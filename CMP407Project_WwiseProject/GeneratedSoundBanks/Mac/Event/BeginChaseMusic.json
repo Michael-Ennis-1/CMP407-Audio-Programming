@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{EDA2D3EF-9B78-4B3E-8607-E6835CE32334}",
     "Language": "SFX",
-    "Hash": "{AC4FC502-83B4-BEFF-36E1-DDF4C078D965}",
+    "Hash": "{5D4E9C4C-B12B-8ECC-93FC-EB1E235AEE09}",
     "ObjectPath": "BeginChaseMusic",
     "ShortName": "BeginChaseMusic",
     "Path": "Event/BeginChaseMusic.bnk",
@@ -185,6 +185,6 @@
     ]
    }
   ],
-  "FileHash": "{5859E134-3B59-1C78-FAB4-49D2CA27A396}"
+  "FileHash": "{37A44C8C-417D-4270-DB8C-482B125A3460}"
  }
 }

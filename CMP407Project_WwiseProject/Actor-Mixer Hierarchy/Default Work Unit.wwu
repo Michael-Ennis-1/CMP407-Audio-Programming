@@ -17,7 +17,7 @@
 							<ObjectRef Name="MetalSwitch" ID="{3BE7B528-1199-41E4-9D33-2C0B6DF53C60}" WorkUnitID="{B83F3059-7324-4C06-9C30-66DF193CF66D}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6DCF3559-4F7F-4265-9DF4-A8C70F54E169}"/>
+							<ObjectRef Name="AffectedByHeartbeatAudioBus" ID="{82A6CA88-DF91-4C72-8930-FDDE526A586B}" WorkUnitID="{6DCF3559-4F7F-4265-9DF4-A8C70F54E169}"/>
 						</Reference>
 						<Reference Name="SwitchGroupOrStateGroup">
 							<ObjectRef Name="FootstepsSwitchGroup" ID="{20DC6370-37A7-46DC-B665-8C8C4FF76E58}" WorkUnitID="{B83F3059-7324-4C06-9C30-66DF193CF66D}"/>
@@ -415,7 +415,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{90025334-F6E4-4397-94DB-005B571AFF8A}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6DCF3559-4F7F-4265-9DF4-A8C70F54E169}"/>
+							<ObjectRef Name="AffectedByHeartbeatAudioBus" ID="{82A6CA88-DF91-4C72-8930-FDDE526A586B}" WorkUnitID="{6DCF3559-4F7F-4265-9DF4-A8C70F54E169}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -547,7 +547,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{90025334-F6E4-4397-94DB-005B571AFF8A}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6DCF3559-4F7F-4265-9DF4-A8C70F54E169}"/>
+							<ObjectRef Name="AffectedByHeartbeatAudioBus" ID="{82A6CA88-DF91-4C72-8930-FDDE526A586B}" WorkUnitID="{6DCF3559-4F7F-4265-9DF4-A8C70F54E169}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -733,7 +733,7 @@
 							<ObjectRef Name="MetalImpact" ID="{B00E73F9-8E0B-48E6-8410-01165B821C01}" WorkUnitID="{B83F3059-7324-4C06-9C30-66DF193CF66D}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6DCF3559-4F7F-4265-9DF4-A8C70F54E169}"/>
+							<ObjectRef Name="AffectedByHeartbeatAudioBus" ID="{82A6CA88-DF91-4C72-8930-FDDE526A586B}" WorkUnitID="{6DCF3559-4F7F-4265-9DF4-A8C70F54E169}"/>
 						</Reference>
 						<Reference Name="SwitchGroupOrStateGroup">
 							<ObjectRef Name="BulletImpactSwitchGroup" ID="{9A41939D-D05B-43DC-9639-30138F889E2E}" WorkUnitID="{B83F3059-7324-4C06-9C30-66DF193CF66D}"/>
@@ -935,6 +935,7 @@
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -944,7 +945,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{90025334-F6E4-4397-94DB-005B571AFF8A}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6DCF3559-4F7F-4265-9DF4-A8C70F54E169}"/>
+							<ObjectRef Name="AffectedByHeartbeatAudioBus" ID="{82A6CA88-DF91-4C72-8930-FDDE526A586B}" WorkUnitID="{6DCF3559-4F7F-4265-9DF4-A8C70F54E169}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -1035,6 +1036,52 @@
 										</ReferenceList>
 									</RTPC>
 								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="HeartbeatContainer" ID="{A4F71839-6CD8-4FF8-B848-7AC2978292E7}" ShortID="77960683">
+					<PropertyList>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{90025334-F6E4-4397-94DB-005B571AFF8A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="HeartbeatAudioBus" ID="{580A8381-4C94-4FB9-8CDC-545F109A0C18}" WorkUnitID="{6DCF3559-4F7F-4265-9DF4-A8C70F54E169}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="heartbeat" ID="{22F0ABDB-D67C-4FE3-8049-F9346FB227B6}" ShortID="917927057">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{90025334-F6E4-4397-94DB-005B571AFF8A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6DCF3559-4F7F-4265-9DF4-A8C70F54E169}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="heartbeat" ID="{21DFE976-A7CF-412B-A32D-84427511BA85}">
+									<Language>SFX</Language>
+									<AudioFile>heartbeat.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="566475053"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="heartbeat" ID="{21DFE976-A7CF-412B-A32D-84427511BA85}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Playlist">
+							<Reference>
+								<ObjectRef Name="heartbeat" ID="{22F0ABDB-D67C-4FE3-8049-F9346FB227B6}" WorkUnitID="{D9FE4D5A-44BA-434B-8F15-7E6272591F65}"/>
 							</Reference>
 						</ObjectList>
 					</ObjectLists>

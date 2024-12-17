@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="1377933095" Type="Event" GUID="{EDA2D3EF-9B78-4B3E-8607-E6835CE32334}" Language="SFX" Hash="{AC4FC502-83B4-BEFF-36E1-DDF4C078D965}">
+		<SoundBank Id="1377933095" Type="Event" GUID="{EDA2D3EF-9B78-4B3E-8607-E6835CE32334}" Language="SFX" Hash="{5D4E9C4C-B12B-8ECC-93FC-EB1E235AEE09}">
 			<ObjectPath>BeginChaseMusic</ObjectPath>
 			<ShortName>BeginChaseMusic</ShortName>
 			<Path>Event/BeginChaseMusic.bnk</Path>
@@ -77,5 +77,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{1A5B2236-D588-551B-0470-9BEF7F985D78}</FileHash>
+	<FileHash>{D864472D-C007-D4D8-23D4-886E7D614A52}</FileHash>
 </SoundBanksInfo>

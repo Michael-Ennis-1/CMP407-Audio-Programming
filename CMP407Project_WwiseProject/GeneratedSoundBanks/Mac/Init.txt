@@ -4,9 +4,15 @@ State Group	ID	Name			Wwise Object Path	Notes
 State	ID	Name	State Group			Notes
 	493461511	Chased	PlayerChasedStateGroup			
 	748895195	None	PlayerChasedStateGroup			
+	938058686	Safe	PlayerChasedStateGroup			
 	3621873013	Hidden	PlayerChasedStateGroup			
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2676555662	HasBeenDamaged			\Default Work Unit\HasBeenDamaged	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	761837322	AffectedByHeartbeatAudioBus			\Default Work Unit\Master Audio Bus\AffectedByHeartbeatAudioBus	
+	1316478143	HeartbeatAudioBus			\Default Work Unit\Master Audio Bus\HeartbeatAudioBus	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes

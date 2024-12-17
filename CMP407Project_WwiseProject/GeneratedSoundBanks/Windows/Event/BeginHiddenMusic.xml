@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="4244123813" Type="Event" GUID="{AD634FDE-E1BB-4FED-ABCF-F7C8744CE6B5}" Language="SFX" Hash="{6B1FE4C4-9B2B-9F19-DD3C-AF56F390D5DC}">
+		<SoundBank Id="4244123813" Type="Event" GUID="{AD634FDE-E1BB-4FED-ABCF-F7C8744CE6B5}" Language="SFX" Hash="{61D1BB61-0931-DE7D-C613-453D6682655E}">
 			<ObjectPath>BeginHiddenMusic</ObjectPath>
 			<ShortName>BeginHiddenMusic</ShortName>
 			<Path>Event/BeginHiddenMusic.bnk</Path>
@@ -77,5 +77,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7BB92D9A-4E09-3899-8FA2-DBA90D9B3CC9}</FileHash>
+	<FileHash>{564DC7F8-6CFC-6813-6659-14672E49774F}</FileHash>
 </SoundBanksInfo>

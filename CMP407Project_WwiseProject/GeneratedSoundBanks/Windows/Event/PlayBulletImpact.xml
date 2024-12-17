@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="2817782225" Type="Event" GUID="{A6B2086B-256A-4ED6-B4F2-527DFDFA72DC}" Language="SFX" Hash="{7F9506BD-B3B0-FFD2-8432-A0B5B7A0DC6F}">
+		<SoundBank Id="2817782225" Type="Event" GUID="{A6B2086B-256A-4ED6-B4F2-527DFDFA72DC}" Language="SFX" Hash="{0074660D-943E-226C-E674-3A71AE06D98D}">
 			<ObjectPath>PlayBulletImpact</ObjectPath>
 			<ShortName>PlayBulletImpact</ShortName>
 			<Path>Event/PlayBulletImpact.bnk</Path>
@@ -57,5 +57,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{0FFCE5A9-46FC-7794-0519-29AA7D9F0BA1}</FileHash>
+	<FileHash>{5CEDFD89-C5B1-97F7-3B9F-CE220C7B9146}</FileHash>
 </SoundBanksInfo>
