@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{AD634FDE-E1BB-4FED-ABCF-F7C8744CE6B5}",
     "Language": "SFX",
-    "Hash": "{61D1BB61-0931-DE7D-C613-453D6682655E}",
+    "Hash": "{B380D154-92A0-31F8-B93A-DA5E522EE053}",
     "ObjectPath": "BeginHiddenMusic",
     "ShortName": "BeginHiddenMusic",
     "Path": "Event/BeginHiddenMusic.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "BassEdited.wav",
       "Path": "Media/8511986.wem",
-      "CachePath": "SFX/BassEdited_FBC78EF0.wem"
+      "CachePath": "SFX/BassEdited_56CEF360.wem"
      },
      {
       "Id": "279993006",
@@ -31,7 +31,7 @@
       "Location": "Loose",
       "ShortName": "PianoEdited.wav",
       "Path": "Media/279993006.wem",
-      "CachePath": "SFX/PianoEdited_FBC78EF0.wem"
+      "CachePath": "SFX/PianoEdited_56CEF360.wem"
      },
      {
       "Id": "342025362",
@@ -40,7 +40,7 @@
       "Location": "Loose",
       "ShortName": "TimbalesEdited.wav",
       "Path": "Media/342025362.wem",
-      "CachePath": "SFX/TimbalesEdited_FBC78EF0.wem"
+      "CachePath": "SFX/TimbalesEdited_56CEF360.wem"
      },
      {
       "Id": "449572488",
@@ -49,7 +49,7 @@
       "Location": "Loose",
       "ShortName": "TheFastTrackEdited.wav",
       "Path": "Media/449572488.wem",
-      "CachePath": "SFX/TheFastTrackEdited_FBC78EF0.wem"
+      "CachePath": "SFX/TheFastTrackEdited_56CEF360.wem"
      }
     ],
     "Events": [
@@ -185,6 +185,6 @@
     ]
    }
   ],
-  "FileHash": "{E0866115-F897-D839-81A4-5BC7E376E777}"
+  "FileHash": "{2E104321-E273-77F2-61C4-A2C4FE08AF4F}"
  }
 }

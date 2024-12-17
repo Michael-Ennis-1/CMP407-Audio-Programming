@@ -10,7 +10,7 @@
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{90025334-F6E4-4397-94DB-005B571AFF8A}"/>
+							<ObjectRef Name="Vorbis Conversion Settings" ID="{1CA59ED1-D26D-4620-A0CC-5D5F49EC85BA}" WorkUnitID="{90025334-F6E4-4397-94DB-005B571AFF8A}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="AffectedByHeartbeatAudioBus" ID="{82A6CA88-DF91-4C72-8930-FDDE526A586B}" WorkUnitID="{6DCF3559-4F7F-4265-9DF4-A8C70F54E169}"/>

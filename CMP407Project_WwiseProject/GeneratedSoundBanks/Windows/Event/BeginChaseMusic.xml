@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="1377933095" Type="Event" GUID="{EDA2D3EF-9B78-4B3E-8607-E6835CE32334}" Language="SFX" Hash="{5D4E9C4C-B12B-8ECC-93FC-EB1E235AEE09}">
+		<SoundBank Id="1377933095" Type="Event" GUID="{EDA2D3EF-9B78-4B3E-8607-E6835CE32334}" Language="SFX" Hash="{C2B8982B-4F78-9B17-1A92-6FE6FF2A2398}">
 			<ObjectPath>BeginChaseMusic</ObjectPath>
 			<ShortName>BeginChaseMusic</ShortName>
 			<Path>Event/BeginChaseMusic.bnk</Path>
@@ -9,22 +9,22 @@
 				<File Id="8511986" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>BassEdited.wav</ShortName>
 					<Path>Media/8511986.wem</Path>
-					<CachePath>SFX/BassEdited_FBC78EF0.wem</CachePath>
+					<CachePath>SFX/BassEdited_56CEF360.wem</CachePath>
 				</File>
 				<File Id="279993006" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>PianoEdited.wav</ShortName>
 					<Path>Media/279993006.wem</Path>
-					<CachePath>SFX/PianoEdited_FBC78EF0.wem</CachePath>
+					<CachePath>SFX/PianoEdited_56CEF360.wem</CachePath>
 				</File>
 				<File Id="342025362" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>TimbalesEdited.wav</ShortName>
 					<Path>Media/342025362.wem</Path>
-					<CachePath>SFX/TimbalesEdited_FBC78EF0.wem</CachePath>
+					<CachePath>SFX/TimbalesEdited_56CEF360.wem</CachePath>
 				</File>
 				<File Id="449572488" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>TheFastTrackEdited.wav</ShortName>
 					<Path>Media/449572488.wem</Path>
-					<CachePath>SFX/TheFastTrackEdited_FBC78EF0.wem</CachePath>
+					<CachePath>SFX/TheFastTrackEdited_56CEF360.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -77,5 +77,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9DC2066E-06B4-86C6-66FF-5B86B868051F}</FileHash>
+	<FileHash>{703352FD-6377-9388-C2EE-878D5471DDE4}</FileHash>
 </SoundBanksInfo>

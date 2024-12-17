@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="182906760" Type="Event" GUID="{7697D898-A9EB-46F3-8BC6-4DE680D4D0CE}" Language="SFX" Hash="{B06476C1-9A2A-4EAD-29EB-1AC270742B68}">
+		<SoundBank Id="182906760" Type="Event" GUID="{7697D898-A9EB-46F3-8BC6-4DE680D4D0CE}" Language="SFX" Hash="{D94B7965-4A6C-2FE4-FE26-186305EEC375}">
 			<ObjectPath>PlayExplosion</ObjectPath>
 			<ShortName>PlayExplosion</ShortName>
 			<Path>Event/PlayExplosion.bnk</Path>
@@ -9,7 +9,7 @@
 				<File Id="126313435" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>ExplosionStereo.wav</ShortName>
 					<Path>Media/126313435.wem</Path>
-					<CachePath>SFX/ExplosionStereo_818F3B66.wem</CachePath>
+					<CachePath>SFX/ExplosionStereo_8E324C96.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -24,5 +24,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{ECE0EBDA-D40F-1FF4-89F5-CC9C60373E4C}</FileHash>
+	<FileHash>{77358319-4D5D-CC12-4457-504D5CC635F3}</FileHash>
 </SoundBanksInfo>

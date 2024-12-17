@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="4244123813" Type="Event" GUID="{AD634FDE-E1BB-4FED-ABCF-F7C8744CE6B5}" Language="SFX" Hash="{61D1BB61-0931-DE7D-C613-453D6682655E}">
+		<SoundBank Id="4244123813" Type="Event" GUID="{AD634FDE-E1BB-4FED-ABCF-F7C8744CE6B5}" Language="SFX" Hash="{B380D154-92A0-31F8-B93A-DA5E522EE053}">
 			<ObjectPath>BeginHiddenMusic</ObjectPath>
 			<ShortName>BeginHiddenMusic</ShortName>
 			<Path>Event/BeginHiddenMusic.bnk</Path>
@@ -9,22 +9,22 @@
 				<File Id="8511986" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>BassEdited.wav</ShortName>
 					<Path>Media/8511986.wem</Path>
-					<CachePath>SFX/BassEdited_FBC78EF0.wem</CachePath>
+					<CachePath>SFX/BassEdited_56CEF360.wem</CachePath>
 				</File>
 				<File Id="279993006" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>PianoEdited.wav</ShortName>
 					<Path>Media/279993006.wem</Path>
-					<CachePath>SFX/PianoEdited_FBC78EF0.wem</CachePath>
+					<CachePath>SFX/PianoEdited_56CEF360.wem</CachePath>
 				</File>
 				<File Id="342025362" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>TimbalesEdited.wav</ShortName>
 					<Path>Media/342025362.wem</Path>
-					<CachePath>SFX/TimbalesEdited_FBC78EF0.wem</CachePath>
+					<CachePath>SFX/TimbalesEdited_56CEF360.wem</CachePath>
 				</File>
 				<File Id="449572488" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>TheFastTrackEdited.wav</ShortName>
 					<Path>Media/449572488.wem</Path>
-					<CachePath>SFX/TheFastTrackEdited_FBC78EF0.wem</CachePath>
+					<CachePath>SFX/TheFastTrackEdited_56CEF360.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -77,5 +77,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{2F3BA66B-3F9E-8AB1-26FE-8E4AA56FB181}</FileHash>
+	<FileHash>{E11E1CBC-4ECA-09C1-C65E-01EE5EBB3B48}</FileHash>
 </SoundBanksInfo>

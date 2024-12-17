@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{7697D898-A9EB-46F3-8BC6-4DE680D4D0CE}",
     "Language": "SFX",
-    "Hash": "{B06476C1-9A2A-4EAD-29EB-1AC270742B68}",
+    "Hash": "{D94B7965-4A6C-2FE4-FE26-186305EEC375}",
     "ObjectPath": "PlayExplosion",
     "ShortName": "PlayExplosion",
     "Path": "Event/PlayExplosion.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "ExplosionStereo.wav",
       "Path": "Media/126313435.wem",
-      "CachePath": "SFX/ExplosionStereo_818F3B66.wem"
+      "CachePath": "SFX/ExplosionStereo_8E324C96.wem"
      }
     ],
     "Events": [
@@ -52,6 +52,6 @@
     ]
    }
   ],
-  "FileHash": "{DB77593E-B1D1-B847-A70E-BC741017FC03}"
+  "FileHash": "{F2A1130E-3BD1-0298-BD31-B3FF660D3CB8}"
  }
 }
