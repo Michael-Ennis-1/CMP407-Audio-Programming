@@ -20,13 +20,8 @@ public:
 	// This subsystem ensures that chased music is playing while at least one enemy is registered, utilizing an event-driven approach, avoiding the update loop entirely.
 	// Also sends signals when an enemy is added/removed from system for dynamic music 
 
-	UFUNCTION(BlueprintCallable)
 	void RegisterAudioEnemy(AAudioEnemy* InEnemy);
-
-	UFUNCTION(BlueprintCallable)
 	void UnRegisterAudioEnemy(AAudioEnemy* InEnemy);
-
-	UFUNCTION(BlueprintCallable)
 	bool IsCurrentlyRegistered(AAudioEnemy* InEnemy);
 
 	FOnGenericEnemySubsystemEvent OnFinishedChasing;

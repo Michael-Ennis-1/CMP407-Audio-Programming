@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{09EEC311-8EA0-41D7-848B-C3FD401D13D0}",
     "Language": "SFX",
-    "Hash": "{7D534FEE-CE67-6593-DAB6-AE4EDAC5FB44}",
+    "Hash": "{99EA3602-51A8-AFBA-94CD-B8DDC6435C09}",
     "ObjectPath": "SetChased",
     "ShortName": "SetChased",
     "Path": "Event/SetChased.bnk",
@@ -71,6 +71,6 @@
     ]
    }
   ],
-  "FileHash": "{D3693FD9-FCC1-680E-50AD-28A7ACCDEFEF}"
+  "FileHash": "{4F356762-529C-F6A6-73EF-E299A0E0D421}"
  }
 }

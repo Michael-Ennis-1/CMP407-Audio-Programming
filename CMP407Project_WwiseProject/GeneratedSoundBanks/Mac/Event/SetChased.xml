@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="3531571417" Type="Event" GUID="{09EEC311-8EA0-41D7-848B-C3FD401D13D0}" Language="SFX" Hash="{7D534FEE-CE67-6593-DAB6-AE4EDAC5FB44}">
+		<SoundBank Id="3531571417" Type="Event" GUID="{09EEC311-8EA0-41D7-848B-C3FD401D13D0}" Language="SFX" Hash="{99EA3602-51A8-AFBA-94CD-B8DDC6435C09}">
 			<ObjectPath>SetChased</ObjectPath>
 			<ShortName>SetChased</ShortName>
 			<Path>Event/SetChased.bnk</Path>
@@ -24,5 +24,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4BD79127-A7C0-DFE4-2DDD-75A7BD828717}</FileHash>
+	<FileHash>{A061AE89-05F2-6A67-1274-1D83F134E578}</FileHash>
 </SoundBanksInfo>

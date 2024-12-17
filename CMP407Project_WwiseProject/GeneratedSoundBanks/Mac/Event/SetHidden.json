@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{75D0B19F-D998-4551-8A37-D9A0F38654B3}",
     "Language": "SFX",
-    "Hash": "{080738C1-5FE0-311B-F9A9-33E842A1D3D6}",
+    "Hash": "{2FCBA7CF-8CAD-5146-F91A-C6570E494870}",
     "ObjectPath": "SetHidden",
     "ShortName": "SetHidden",
     "Path": "Event/SetHidden.bnk",
@@ -71,6 +71,6 @@
     ]
    }
   ],
-  "FileHash": "{53E3ACE2-6CC5-9F75-97B2-7FF298407805}"
+  "FileHash": "{EA66A400-039C-A8CA-CCC2-1A9ADED18027}"
  }
 }

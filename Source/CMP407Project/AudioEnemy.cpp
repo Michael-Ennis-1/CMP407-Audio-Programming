@@ -6,6 +6,7 @@
 #include "Perception/AIPerceptionTypes.h"
 #include "AudioEnemySubsystem.h"
 #include "EnemyAudioComponent.h"
+#include "Perception/AISenseConfig_Sight.h"
 
 AAudioEnemy::AAudioEnemy()
 {
@@ -20,6 +21,12 @@ void AAudioEnemy::DisableEnemy()
 	if (ensure(AudioComponent))
 	{
 		AudioComponent->PlayExplosionSFX();
+	}
+
+	if (ensure(PerceptionComponent))
+	{
+		PerceptionComponent->SetSenseEnabled(UAISenseConfig_Sight::StaticClass(), false);
+		PerceptionComponent->SetActive(false);
 	}
 
 	UAudioEnemySubsystem* AudioSubsystem = GetAudioEnemySubsystem();

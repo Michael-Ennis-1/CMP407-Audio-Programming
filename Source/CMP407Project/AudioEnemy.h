@@ -26,6 +26,7 @@ public:
 	FOnGenericEnemyEvent OnEnemyStoppedChasing;
 
 	// Disables enemy when hit by projecile
+	UFUNCTION(BlueprintCallable)
 	void DisableEnemy();
 
 	FOnGenericEnemyEvent OnEnemyDisabled;

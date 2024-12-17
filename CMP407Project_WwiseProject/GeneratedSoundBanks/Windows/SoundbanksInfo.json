@@ -893,7 +893,7 @@
     "Type": "Event",
     "GUID": "{09EEC311-8EA0-41D7-848B-C3FD401D13D0}",
     "Language": "SFX",
-    "Hash": "{7D534FEE-CE67-6593-DAB6-AE4EDAC5FB44}",
+    "Hash": "{99EA3602-51A8-AFBA-94CD-B8DDC6435C09}",
     "ObjectPath": "SetChased",
     "ShortName": "SetChased",
     "Path": "Event/SetChased.bnk",
@@ -1028,7 +1028,7 @@
     "Type": "Event",
     "GUID": "{75D0B19F-D998-4551-8A37-D9A0F38654B3}",
     "Language": "SFX",
-    "Hash": "{080738C1-5FE0-311B-F9A9-33E842A1D3D6}",
+    "Hash": "{2FCBA7CF-8CAD-5146-F91A-C6570E494870}",
     "ObjectPath": "SetHidden",
     "ShortName": "SetHidden",
     "Path": "Event/SetHidden.bnk",
@@ -1268,6 +1268,6 @@
     ]
    }
   ],
-  "FileHash": "{AD487BD7-5FD9-875B-8200-0D48548A9B6B}"
+  "FileHash": "{502E3409-085F-5CA9-EEE2-E8CE5F8AC8E1}"
  }
 }
