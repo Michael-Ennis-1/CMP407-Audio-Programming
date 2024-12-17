@@ -3,11 +3,6 @@
 	<GameParameters>
 		<WorkUnit Name="Default Work Unit" ID="{6C36F32B-C9C0-4E20-AEE6-C82CBE441F3B}" PersistMode="Standalone">
 			<ChildrenList>
-				<GameParameter Name="PlayerSpeed" ID="{E25294AF-93C8-4B62-B86F-4447C6D2C2D5}">
-					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="0"/>
-					</PropertyList>
-				</GameParameter>
 				<GameParameter Name="CameraDirection" ID="{C1CC14D2-C77C-4899-B2B7-CFFC6A779A05}">
 					<PropertyList>
 						<Property Name="BindToBuiltInParam" Type="int16" Value="2"/>
