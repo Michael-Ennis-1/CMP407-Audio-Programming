@@ -7,7 +7,6 @@
 #include "AudioPlayerComponent.h"
 #include "Components/BoxComponent.h"
 #include "ProjectileAudioComponent.h"
-#include "AudioProjectileSubsystem.h"
 #include "AudioPlayerHealthComponent.h"
 
 AAudioPlayerCharacter::AAudioPlayerCharacter()
@@ -101,15 +100,4 @@ bool AAudioPlayerCharacter::PredictProjectileCollision(AActor* InOtherActor, UPr
 
 	// Return false if actor hit is not player or no actor hit
 	return false;
-}
-
-UAudioProjectileSubsystem* AAudioPlayerCharacter::GetAudioProjectileSubsystem()
-{
-	UGameInstance* GameInstance = GetGameInstance();
-	if (ensure(GameInstance))
-	{
-		return GameInstance->GetSubsystem<UAudioProjectileSubsystem>();
-	}
-
-	return nullptr;
 }

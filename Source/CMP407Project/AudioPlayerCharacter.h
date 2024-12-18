@@ -8,7 +8,6 @@
 
 class UBoxComponent;
 class UProjectileMovementComponent;
-class UAudioProjectileSubsystem;
 
 /**
  * 
@@ -34,8 +33,6 @@ public:
 
 	// Predict if we're about to hit the player, so whizz only plays on a miss
 	bool PredictProjectileCollision(AActor* InOtherActor, UProjectileMovementComponent* InProjectileMovementComponent);
-
-	UAudioProjectileSubsystem* GetAudioProjectileSubsystem();
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	TObjectPtr<UBoxComponent> BulletPassbyBoxCollider;
